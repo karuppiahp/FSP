@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layForTouch">
+
+    <ImageView
+        style="@style/introImgLay"
+        android:background="@drawable/info2_top_back"
+        />
+
+    <RelativeLayout
+        style="@style/introTxtLay"
+        >
+        <TextView
+            android:id="@+id/txtForHeaderIntro3"
+            style="@style/HeaderTextIntroTheme"
+            android:text="@string/info2personaltxt"
+            android:layout_margin="@dimen/bottmMargin"
+            />
+
+        <TextView
+            android:id="@+id/txtForIntro3Cntnt"
+            style="@style/TextSmallLargeTheme"
+            android:text="@string/info2content"
+            android:layout_below="@+id/txtForHeaderIntro3"
+            android:layout_marginTop="@dimen/bottmMargin"
+            android:layout_marginLeft="@dimen/commonMargin"
+            android:layout_marginRight="@dimen/commonMargin"
+            />
+
+        <ImageView
+            style="@style/intro3of4Img"
+            android:background="@drawable/img_2_of_4"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipeRefreshLayout"
+        >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <RelativeLayout style="@style/HeaderTheme">
+
+                <TextView
+                    style="@style/HeaderTextTheme"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/goalheadertxt" />
+
+                <ImageView
+                    android:id="@+id/imgForInfoIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="15dp"
+                    android:src="@drawable/info_icon"
+                    android:tint="@color/transactionBegin" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/mediumSpaceMargin"
+                android:orientation="horizontal"
+                android:background="@color/goalssubheadercolor"
+                >
+                <LinearLayout
+                    style="@style/LinearLayoutVerticalTheme"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/todoListItemMargin"
+                    >
+                    <ImageView
+                        style="@style/RelativeWrapTheme"
+                        android:background="@drawable/swipe_right"
+                        android:layout_gravity="center_vertical"
+
+                        />
+                    <TextView
+                        style="@style/RelativeWrapTheme"
+                        android:text="@string/swipegoaltxt"
+                        android:layout_marginLeft="@dimen/textSpaceCommon"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/textSizeSmall2"
+                        />
+                    <ImageView
+                        style="@style/RelativeWrapTheme"
+                        android:background="@drawable/swipe_left"
+                        android:layout_marginLeft="@dimen/textSpaceCommon"
+                        android:layout_gravity="center_vertical"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/todoListItemMargin"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/InviteHeaderTheme"
+                    android:text="@string/previousgoal_txt"
+                    android:textStyle="bold"/>
+                <View style="@style/CommonLineTheme" />
+
+            </LinearLayout>
+
+                <!--<com.handmark.pulltorefresh.library.PullToRefreshListView
+                    android:id="@+id/pull_to_refresh_listview"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="@dimen/commonMargin"
+                    android:layout_marginRight="@dimen/commonMargin"/>-->
+
+            <ListView
+                android:id="@+id/listViewForGoals"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/commonMargin"
+                />
+        </LinearLayout>
+    </ScrollView>
+    </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/layForOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <include layout="@layout/goals_overlay" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layForRedirect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <include layout="@layout/financial_redirect" />
+    </RelativeLayout>
+
+</RelativeLayout>

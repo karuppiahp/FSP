@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/txtForExpenses"
+                style="@style/Step1of2TextTheme"
+                android:layout_gravity="left"
+                android:padding="@dimen/todoListItemMargin"
+                android:text="@string/transExpenses" />
+
+            <View
+                style="@style/CommonLineTheme"
+                android:visibility="gone"/>
+
+            <TextView
+                style="@style/TextMediumGreyBoldTheme"
+                android:layout_gravity="left"
+                android:padding="@dimen/todoListItemMargin"
+                android:text="@string/transNeeds" />
+            <LinearLayout
+                style="@style/TransactionImagesLayTheme"
+                android:visibility="visible">
+                <ImageView
+                    style="@style/TransactionImagesTheme"
+                    android:background="@drawable/trans_home_icon"
+                    android:layout_marginRight="1dp"
+                    android:id="@+id/trans_im_home" />
+                <ImageView
+                    style="@style/TransactionImagesTheme"
+                    android:background="@drawable/trans_groceries_icon"
+                    android:id="@+id/trans_im_groceries" />
+                <ImageView
+                    style="@style/TransactionImagesTheme"
+                    android:background="@drawable/trans_transaction_icon"
+                    android:layout_marginLeft="1dp"
+                    android:id="@+id/trans_im_transportation" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/TransactionImagesLayTheme"
+                android:layout_marginTop="1dp"
+                android:visibility="visible">
+                <ImageView
+                    style="@style/TransactionImagesTheme"
+                    android:background="@drawable/trans_health_icon"
+                    android:layout_marginRight="1dp"
+                    android:id="@+id/trans_im_health" />
+                <ImageView
+                    style="@style/TransactionImagesTheme"
+                    android:background="@drawable/trans_education_icon"
+                    android:id="@+id/trans_im_education" />
+                <ImageView
+                    style="@style/TransactionImagesTheme"
+                    android:background="@drawable/trans_utilities_icon"
+                    android:layout_marginLeft="1dp"
+                    android:id="@+id/trans_im_utilities" />
+            </LinearLayout>
+            <TextView
+                style="@style/TextMediumGreyBoldTheme"
+                android:layout_gravity="left"
+                android:padding="@dimen/todoListItemMargin"
+                android:text="@string/transWants" />
+            <LinearLayout
+                style="@style/TransactionImagesLayTheme"
+                >
+                <ImageView
+                    style="@style/TransactionImagesTheme"
+                    android:background="@drawable/trans_shopping_icon"
+                    android:layout_marginRight="1dp"
+                    android:id="@+id/trans_im_shopping" />
+                <ImageView
+                    style="@style/TransactionImagesTheme"
+                    android:background="@drawable/trans_dining_out_icon"
+                    android:id="@+id/trans_im_dining_out" />
+                <ImageView
+                    style="@style/TransactionImagesTheme"
+                    android:background="@drawable/trans_entertainment_icon"
+                    android:layout_marginLeft="1dp"
+                    android:id="@+id/trans_im_enterteinment" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/TransactionImagesLayTheme"
+                android:layout_marginTop="1dp"
+                >
+                <ImageView
+                    style="@style/TransactionImagesTheme"
+                    android:background="@drawable/trans_travel_icon"
+                    android:layout_marginRight="1dp"
+                    android:id="@+id/trans_im_travel" />
+                <ImageView
+                    style="@style/TransactionImagesTheme"
+                    android:background="@drawable/trans_other_icon"
+                    android:id="@+id/trans_im_other" />
+                <ImageView
+                    style="@style/TransactionImagesTheme"
+                    android:layout_marginLeft="1dp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtForFinancials"
+                style="@style/Step1of2TextTheme"
+                android:layout_gravity="left"
+                android:padding="@dimen/todoListItemMargin"
+                android:text="@string/transFinancials" />
+            <LinearLayout
+                style="@style/TransactionImagesLayTheme"
+                android:layout_marginTop="1dp"
+                >
+                <ImageView
+                    style="@style/TransactionImagesTheme"
+                    android:background="@drawable/trans_income_icon"
+                    android:layout_marginRight="1dp"
+                    android:id="@+id/trans_im_income" />
+                <ImageView
+                    style="@style/TransactionImagesTheme"
+                    android:background="@drawable/trans_new_loan_icon"
+                    android:id="@+id/trans_im_new_loan" />
+                <ImageView
+                    style="@style/TransactionImagesTheme"
+                    android:background="@drawable/trans_pay_off_icon"
+                    android:id="@+id/trans_im_pay_off_loan"
+                    android:layout_marginLeft="1dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

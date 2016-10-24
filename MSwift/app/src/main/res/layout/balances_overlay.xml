@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9111111">
+
+    <ImageView
+        android:id="@+id/imgForHeader"
+        style="@style/OverlayHeaderBird"
+        android:layout_margin="@dimen/commonMargin"
+        />
+
+    <TextView
+        android:id="@+id/txtForBalancesHeader"
+        style="@style/TextLargeWhiteTheme"
+        android:text="@string/balancesOverlayheader"
+        android:layout_below="@+id/imgForHeader"
+        android:layout_margin="@dimen/commonMargin"
+        />
+
+    <TextView
+        android:id="@+id/txtForOverlayTxt1"
+        style="@style/TextSmallRoseTheme"
+        android:text="@string/balancesOverlayTxt1"
+        android:layout_below="@+id/txtForBalancesHeader"
+        android:layout_marginLeft="@dimen/commonMargin"
+        android:layout_marginRight="@dimen/commonMargin"
+        android:layout_marginTop="@dimen/commonMargin"
+        />
+
+    <LinearLayout
+        android:id="@+id/layForGotIt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/todoListItemMargin"
+        android:layout_marginRight="@dimen/todoListItemMargin"
+        android:layout_marginTop="@dimen/bottmMargin"
+        android:layout_below="@+id/txtForOverlayTxt1"
+        android:orientation="horizontal">
+
+        <View style="@style/CenterThemeXLarge" />
+
+        <Button
+            android:id="@+id/btnForGotIt"
+            style="@style/SaveBtnThemeshape"
+            android:background="@drawable/shape"
+            android:text="GOT IT"
+            />
+    </LinearLayout>
+</RelativeLayout>

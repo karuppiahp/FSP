@@ -1,0 +1,57 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="textSizeSmall">10sp</dimen>
+    <dimen name="textSizeSmall2">12sp</dimen>
+    <dimen name="textSizeSmallLarge">14sp</dimen>
+    <dimen name="textSizeMedium">16sp</dimen>
+    <dimen name="textSizeLarge">22sp</dimen>
+    <dimen name="textSizeXLarge">25sp</dimen>
+    <dimen name="textSubHeader">20sp</dimen>
+    <dimen name="textSizeXXLarge">30sp</dimen>
+    <dimen name="policyheader">35sp</dimen>
+
+    <!-- just to test bottom margin -->
+    <dimen name="introBottomMargin">20dp</dimen>
+
+    <dimen name="calendarImgWidth">30dp</dimen>
+    <dimen name="calendarImgHeight">20dp</dimen>
+    <dimen name="todoListItemMargin">12dp</dimen>
+    <dimen name="layForMoneyMargin">5dp</dimen>
+    <dimen name="prevNextBtnMargin">3dp</dimen>
+    <dimen name="commonMargin">10dp</dimen>
+    <dimen name="bottmMargin">10dp</dimen>
+    <dimen name="mediumMargin">30dp</dimen>
+    <dimen name="mediumSpaceMargin">40dp</dimen>
+    <dimen name="signUpBtnMargin">60dp</dimen>
+    <dimen name="iconCommon">17dp</dimen>
+    <dimen name="arrowCommon">12dp</dimen>
+    <dimen name="listItemMarginTop">12dp</dimen>
+    <dimen name="listItemMarginLeft">8dp</dimen>
+    <dimen name="toggleWidth">30dp</dimen>
+    <dimen name="toggleHeight">20dp</dimen>
+    <dimen name="commonSpace">15dp</dimen>
+    <dimen name="marginLowSpace">7dp</dimen>
+    <dimen name="textSpaceCommon">5dp</dimen>
+
+    <dimen name="todoListHeaderHt">45dp</dimen>
+    <dimen name="prvNextBtnHt">30dp</dimen>
+    <dimen name="singUpBtnHt">35dp</dimen>
+    <dimen name="largeSpace">50dp</dimen>
+
+    <dimen name="prizesHeight">80dp</dimen>
+    <dimen name="prizesPlayHeight">30dp</dimen>
+    <dimen name="imageCommonWidth">40dp</dimen>
+
+    <dimen name="transactionImgHt">110dp</dimen>
+    <dimen name="transFinancialsHt">90dp</dimen>
+
+    <dimen name="playtop">150dp</dimen>
+    <dimen name="playbtntop">140dp</dimen>
+    <dimen name="textSizeXxLarge">45sp</dimen>
+    <dimen name="goaltext">30sp</dimen>
+    <dimen name="moreIcon">25dp</dimen>
+    <dimen name="subtitle_text_size">18sp</dimen>
+</resources>

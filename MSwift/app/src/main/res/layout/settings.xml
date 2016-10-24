@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/HeaderTheme">
+
+        <TextView
+            style="@style/HeaderTextTheme"
+            android:text="@string/settingsTxt" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layForSetting1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/commonSpace"
+            android:layout_marginRight="@dimen/commonSpace"
+            android:layout_marginTop="@dimen/commonSpace">
+
+            <TextView
+                android:id="@+id/txtForSetting1"
+                style="@style/TextMediumBlackBoldTheme"
+                android:layout_centerVertical="true"
+                android:text="@string/setting1" />
+
+            <ImageButton
+                android:id="@+id/toggleSetting1Off"
+                style="@style/toggleTheme"
+                android:background="@drawable/toggle_off" />
+        </RelativeLayout>
+
+        <View style="@style/CommonLineTheme" />
+
+        <RelativeLayout
+            android:id="@+id/layForSetting2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/commonSpace"
+            android:layout_marginRight="@dimen/commonSpace"
+            android:layout_marginTop="@dimen/commonSpace">
+
+            <TextView
+                android:id="@+id/txtForSetting2"
+                style="@style/TextMediumBlackBoldTheme"
+                android:layout_centerVertical="true"
+                android:text="@string/setting2" />
+
+            <ImageButton
+                android:id="@+id/toggleSetting2Off"
+                style="@style/toggleTheme"
+                android:background="@drawable/toggle_off" />
+        </RelativeLayout>
+
+        <View style="@style/CommonLineTheme" />
+
+        <LinearLayout
+            android:id="@+id/layForSetting3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/commonSpace"
+            android:layout_marginRight="@dimen/commonSpace"
+            android:layout_marginTop="@dimen/commonSpace"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtForSetting3"
+                style="@style/TextMediumBlackBoldTheme"
+                android:layout_centerVertical="true"
+                android:text="@string/setting3" />
+
+            <RelativeLayout
+                android:id="@+id/layForSetting3Spinner"
+                style="@style/SpinnerTheme"
+                android:layout_marginTop="@dimen/commonMargin">
+
+                <TextView
+                    android:id="@+id/txtForSetting3Selected"
+                    style="@style/TextMediumTheme"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/layForMoneyMargin"
+                    android:text="@string/choose" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View style="@style/CommonLineTheme" />
+
+        <RelativeLayout
+            android:id="@+id/layForSetting4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/commonSpace"
+            android:layout_marginRight="@dimen/commonSpace"
+            android:layout_marginTop="@dimen/commonSpace">
+
+            <TextView
+                android:id="@+id/txtForSetting4"
+                style="@style/TextMediumBlackBoldTheme"
+                android:layout_centerVertical="true"
+                android:text="@string/setting4" />
+
+            <ImageButton
+                android:id="@+id/toggleSetting4Off"
+                style="@style/toggleTheme"
+                android:background="@drawable/toggle_off" />
+        </RelativeLayout>
+
+        <View style="@style/CommonLineTheme" />
+
+        <LinearLayout
+            android:id="@+id/layForSetting5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/commonSpace"
+            android:layout_marginRight="@dimen/commonSpace"
+            android:layout_marginTop="@dimen/commonSpace"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtForSetting5"
+                style="@style/TextMediumBlackBoldTheme"
+                android:layout_centerVertical="true"
+                android:text="@string/setting5" />
+
+            <RelativeLayout
+                android:id="@+id/layForSetting5Spinner"
+                style="@style/SpinnerTheme"
+                android:layout_marginTop="@dimen/commonMargin">
+
+                <TextView
+                    android:id="@+id/txtForSetting5Selected"
+                    style="@style/TextMediumTheme"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/layForMoneyMargin"
+                    android:text="@string/choose" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SignUpTheme">
+
+    <RelativeLayout style="@style/RelativeLayoutCommon">
+
+        <ImageView
+            android:id="@+id/imgForLogo"
+            style="@style/WalaWhiteLogo" />
+
+        <TextView
+            android:id="@+id/signedUp"
+            style="@style/RelativeWrapTheme"
+            android:text="@string/signedupcntn"
+            android:textColor="@color/pointsGrey"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imgForLogo"
+            android:layout_marginTop="@dimen/todoListHeaderHt"
+            android:textSize="@dimen/textSizeXLarge"
+            />
+
+        <ImageView
+            android:id="@+id/btnForFinancial"
+            style="@style/signupBtnStyles"
+            android:src="@drawable/completefin_bg"
+            android:layout_below="@+id/signedUp"
+            android:layout_marginTop="@dimen/signUpBtnMargin"/>
+
+        <RelativeLayout
+            style="@style/RelativeWrapTheme"
+            android:layout_below="@+id/btnForEmail"
+            android:layout_centerHorizontal="true"
+            >
+            <TextView
+                android:id="@+id/fitOut"
+                style="@style/RelativeWrapTheme"
+                android:text="@string/filloutcontn"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSizeMedium"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/bottmMargin"
+                />
+            <TextView
+                android:id="@+id/movetoApp"
+                style="@style/RelativeWrapTheme"
+                android:text="@string/takemetoapp"
+                android:layout_toRightOf="@+id/fitOut"
+                android:textColor="@color/privacy"
+                android:textSize="@dimen/textSizeMedium"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/bottmMargin"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

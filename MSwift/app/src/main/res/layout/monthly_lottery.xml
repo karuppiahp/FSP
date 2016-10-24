@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                style="@style/PrizesHeaderImage1"
+                android:background="@drawable/monthlylotbg"
+                />
+
+            <TextView
+                style="@style/GoalsTheme1"
+                android:text="@string/monthlyLoteryTxt"
+                android:textSize="@dimen/textSizeXLarge"
+                android:layout_marginTop="@dimen/commonMargin"
+                android:layout_marginLeft="@dimen/commonSpace"
+                android:textColor="@color/recentTransactionsHeader"
+
+                />
+            <LinearLayout
+                style="@style/LinearLayoutVerticalTheme"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/calendarImgHeight"
+                >
+                <ImageView
+                    style="@style/RelativeWrapTheme"
+                    android:background="@drawable/pricecupimg"
+                    android:layout_marginLeft="@dimen/calendarImgHeight"
+                    android:layout_marginTop="@dimen/textSpaceCommon"
+                    />
+                <LinearLayout
+                    style="@style/RelativeWrapTheme"
+                    android:layout_marginLeft="@dimen/moreIcon"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        style="@style/RelativeWrapTheme"
+                        android:text="@string/currentPrizeWk"
+                        android:textColor="@color/chkBoxColor"
+                        android:layout_marginTop="3dp"
+                        />
+                    <TextView
+                        android:id="@+id/priceamount"
+                        style="@style/RelativeWrapTheme"
+                        android:text="@string/savingsAmntWk"
+                        android:textColor="@color/prizeamt"
+                        android:textSize="@dimen/textSizeLarge"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View style="@style/CommonLineTheme"
+                android:layout_marginTop="@dimen/calendarImgHeight"/>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/commonSpace"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/calendarImgHeight"
+                    android:layout_weight="1"
+                    >
+                    <ImageView
+                        android:id="@+id/peopleIcon"
+                        style="@style/RelativeWrapTheme"
+                        android:background="@drawable/peopleimg"
+                        android:layout_centerVertical="true"
+                        />
+                    <TextView
+                        android:id="@+id/txtForParticipants"
+                        style="@style/RelativeWrapTheme"
+                        android:text="@string/participant"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/peopleIcon"
+                        android:textSize="@dimen/textSizeMedium"
+                        android:textColor="@color/popUpTxt"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="@dimen/marginLowSpace"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/calenderLayout"
+                    style="@style/RelativeWrapTheme"
+                    android:layout_weight="1"
+                    >
+                    <ImageView
+                        android:id="@+id/calenderIcon"
+                        style="@style/RelativeWrapTheme"
+                        android:background="@drawable/calenderleft_icon"
+                        android:layout_centerVertical="true"
+                        />
+                    <TextView
+                        android:id="@+id/txtForDaysLeft"
+                        style="@style/RelativeWrapTheme"
+                        android:text="@string/leftdays"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/calenderIcon"
+                        android:textSize="@dimen/textSizeMedium"
+                        android:textColor="@color/popUpTxt"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="@dimen/marginLowSpace"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+            <View style="@style/CommonLineTheme"
+                android:layout_marginTop="@dimen/calendarImgHeight"/>
+
+            <TextView
+                android:id="@+id/txtForPointsWinnerCnt"
+                style="@style/RelativeWrapTheme"
+                android:layout_marginTop="@dimen/commonSpace"
+                android:text="@string/enterlottery"
+                android:textColor="@color/popUpTxt"
+                android:textSize="@dimen/textSizeMedium"
+                android:layout_marginLeft="@dimen/commonMargin"
+                />
+
+            <RelativeLayout
+                android:id="@+id/btnForBuyTickets"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_blue"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/commonSpace"
+                android:layout_marginTop="@dimen/toggleHeight"
+                >
+
+                <ImageView
+                    android:id="@+id/ticketimg"
+                    style="@style/RelativeWrapTheme"
+                    android:background="@drawable/buyticketimg"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/toggleHeight"
+                    />
+                <TextView
+                    style="@style/RelativeWrapTheme"
+                    android:text="@string/buyTkts"
+                    android:layout_toRightOf="@+id/ticketimg"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/textSpaceCommon"
+                    android:layout_marginRight="@dimen/textSpaceCommon"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

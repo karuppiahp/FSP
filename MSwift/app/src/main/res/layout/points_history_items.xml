@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        style="@style/LinearLayoutVerticalTheme"
+        android:layout_margin="@dimen/todoListItemMargin"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/dailyQuizLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/layForMoneyMargin"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dailyquizdate"
+                style="@style/TextSmallTheme1"
+                android:text="@string/datebalance"
+                android:textColor="@color/headerLightGrey"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layFordailyQuizpnt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layForMoneyMargin"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtFordailyQuizpnt"
+                style="@style/TextSmallTheme1"
+                android:text="@string/quizPoints"
+                android:textColor="@color/headerLightGrey"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtFordailyQuiz"
+        style="@style/EditTextTheme"
+        android:layout_marginTop="@dimen/layForMoneyMargin"
+        android:layout_marginRight="@dimen/todoListItemMargin"
+        android:layout_marginLeft="@dimen/todoListItemMargin"
+        android:text="@string/dailyQuiztxt"
+        android:maxLines="2"
+        />
+    <View style="@style/CommonLineTheme" />
+
+</LinearLayout>

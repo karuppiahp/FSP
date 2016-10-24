@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        style="@style/HeaderTheme">
+
+        <TextView
+            style="@style/HeaderTextTheme"
+            android:text="@string/healthHeader" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layForPopUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/popUpBg">
+
+                <TextView
+                    style="@style/TextMediumPopUpTheme"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/toggleHeight"
+                    android:layout_marginLeft="@dimen/commonMargin"
+                    android:layout_marginRight="@dimen/commonMargin"
+                    android:layout_marginTop="@dimen/toggleHeight"
+                    android:text="@string/accounthealthtxt" />
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/AccountHealthBachgroundTheme"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/accHealth"
+                    style="@style/AccHealthTextBacgroundTheme"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/accHealthText"
+                        style="@style/AccHealthTextTheme"
+                        android:textColor="@color/chkBoxColor"
+                        android:text="@string/accounthealth"
+                        />
+                    <TextView
+                        android:id="@+id/accounthealthnum"
+                        style="@style/AccHealthPercentageTextTheme"
+                        android:text="@string/accounthealthnum"
+                        android:textColor="@color/currentprogress"
+                        />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/graphLay"
+                    style="@style/GraphlayoutTheme">
+
+                    <LinearLayout
+                        android:id="@+id/graph2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/helathHistory"
+                android:layout_marginLeft="@dimen/bottmMargin"
+                android:layout_marginTop="@dimen/commonMargin"
+                style="@style/HealthHistoryBackgrounndTheme">
+
+                <TextView
+                    android:id="@+id/txtForEmpStatus"
+                    style="@style/TextSmallTheme"
+                    android:text="@string/timeFrame" />
+
+                <RelativeLayout
+                    android:layout_below="@+id/txtForEmpStatus"
+                    android:id="@+id/layForEmpStatusSpinner"
+                    style="@style/SpinnerTheme"
+                    android:layout_marginTop="@dimen/layForMoneyMargin">
+
+                    <TextView
+                        android:id="@+id/txtForEmpStatusSelected"
+                        style="@style/TextMediumTheme"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/layForMoneyMargin"
+                        android:layout_marginRight="@dimen/calendarImgWidth"
+                        android:text="@string/choose" />
+
+                    <ImageView
+                        style="@style/arrowTheme"
+                        android:layout_marginRight="@dimen/textSpaceCommon"
+                        android:src="@drawable/options_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ListView
+        android:id="@+id/listViewForSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/mediumMargin"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/moreListItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/listItemMarginTop"
+        android:layout_marginLeft="@dimen/listItemMarginTop"
+        android:layout_marginRight="@dimen/listItemMarginTop"
+        android:layout_marginTop="@dimen/listItemMarginTop">
+
+        <ImageView
+            android:id="@+id/imgForListicon"
+            style="@style/iconTheme"
+            android:tint="@color/toDoListBg"/>
+
+        <TextView
+            android:id="@+id/txtForListItem"
+            style="@style/TextMediumBlueTheme"
+            android:layout_marginLeft="@dimen/mediumMargin"
+            android:layout_marginRight="@dimen/mediumMargin" />
+
+        <ImageView
+            android:id="@+id/imgForListArrow"
+            style="@style/arrowTheme"
+            android:src="@drawable/red_arrow"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</RelativeLayout>

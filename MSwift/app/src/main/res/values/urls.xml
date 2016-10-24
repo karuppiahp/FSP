@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="baseUrl">http://104.239.175.251/%s</string>
+    <string name="countryApi">users/countries</string>
+    <string name="signUpApi">users/signup</string>
+</resources>

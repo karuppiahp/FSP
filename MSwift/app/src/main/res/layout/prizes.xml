@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        style="@style/HeaderTheme">
+
+        <TextView
+            style="@style/HeaderTextTheme"
+            android:text="@string/prizesHeader" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layForDailyQuiz"
+            style="@style/prizesRowTheme"
+            android:background="@drawable/daily_quiz_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layForMoneyMargin"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/prizesHeaderTxt"
+                    android:text="@string/dailyQuiz" />
+
+                <RelativeLayout style="@style/prizesPlayTheme">
+
+                    <ImageView
+                        android:id="@+id/imgForPlayicon"
+                        style="@style/iconTheme"
+                        android:layout_marginLeft="@dimen/commonMargin"
+                        android:layout_marginRight="@dimen/commonMargin"
+                        android:src="@drawable/daily_quiz_icon" />
+
+                    <TextView
+                        android:id="@+id/txtForPlayItem"
+                        style="@style/TextMediumBlueTheme"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/mediumSpaceMargin"
+                        android:layout_marginRight="@dimen/mediumSpaceMargin"
+                        android:text="@string/winPoints" />
+
+                    <ImageView
+                        android:id="@+id/imgForPlayArrow"
+                        style="@style/arrowTheme"
+                        android:layout_marginLeft="@dimen/commonMargin"
+                        android:layout_marginRight="@dimen/commonMargin"
+                        android:src="@drawable/prizes_arrow_icon" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layForWeekly"
+            style="@style/prizesRowTheme"
+            android:background="@drawable/weekly_drawaing_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layForMoneyMargin"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/prizesHeaderTxt"
+                    android:text="@string/weeklyDrawing" />
+
+                <RelativeLayout style="@style/prizesPlayTheme">
+
+                    <ImageView
+                        android:id="@+id/imgForWeeklyicon"
+                        style="@style/iconTheme"
+                        android:layout_marginLeft="@dimen/commonMargin"
+                        android:layout_marginRight="@dimen/commonMargin"
+                        android:src="@drawable/weekly_drawing_icon" />
+
+                    <TextView
+                        android:id="@+id/txtForWeeklyItem"
+                        style="@style/TextMediumBlueTheme"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/mediumSpaceMargin"
+                        android:layout_marginRight="@dimen/mediumSpaceMargin"
+                        android:text="@string/winCash" />
+
+                    <ImageView
+                        android:id="@+id/imgForWeeklyArrow"
+                        style="@style/arrowTheme"
+                        android:layout_marginLeft="@dimen/commonMargin"
+                        android:layout_marginRight="@dimen/commonMargin"
+                        android:src="@drawable/prizes_arrow_icon" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layForMonthly"
+            style="@style/prizesRowTheme"
+            android:background="@drawable/monthly_lottery_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layForMoneyMargin"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/prizesHeaderTxt"
+                    android:text="@string/monthlyLottery" />
+
+                <RelativeLayout style="@style/prizesPlayTheme">
+
+                    <ImageView
+                        android:id="@+id/imgForMonthlyicon"
+                        style="@style/iconTheme"
+                        android:layout_marginLeft="@dimen/commonMargin"
+                        android:layout_marginRight="@dimen/commonMargin"
+                        android:src="@drawable/weekly_drawing_icon" />
+
+                    <TextView
+                        android:id="@+id/txtForMonthlyItem"
+                        style="@style/TextMediumBlueTheme"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/mediumSpaceMargin"
+                        android:layout_marginRight="@dimen/mediumSpaceMargin"
+                        android:text="@string/winCash" />
+
+                    <ImageView
+                        android:id="@+id/imgForMonthlyArrow"
+                        style="@style/arrowTheme"
+                        android:layout_marginLeft="@dimen/commonMargin"
+                        android:layout_marginRight="@dimen/commonMargin"
+                        android:src="@drawable/prizes_arrow_icon" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/RelativeLayoutCommonWithoutMargin"
+        android:layout_alignParentBottom="true"
+        android:background="@color/pointsBg">
+
+        <RelativeLayout
+            style="@style/RelativeLayoutWrapCommonNormal"
+            android:layout_marginLeft="@dimen/commonMargin"
+            android:layout_marginTop="@dimen/commonSpace">
+            <ImageView
+                android:id="@+id/imgForStar"
+                style="@style/imgThemeSmall"
+                android:src="@drawable/daily_quiz_icon"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                style="@style/TextSmallLargeTheme"
+                android:text="Points: 2500"
+                android:layout_toRightOf="@+id/imgForStar"
+                android:layout_marginLeft="@dimen/layForMoneyMargin"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/RelativeLayoutWrapCommonNormal"
+            android:layout_marginRight="@dimen/commonMargin"
+            android:layout_marginTop="@dimen/commonSpace"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:id="@+id/imgForArrow"
+                style="@style/imgThemeSmall"
+                android:src="@drawable/arrow_grey"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                />
+            <TextView
+                style="@style/TextSmallLargeTheme"
+                android:text="@string/ptsHistory"
+                android:layout_toLeftOf="@+id/imgForArrow"
+                android:layout_marginRight="@dimen/layForMoneyMargin"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

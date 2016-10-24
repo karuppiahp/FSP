@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SignUpTheme">
+
+    <RelativeLayout style="@style/RelativeLayoutCommon">
+
+        <ImageView
+            android:id="@+id/imgForLogo"
+            style="@style/SplashLogo" />
+
+        <TextView
+            android:id="@+id/txtForReady"
+            style="@style/ReadyToGoFontStyle"
+            android:layout_below="@+id/imgForLogo" />
+
+        <TextView
+            android:id="@+id/txtForWhatNext"
+            style="@style/WhatNextFontStyle"
+            android:layout_below="@+id/txtForReady"
+            android:text="@string/whatNext" />
+
+        <ImageView
+            android:id="@+id/fbBtn"
+            style="@style/FbImageButton"
+            android:layout_below="@+id/txtForWhatNext"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/fb_sign_up" />
+
+        <ImageView
+            android:id="@+id/emailBtn"
+            style="@style/FbImageButton"
+            android:layout_below="@+id/fbBtn"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/email_sign_up_btn" />
+    </RelativeLayout>
+
+</RelativeLayout>

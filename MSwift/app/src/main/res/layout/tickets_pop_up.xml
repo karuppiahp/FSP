@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9111111">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/commonMargin"
+        android:layout_marginRight="@dimen/commonMargin"
+        android:layout_marginTop="@dimen/mediumMargin"
+        android:background="@drawable/shape_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/commonMargin">
+
+            <LinearLayout
+                android:id="@+id/layForTcktsHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/TicketsHeaderImg"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/txtForHeader"
+                    style="@style/TextSubHederMerunTheme"
+                    android:layout_marginLeft="@dimen/textSpaceCommon"
+                    android:text="@string/ticketsHeader" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtForPoints"
+                style="@style/TextMediumPopUpTheme"
+                android:layout_below="@+id/layForTcktsHeader"
+                android:layout_marginTop="@dimen/commonSpace"
+                android:text="@string/ticketsSubTxt" />
+
+            <LinearLayout
+                android:id="@+id/layForPts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtForPoints"
+                android:layout_marginTop="@dimen/commonSpace">
+
+                <TextView
+                    android:id="@+id/txtForPtsLeft"
+                    style="@style/TextMediumPopUpMerunTheme"
+                    android:layout_marginLeft="@dimen/textSpaceCommon"
+                    android:text="@string/ticketsHeader" />
+
+                <TextView
+                    android:id="@+id/txtForTktsBought"
+                    style="@style/TextMediumPopUpMerunTheme"
+                    android:layout_marginLeft="@dimen/textSpaceCommon"
+                    android:text="@string/ticketsHeader" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewForPts"
+                style="@style/CommonLineTheme"
+                android:layout_marginTop="@dimen/commonSpace"
+                android:layout_below="@+id/layForPts" />
+
+            <LinearLayout
+                android:id="@+id/layForTktBtns"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/viewForPts"
+                android:layout_marginTop="@dimen/commonSpace"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnForDropTkt"
+                    style="@style/SaveBtnThemeshape"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/shape_drop_tkt"
+                    android:text="@string/ticketsDropTckt" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.7" />
+
+                <Button
+                    android:id="@+id/btnForBuyTkt"
+                    style="@style/SaveBtnThemeshape"
+                    android:background="@drawable/shape"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/ticketsBuyTckt" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewForBtns"
+                style="@style/CommonLineTheme"
+                android:layout_marginTop="@dimen/commonSpace"
+                android:layout_below="@+id/layForTktBtns" />
+
+            <TextView
+                android:id="@+id/txtForDone"
+                style="@style/TextMediumRedTheme"
+                android:layout_below="@+id/viewForBtns"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/commonSpace"
+                android:text="@string/ticketsDoneBtn" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

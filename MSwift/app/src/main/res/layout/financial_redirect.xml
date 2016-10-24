@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/intro_bg">
+
+    <ImageView
+        android:id="@+id/imgHeader"
+        style="@style/RedirectHeaderBird"
+        android:layout_marginTop="@dimen/bottmMargin"
+        />
+
+    <TextView
+        android:id="@+id/txtForRedirect"
+        style="@style/TextSemiLargeWhiteTheme"
+        android:text="@string/redirectText"
+        android:layout_below="@+id/imgHeader"
+        android:layout_marginLeft="@dimen/mediumMargin"
+        android:layout_marginRight="@dimen/mediumMargin"
+        android:layout_marginTop="@dimen/singUpBtnHt"
+        android:layout_centerHorizontal="true"
+        android:lineSpacingExtra="@dimen/commonMargin"
+        android:gravity="center"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layForRedirectBtn"
+        style="@style/FiancialRedirectTheme"
+        android:layout_below="@+id/txtForRedirect"
+        android:layout_marginLeft="@dimen/signUpBtnMargin"
+        android:layout_marginRight="@dimen/signUpBtnMargin"
+        android:layout_marginTop="@dimen/largeSpace"
+        >
+
+        <TextView
+            android:id="@+id/txtForCompleteProfile"
+            style="@style/TextSmallWhiteTheme"
+            android:text="@string/completeFinancialTxt"
+            android:layout_marginLeft="@dimen/commonMargin"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            style="@style/arrowTheme"
+            android:src="@drawable/arrow_right_white"
+            android:layout_marginRight="@dimen/commonMargin"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/HeaderTheme">
+
+            <TextView
+                style="@style/HeaderTextTheme"
+                android:text="@string/financialProfile" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/todoListItemMargin">
+
+                    <TextView
+                        android:id="@+id/txtForSteps"
+                        style="@style/Step1of2TextTheme"
+                        android:text="@string/step34" />
+
+                    <TextView
+                        android:id="@+id/txtForStepName"
+                        style="@style/AccInfoTextTheme"
+                        android:layout_toRightOf="@+id/txtForSteps"
+                        android:text="@string/debt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layForPopUp1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/popUpBg">
+
+                    <TextView
+                        style="@style/TextMediumPopUpTheme"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/toggleHeight"
+                        android:layout_marginLeft="@dimen/commonMargin"
+                        android:layout_marginRight="@dimen/commonMargin"
+                        android:layout_marginTop="@dimen/toggleHeight"
+                        android:text="@string/popUp3of1" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/todoListItemMargin"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layForDebtCurrentlyTxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/todoListItemMargin"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtForDebtCurrentContent"
+                            style="@style/TextSmallTheme"
+                            android:text="@string/debtCurrently" />
+
+                        <EditText
+                            android:id="@+id/editTxtForDebtCurrent"
+                            style="@style/EditTextTheme"
+                            android:layout_marginTop="@dimen/bottmMargin"
+                            android:hint="@string/placeHolderText"
+                            android:inputType="numberDecimal" />
+                    </LinearLayout>
+
+                    <View style="@style/CommonLineTheme" />
+
+                    <LinearLayout
+                        android:id="@+id/layForDebtChoose"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/todoListItemMargin"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtForDebtChooseContent"
+                            style="@style/TextSmallTheme"
+                            android:text="@string/debtType" />
+
+                        <!--<RelativeLayout
+                            android:id="@+id/layForDebtTypeSpinner"
+                            style="@style/SpinnerTheme"
+                            android:layout_marginTop="@dimen/bottmMargin">
+
+                            <TextView
+                                android:id="@+id/txtForDebtTypeSelected"
+                                style="@style/TextMediumTheme"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/layForMoneyMargin"
+                                android:text="@string/choose" />
+                        </RelativeLayout>-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/chkBoxForLoan"
+                                style="@style/chkBoxTheme"
+                                android:drawablePadding="@dimen/commonMargin"
+                                android:textColor="@color/recentTransactionsDate"
+                                android:gravity="center_vertical"
+                                android:buttonTint="@color/chkBoxColor"
+                                android:text="@string/loanDebt" />
+
+                            <CheckBox
+                                android:id="@+id/chkBoxForCreditCard"
+                                style="@style/chkBoxTheme"
+                                android:drawablePadding="@dimen/commonMargin"
+                                android:textColor="@color/recentTransactionsDate"
+                                android:gravity="center_vertical"
+                                android:buttonTint="@color/chkBoxColor"
+                                android:text="@string/creditCardDebt" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/chkBoxForSchool"
+                                style="@style/chkBoxTheme"
+                                android:drawablePadding="@dimen/commonMargin"
+                                android:textColor="@color/recentTransactionsDate"
+                                android:gravity="center_vertical"
+                                android:buttonTint="@color/chkBoxColor"
+                                android:text="@string/schoolDebt" />
+
+                            <CheckBox
+                                android:id="@+id/chkBoxForOther"
+                                style="@style/chkBoxTheme"
+                                android:drawablePadding="@dimen/commonMargin"
+                                android:textColor="@color/recentTransactionsDate"
+                                android:gravity="center_vertical"
+                                android:buttonTint="@color/chkBoxColor"
+                                android:text="@string/otherDebt" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--<RelativeLayout
+                    android:id="@+id/layForPopUp2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/popUpBg">
+
+                    <TextView
+                        style="@style/TextMediumPopUpTheme"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/toggleHeight"
+                        android:layout_marginLeft="@dimen/commonMargin"
+                        android:layout_marginRight="@dimen/commonMargin"
+                        android:layout_marginTop="@dimen/toggleHeight"
+                        android:text="@string/popUp3of2" />
+                </RelativeLayout> -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/todoListItemMargin"
+                    android:orientation="vertical">
+
+                    <!--<LinearLayout
+                        android:id="@+id/layForDebtOwedTxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/todoListItemMargin"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtForDebtOwedContent"
+                            style="@style/TextSmallTheme"
+                            android:text="@string/debtOwed" />
+
+                        <EditText
+                            android:id="@+id/editTxtForDebtOwed"
+                            style="@style/EditTextTheme"
+                            android:layout_marginTop="@dimen/bottmMargin"
+                            android:hint="@string/placeHolderText"
+                            android:inputType="numberDecimal" />
+                    </LinearLayout>
+
+                    <View style="@style/CommonLineTheme" />-->
+
+                    <LinearLayout
+                        android:id="@+id/skipsave"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnForSkip"
+                            style="@style/SkipBtnThemeShape"
+                            android:background="@drawable/shape_skip"
+                            android:text="SKIP"
+                            />
+
+                        <View style="@style/CenterTheme" />
+
+                        <Button
+                            android:id="@+id/btnForSave"
+                            style="@style/SaveBtnThemeshape"
+                            android:background="@drawable/shape"
+                            android:text="SAVE"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewForSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/mediumMargin"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:visibility="gone" />
+</RelativeLayout>

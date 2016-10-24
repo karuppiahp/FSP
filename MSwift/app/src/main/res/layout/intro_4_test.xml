@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layForTouch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/introImgLay"
+            android:background="@drawable/intro_4_half_img" />
+
+        <LinearLayout
+            style="@style/introTxtLay"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtForHeaderIntro4"
+                style="@style/HeaderTextIntroTheme"
+                android:layout_marginTop="@dimen/bottmMargin"
+                android:text="@string/intro4HeaderTxt" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtForHeaderIntro4"
+                android:layout_marginLeft="@dimen/mediumMargin"
+                android:layout_marginRight="@dimen/mediumMargin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtForIntro4Cntnt"
+                    style="@style/TextSmallLargeTheme"
+                    android:text="@string/intro4BelowTxt" />
+
+                <ImageView
+                    android:id="@+id/btnForEmail"
+                    style="@style/signupBtnStyles"
+                    android:layout_marginTop="@dimen/commonMargin"
+                    android:src="@drawable/email_btn_img" />
+
+                <ImageView
+                    android:id="@+id/btnForFb"
+                    style="@style/signupBtnStyles"
+                    android:layout_marginTop="@dimen/commonMargin"
+                    android:src="@drawable/fb_btn_img" />
+
+                <ImageView
+                    android:id="@+id/btnForLogin"
+                    style="@style/signupBtnStyles"
+                    android:layout_marginTop="@dimen/commonMargin"
+                    android:src="@drawable/login_btn_img" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/introBottomMargin">
+
+                <ImageView
+                    style="@style/intro4of4Img"
+                    android:background="@drawable/img_4_of_4" />
+
+                <View style="@style/intro4of4Img" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

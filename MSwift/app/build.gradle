@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    configurations.all {
+        resolutionStrategy.force 'com.android.support:support-annotations:23.0.0'
+    }
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "activities.mswift.info.walaapp"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 6
+        versionName "1.5"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        encoding "UTF-8"
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.android.support:design:22.2.0'
+    compile 'com.android.support:recyclerview-v7:22.2.0'
+    compile 'com.baoyz.swipemenulistview:library:1.3.0'
+    compile project(':MaterialDesign')
+    compile files('libs/achartengine.jar')
+
+    compile 'com.google.android.gms:play-services-appinvite:8.4.0'
+
+    compile 'com.navercorp.pulltorefresh:library:3.2.0@aar'
+
+    compile 'com.facebook.android:facebook-android-sdk:3.+'
+    compile 'com.google.android.gms:play-services-analytics:8.4.0'
+    compile 'com.mixpanel.android:mixpanel-android:4.8.0'
+
+    compile 'com.googlecode.libphonenumber:libphonenumber:7.0.4'
+
+    // UiAutomatorTesting
+    androidTestCompile 'com.android.support.test:runner:0.4.1'
+    androidTestCompile 'com.android.support.test:rules:0.4.1'
+   // androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.2'
+    androidTestCompile 'com.android.support:support-annotations:22.2.0'
+
+    compile ('io.intercom.android:intercom-sdk:1.+@aar') {
+        transitive = true
+    }
+
+    //SwipyRefreshLayout
+    compile 'com.github.orangegangsters:swipy:1.2.3@aar'
+}

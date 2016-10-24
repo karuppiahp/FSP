@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "879046957903",
+    "firebase_url": "https://walaappprod.firebaseio.com",
+    "project_id": "walaappprod",
+    "storage_bucket": "walaappprod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:879046957903:android:fbd1315d156d2e24",
+        "android_client_info": {
+          "package_name": "activities.mswift.info.walaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "879046957903-qsdd820cjv8h769tn594i8a9smr1e7cb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "activities.mswift.info.walaapp",
+            "certificate_hash": "09E146300E6ED98D7982C4C81CABA49C51C20042"
+          }
+        },
+        {
+          "client_id": "879046957903-a47uui074c659a4s1c2ofrkqip2g97co.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDFrllLXNhdtez9db0wuaZhT9BV_9ujsw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "879046957903-a47uui074c659a4s1c2ofrkqip2g97co.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/HeaderTheme">
+
+        <TextView
+            style="@style/HeaderTextTheme"
+            android:text="@string/financialProfile" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/todoListItemMargin"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtForSteps"
+                style="@style/Step1of2TextTheme"
+                android:text="@string/step15" />
+
+            <TextView
+                android:id="@+id/txtForStepName"
+                style="@style/AccInfoTextTheme"
+                android:layout_toRightOf="@+id/txtForSteps"
+                android:text="@string/dependents" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dependentsContent"
+            style="@style/TextMediumTheme"
+            android:layout_marginTop="@dimen/todoListItemMargin"
+            android:text="@string/dependentsContent" />
+
+        <LinearLayout
+            android:id="@+id/layForNoOfDependents"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/todoListItemMargin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtForNoOfDependents"
+                style="@style/TextSmallTheme"
+                android:text="@string/noOfdependents" />
+
+            <EditText
+                android:id="@+id/editTxtForDependents"
+                style="@style/EditTextTheme"
+                android:layout_marginTop="@dimen/layForMoneyMargin"
+                android:hint="@string/placeHolderText"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+
+        <View style="@style/CommonLineTheme" />
+
+        <LinearLayout
+            android:id="@+id/skipsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bottmMargin"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnForSkip"
+                style="@style/SkipBtnTheme"
+                android:background="@drawable/skip_btn" />
+
+            <View style="@style/CenterTheme" />
+
+            <ImageButton
+                android:id="@+id/btnForSave"
+                style="@style/SaveBtnTheme"
+                android:background="@drawable/save_btn" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

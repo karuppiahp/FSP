@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/HeaderTheme">
+
+            <TextView
+                style="@style/HeaderTextTheme"
+                android:text="@string/financialProfile" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/todoListItemMargin">
+
+                        <TextView
+                            android:id="@+id/txtForSteps"
+                            style="@style/Step1of2TextTheme"
+                            android:text="@string/step14" />
+
+                        <TextView
+                            android:id="@+id/txtForStepName"
+                            style="@style/AccInfoTextTheme"
+                            android:layout_toRightOf="@+id/txtForSteps"
+                            android:text="@string/income" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layForPopUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/popUpBg">
+
+                        <TextView
+                            style="@style/TextMediumPopUpTheme"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="@dimen/toggleHeight"
+                            android:layout_marginLeft="@dimen/commonMargin"
+                            android:layout_marginRight="@dimen/commonMargin"
+                            android:layout_marginTop="@dimen/toggleHeight"
+                            android:text="@string/popUpStep1" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/todoListItemMargin"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/avgMonthlyIncome"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtForAvgMonthlyIncome"
+                                style="@style/TextSmallTheme"
+                                android:text="@string/avgMonthlyIncome" />
+
+                            <EditText
+                                android:id="@+id/editTxtForAvgMonthlyIncome"
+                                style="@style/EditTextTheme"
+                                android:layout_marginTop="@dimen/layForMoneyMargin"
+                                android:hint="@string/placeHolderText"
+                                android:inputType="numberDecimal" />
+                        </LinearLayout>
+
+                        <View style="@style/CommonLineTheme" />
+
+                        <LinearLayout
+                            android:id="@+id/layForEmpStatus"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/todoListItemMargin"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtForEmpStatus"
+                                style="@style/TextSmallTheme"
+                                android:text="@string/empStatus" />
+
+                            <RelativeLayout
+                                android:id="@+id/layForEmpStatusSpinner"
+                                style="@style/SpinnerTheme"
+                                android:layout_marginTop="@dimen/layForMoneyMargin">
+
+                                <TextView
+                                    android:id="@+id/txtForEmpStatusSelected"
+                                    style="@style/TextMediumTheme"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/layForMoneyMargin"
+                                    android:layout_marginRight="@dimen/calendarImgWidth"
+                                    android:text="@string/choose" />
+
+                                <ImageView
+                                    style="@style/arrowTheme"
+                                    android:layout_marginRight="@dimen/textSpaceCommon"
+                                    android:src="@drawable/options_arrow" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <View style="@style/CommonLineTheme" />
+
+                        <LinearLayout
+                            android:id="@+id/layForIncomeType"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/todoListItemMargin"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtForIncomeType"
+                                style="@style/TextSmallTheme"
+                                android:text="@string/incomeType" />
+
+                            <RelativeLayout
+                                android:id="@+id/layForIncomeTypeSpinner"
+                                style="@style/SpinnerTheme"
+                                android:layout_marginTop="@dimen/layForMoneyMargin">
+
+                                <TextView
+                                    android:id="@+id/txtForIncomeTypeSelected"
+                                    style="@style/TextMediumTheme"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/layForMoneyMargin"
+                                    android:layout_marginRight="@dimen/calendarImgWidth"
+                                    android:text="@string/choose" />
+
+                                <ImageView
+                                    style="@style/arrowTheme"
+                                    android:layout_marginRight="@dimen/textSpaceCommon"
+                                    android:src="@drawable/options_arrow" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <View style="@style/CommonLineTheme" />
+
+                        <LinearLayout
+                            android:id="@+id/layForIncomeFrequency"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/todoListItemMargin"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtForIncomeFrequency"
+                                style="@style/TextSmallTheme"
+                                android:text="@string/incomeFrequency" />
+
+                            <RelativeLayout
+                                android:id="@+id/layForIncomeFreqSpinner"
+                                style="@style/SpinnerTheme"
+                                android:layout_marginTop="@dimen/layForMoneyMargin">
+
+                                <TextView
+                                    android:id="@+id/txtForIncomeFreqSelected"
+                                    style="@style/TextMediumTheme"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/layForMoneyMargin"
+                                    android:layout_marginRight="@dimen/calendarImgWidth"
+                                    android:text="@string/choose" />
+
+                                <ImageView
+                                    style="@style/arrowTheme"
+                                    android:layout_marginRight="@dimen/textSpaceCommon"
+                                    android:src="@drawable/options_arrow" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <View style="@style/CommonLineTheme" />
+
+                        <LinearLayout
+                            android:id="@+id/skipsave"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/bottmMargin"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnForSkip"
+                                style="@style/SkipBtnThemeShape"
+                                android:background="@drawable/shape_skip"
+                                android:text="SKIP" />
+
+                            <View style="@style/CenterTheme" />
+
+                            <Button
+                                android:id="@+id/btnForSave"
+                                style="@style/SaveBtnThemeshape"
+                                android:background="@drawable/shape"
+                                android:text="SAVE" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewForSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/mediumMargin"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:visibility="gone" />
+</RelativeLayout>

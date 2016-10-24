@@ -1,0 +1,229 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        >
+        <LinearLayout
+            style="@style/GoalsMainTheme"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/weeksTextLay"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:background="@color/subtabheader"
+                >
+
+                <ImageView
+                    android:id="@+id/wincup"
+                   style="@style/WinCupTheme"
+                    />
+                <TextView
+                    style="@style/WeekTextTheme"
+                    android:layout_toRightOf="@+id/wincup"
+                    android:text="@string/weeksgoaltxt"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/weeksGoal"
+                style="@style/WeekGoalBackgroundTheme"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp">
+
+                    <TextView
+                        android:id="@+id/weeksGoaltext"
+                        style="@style/WeekGoalTextTheme" />
+                </RelativeLayout>
+                <View
+                 style="@style/GoalsCommonViewTheme"
+                 />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp">
+
+                    <TextView
+                        android:id="@+id/completeGoaltext"
+                        style="@style/GoalsTheme"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/goalcompletetxt"
+                        android:text="@string/goalcompletetext" />
+                    <TextView
+                        android:id="@+id/goalpoints"
+                        style="@style/GoalsTheme1"
+                        android:paddingLeft="2dp"
+                        android:layout_toRightOf="@+id/completeGoaltext"
+                        android:textColor="@color/currentprogress"
+                        android:text="@string/goalpointvalue" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/currentProgrssLay"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:background="@color/currentprogress"
+                >
+                <TextView
+                    android:id="@+id/currentProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/cuurentprogresstextvalue"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@android:color/white" />
+                <TextView
+                    android:id="@+id/currentProgressxx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/xxxvalue"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@+id/currentProgress"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/onTrack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="ON TRACK!"
+                    android:paddingRight="10dp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/monthTextLay"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:background="@color/subtabheader">
+
+                <ImageView
+                    android:id="@+id/wincup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/goalimag"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:id="@+id/monthText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/wincup1"
+                    android:textColor="@color/subtabunclicked"
+                    android:paddingLeft="3dp"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:text="@string/monthsgoaltext" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/monthsGoal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:color/white"
+                android:paddingTop="5dp">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp">
+
+                    <TextView
+                        android:id="@+id/monthsGoaltext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/monthsgoalsentence"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/balsavingstrans"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/GoalsCommonViewTheme" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp">
+
+                    <TextView
+                        android:id="@+id/completeGoaltextmonth"
+                        style="@style/GoalsTheme"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/goalcompletetxt"
+                        android:text="@string/goalcompletetext" />
+                    <TextView
+                        android:id="@+id/goalpoints1"
+                        style="@style/GoalsTheme1"
+                        android:paddingLeft="2dp"
+                        android:layout_toRightOf="@+id/completeGoaltextmonth"
+                        android:textColor="@color/currentprogress"
+                        android:text="@string/goalpointvalue" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/currentProgrssLay1"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:background="@color/currentprogressred">
+
+                <TextView
+                    android:id="@+id/currentprogressred"
+                    style="@style/GoalsTheme"
+                    android:text="Current Progrsss:"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/currentProgressxxred"
+                    style="@style/GoalsTheme1"
+                    android:text="@string/xxxvalue"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@+id/currentprogressred"
+                    android:textColor="@android:color/white" />
+                <TextView
+                    android:id="@+id/notonTrack"
+                    style="@style/GoalsTheme1"
+                    android:layout_alignParentRight="true"
+                     android:text="NOT ON TRACK!"
+                    android:paddingRight="10dp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/healthcurrentprogview" />
+
+            <include
+                layout="@layout/goals_table"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/commonview" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,580 @@
+<resources>
+    <string name="app_name">Wala</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!--&lt;!&ndash; Dev id&ndash;&gt;
+    <string name="fbId">255037321494845</string>-->
+
+    <!-- Prod id-->
+    <string name="fbId">861240457319816</string>
+
+    <!-- Home Screen -->
+    <string name="thisWkGoal">THIS WEEK\'S GOAL</string>
+    <string name="youEarned">YOU EARNED</string>
+    <string name="youSpent">YOU SPENT</string>
+    <string name="youSaved">YOU SAVED</string>
+    <string name="myTodoList">My Todo List</string>
+    <string name="recentTransactions">Recent Transactions</string>
+    <string name="category">Category</string>
+    <string name="description">Description</string>
+    <string name="amount">Amount</string>
+
+    <!-- OnBoarding -->
+    <string name="readyToGo">You\'re Ready to Save!</string>
+    <string name="whatNext">A message about what to do next.</string>
+
+    <!-- SignUp Screen 1 -->
+    <string name="signUp">SIGN UP</string>
+    <string name="step12">STEP 1 of 2: </string>
+    <string name="accInfo">ACCOUNT INFO</string>
+    <string name="emailAddress">Email Address</string>
+    <string name="phNo">Phone Number</string>
+    <string name="userName">Username</string>
+    <string name="pwd">Password</string>
+    <string name="placeHolderText"></string>
+    <string name="phNumber">000-000-0000</string>
+    <string name="pwdHint"></string>
+
+    <!-- SignUp Screen 2 -->
+    <string name="step22">STEP 2 of 2: </string>
+    <string name="personalInfo">PERSONAL INFO</string>
+    <string name="firstName">First Name</string>
+    <string name="middleName">Middle Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="country">Country</string>
+    <string name="chooseCountry">Choose Your Country...</string>
+    <string name="city">City</string>
+    <string name="dateOfBirth">Date of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="choose">Choose...</string>
+
+    <!-- Financial Screen 1 -->
+    <string name="financialProfile">FINANCIAL PROFILE</string>
+    <string name="step15">STEP 1 of 5: </string>
+    <string name="dependents">DEPENDENTS</string>
+    <string name="dependentsContent">How many dependents do you have? How many people rely on you financially? (children, spouses, parents, relatives)</string>
+    <string name="noOfdependents">Number of Dependents</string>
+
+    <!-- Financial Screen 2 -->
+    <string name="step14">STEP 1 of 4: </string>
+    <string name="income">INCOME</string>
+    <string name="avgMonthlyIncome">What\'s your average monthly income?</string>
+    <string name="empStatus">Employment Status</string>
+    <string name="incomeType">Income Type</string>
+    <string name="incomeFrequency">How often do you get paid?</string>
+    <string name="popUpStep1">Input the amount or best estimate of your monthly earnings.</string>
+
+    <!-- Financial Screen 3 -->
+    <string name="step24">STEP 2 of 4: </string>
+    <string name="savings">SAVINGS</string>
+    <string name="savingsContent">How much money do you have saved as of TODAY?</string>
+    <string name="whereYouKeep">Where do you currently keep your savings?</string>
+
+    <!-- Financial Screen 4 -->
+    <string name="step34">STEP 3 of 4: </string>
+    <string name="debt">DEBT</string>
+    <string name="popUp3of1">Debt is any money that you owe to others, like a loan from a bank or friend.</string>
+    <string name="debtCurrently">How much money do you owe in debt, as of today?</string>
+    <string name="debtType">What type of debt do you owe(if any)?</string>
+    <string name="popUp3of2">Credit is any money that is owed to you by some-one else, like a loan to a friend.</string>
+    <string name="debtOwed">How much money is owed to you in credit, as of today?</string>
+    <string name="loanDebt">Loan Debt</string>
+    <string name="creditCardDebt">Credit Card Debt</string>
+    <string name="schoolDebt">School Debt</string>
+    <string name="otherDebt">Other Debt</string>
+
+    <!-- Financial Screen 5 -->
+    <string name="step44">STEP 4 of 4: </string>
+    <string name="expenses">MONTHLY EXPENSES</string>
+    <string name="rent">Rent</string>
+    <string name="groceries">Groceries</string>
+    <string name="transportation">Transportation</string>
+    <string name="health">Health</string>
+    <string name="education">Education</string>
+    <string name="utilities">Utilities</string>
+    <string name="shopping">Shopping</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="diningOut">Dining Out</string>
+    <string name="travel">Travel</string>
+    <string name="other">Other</string>
+
+    <!-- More Screen -->
+    <string name="more">MORE</string>
+    <string name="myAccount">My Account</string>
+    <string name="peronalInfo">Personal Info</string>
+    <string name="financialInfo">Financial Info</string>
+    <string name="chngPswd">Change Password</string>
+    <string name="settings">Settings</string>
+    <string name="referFrnd">Refer a Friend</string>
+    <string name="otherMore">Other</string>
+    <string name="faq">FAQ</string>
+    <string name="abtSwift">About Wala</string>
+    <string name="logout">Logout</string>
+
+    <!-- Edit Personal Screen -->
+    <string name="editPersonal">PERSONAL INFO</string>
+
+    <!-- ChangePassword -->
+    <string name="changePswd">CHANGE PASSWORD</string>
+    <string name="enterOldPwd">Enter Your Old Password</string>
+    <string name="enterNewPwd">Enter Your New Password</string>
+    <string name="confirmNewPwd">Confirm Your New Password</string>
+
+    <!-- OTP Confirmation -->
+    <string name="otpTxt">An OTP code has been sent to you in a text message.</string>
+    <string name="otpInputTxt">Input the OTP code to authorize your account.</string>
+    <string name="otpCode"></string>
+    <string name="enterOtpCode">OTP Code</string>
+    <string name="otpBttn">AUTHORIZE</string>
+
+    <!-- Settings screen -->
+    <string name="settingsTxt">SETTINGS</string>
+    <string name="setting1">Setting 1</string>
+    <string name="setting2">Setting 2</string>
+    <string name="setting3">Setting 3</string>
+    <string name="setting4">Setting 4</string>
+    <string name="setting5">Setting 5</string>
+
+    <!-- Refer A Friend -->
+    <string name="referTxt">REFER A FRIEND</string>
+    <string name="inviteHeader">Invite a Friend and Earn Points</string>
+    <string name="inviteTxt">For every friend you refer to Wala that signs up, you\'ll receive XXX Points, as well as XX Points for every action they take after!</string>
+    <string name="referralHistory">Referrral History</string>
+    <string name="frndName">Friend\'s Name</string>
+    <string name="frndNameStatus">Status</string>
+
+    <!-- Login Screen -->
+    <string name="loginTxt">LOGIN</string>
+    <string name="loginEmail">Email Address</string>
+    <string name="loginPwd">Password</string>
+    <string name="loginUsername">Username</string>
+    <string name="dontHaveAcc">Don\'t have an account?</string>
+    <string name="loginSingup">Sign up!</string>
+    <string name="facebook_login">Login with Facebook</string>
+
+    <!-- About Us Screen -->
+    <string name="aboutUs">ABOUT WALA</string>
+    <string name="aboutSwift">About Wala</string>
+    <string name="aboutSwiftTxt">Wala is a mobile app designed to help you save money. By inputting your financial information, daily expenses, and income you can begin building your personal savings. Wala will automatically generate goals for you every week and reaching those goals will result in points, which can be redeemed for prizes.</string>
+
+    <!-- Our Team Screen -->
+    <string name="firstAndLastNames">Firstname Lastname</string>
+    <string name="aboutTeamTitle1">Tricia Martinezx</string>
+    <string name="aboutTeamTitle2">Samer Saab</string>
+    <string name="aboutTeamTitle3">Dennis Ramirez</string>
+    <string name="aboutTeamTitle4">Emmy Baluye</string>
+
+    <string name="aboutTeamContent1">Patricia is the Co-Founder and CEO of Wala. She has dedicated her life to helping people and has started numerous companies that do just that.</string>
+    <string name="aboutTeamContent2">Samer Co-Founder and Chief Product of Officer. All he thinks about each day is how to make Wala a better money saving tool for people around the globe. </string>
+    <string name="aboutTeamContent3">Dennis is the Head of Design. Of the hundreds of websites and apps he has designed, none are as amazing and important as Wala!</string>
+    <string name="aboutTeamContent4">Emmy is the Lead Community Manager. His efforts are driving the Wala savings revolution throughout the world.</string>
+
+    <!-- FAQ Screen -->
+    <string name="faqHeader">FAQ</string>
+    <string name="faqQues">1.This is an FAQ question?</string>
+
+    <!-- Prizes Screen -->
+    <string name="prizesHeader">PRIZES</string>
+    <string name="dailyQuiz">Take the Daily Quiz!</string>
+    <string name="weeklyDrawing">Enter weekly Drawing</string>
+    <string name="monthlyLottery">Enter Monthly Lottery</string>
+    <string name="winPoints">PLAY TO WIN POINTS</string>
+    <string name="winCash">PLAY TO WIN CASH</string>
+    <string name="ptsHistory">Points History</string>
+
+    <!-- Daily Quiz screen -->
+    <string name="selectAnswer">SELECT YOUR ANSWER BELOW</string>
+    <string name="hint">HINT</string>
+    <string name="question">What is the answer to this question about finance?</string>
+    <string name="answer1">Answer 1 for this question.</string>
+    <string name="answer2">Answer 2 for this question.</string>
+    <string name="answer3">Answer 3 for this question.</string>
+    <string name="hintTxt">This is a hint to help solve the question.</string>
+
+    <!-- Weekly drawing screen -->
+    <string name="currentPrize">CURRENT PRIZE</string>
+    <string name="descriptionWeekly">DESCRIPTION</string>
+    <string name="prizeDollar">$10,000</string>
+    <string name="participants">37 participants</string>
+    <string name="daysLeft">4 Days Left</string>
+    <string name="descriptionTxt">Enter the drawing for this week\'s great prize! Entry costs XX points. X winners will be chosen!</string>
+
+    <!-- Monthly Lottery screen -->
+    <string name="descriptionMonthlyTxt">Tickets cost XX points and you can purchase as many as you like. This month\'s prize is XX and there will be YY winners selected.</string>
+
+    <!-- Transactions screen -->
+    <string name="transaction">TRANSACTIONS</string>
+    <string name="transExpenses">Expenses</string>EXPENSES
+    <string name="transNeeds">Needs</string>
+    <string name="transWants">Wants</string>
+    <string name="transFinancials">Income &amp; Payments</string>
+
+    <!-- Transaction add screen -->>
+    <string name="transactionAdd">TRANSACTIONS: ADD</string>
+    <string name="transactionAddType">TRANSACTION TYPE</string>
+    <string name="transactionAddValue">DEBT</string>
+    <string name="transactionDetailHeader">Please provide details for this transaction</string>
+    <string name="debtAmount">Debt Amount</string>
+    <string name="transactionDescription">Description</string>
+    <string name="dateOfTransaction">Date of transaction</string>
+    <string name="transactionSave">SAVE</string>
+
+    <!-- Transaction edit screen -->>
+    <string name="transactionEdit">EDIT TRANSACTION</string>
+
+    <!-- Balance Page -->
+    <string name="balanceHeader">BALANCES</string>
+    <string name="savingsTranstext">Savings Transactions</string>
+    <string name="accountbalsavings">Account Balance:</string>
+    <string name="transactionbegin">Transaction Begin</string>
+    <string name="transactionend">Transaction End</string>
+    <string name="company">Company</string>
+    <string name="date">Date</string>
+    <string name="progressHeader">PROGRESS</string>
+    <string name="deptcrediransactions">Dept/Credit Transactions</string>
+    <string name="balanceDateOfTransactionEnd">Transaction End</string>
+    <string name="balanceDateOfTransactionStart">Transaction Begin</string>
+
+
+    <!--Health Fragment-->
+    <string name="healthHeader">HEALTH</string>
+    <string name="accounthealth">Account Health:</string>
+    <string name="accounthealthnum">75 %</string>
+    <string name="accounthealthtxt">Some brief text about what Account Health is for the user.</string>
+    <string name="accounthealthhistorytxt"> Account Health History</string>
+    <string name="savingstotalhealth">Savings Total</string>
+    <string name="savingsperhealth">Savings %</string>
+    <string name="savingsdepthealth">Dept</string>
+    <string name="timeFrame">Timeframe</string>
+
+    <!--health fragment-->
+    <string name="weeksgoaltxt">THIS WEEKS GOAL</string>
+    <string name="weekgoaltxt">Whatever This Week Goal is called</string>
+    <string name="goalcompletetext">COMPLETE THIS GOAL FOR</string>
+    <string name="cuurentprogresstextvalue">Current Progrsss: </string>
+    <string name="xxxvalue">XXXX</string>
+    <string name="goalpointvalue">XXX POINTS</string>
+    <string name="monthsgoaltext">THIS MONTHS GOAL</string>
+    <string name="monthsgoalsentence">Whatever This Months Goal is called</string>
+
+    <!--goals table-->
+    <string name="goaltxt">Goal</string>
+    <string name="resulttxt">Result</string>
+    <string name="pointstxt">Points</string>
+    <string name="title_activity_financial">Financial</string>
+
+    <!--Transactions Add-->
+    <string name="transAdHeader">TRANSACTIONS: ADD</string>
+    <string name="addingTransFor">Adding a Transaction for: </string>
+    <string name="transHome">HOME</string>
+    <string name="transGroceries">GROCERIES</string>
+    <string name="transTransport">TRANSPORTATION</string>
+    <string name="transHealth">HEALTH</string>
+    <string name="transEdu">EDUCATION</string>
+    <string name="transUtil">UTILITIES</string>
+    <string name="transShop">SHOPPING</string>
+    <string name="transDining">DINING OUT</string>
+    <string name="transEtmnt">ENTERTAINMENT</string>
+    <string name="transTravel">TRAVEL</string>
+    <string name="transExpenseAmt">Expense Amount</string>
+    <string name="transDate">Date of Transaction</string>
+    <string name="transDesc">Description</string>
+
+    <!-- Intro 1 -->
+    <string name="welcometxt">Welcome to Wala!</string>
+    <string name="info1txt1"><b>Wala</b> is your personalized savings tool.</string>
+    <string name="info1txt">Swipe to learn how <b>Wala</b> can help you increase your life savings!</string>
+
+    <!-- Intro 2 -->
+    <string name="info2personaltxt">Personalized Goals &amp; \nExpense Tracking</string>
+    <string name="info2content">Wala will create savings goals for you each week on your personal income, needs, and spending habits. You will track your progress against these goals by easily logging your daily transactions in the Wala app.</string>
+
+
+    <!-- Intro 3 -->
+    <string name="intro3HeaderTxt">Gaming, Points &amp; Prizes</string>
+    <string name="intro3Text">Every time you enter a transaction, achieve a goal, and play a game you will earn points. Your points can be used to enter lotteries to win cash and other prizes to further improve your savings!</string>
+
+    <!-- Intro 4 -->
+    <string name="intro4HeaderTxt">You\'re Ready to Save!</string>
+    <string name="intro4BelowTxt">Click below to sign-up, build your personal and financial profile, and grow your savings.</string>
+
+    <!-- Games Screen -->
+    <string name="gamesHeader">GAMES</string>
+    <string name="dailyQuizTxt">The Wala Daily Quiz</string>
+    <string name="weeklyLoteryTxt">Weekly Lottery</string>
+    <string name="monthlyLoteryTxt">Monthly Lottery</string>
+
+    <string name="emailhint">youremail@example.com</string>
+    <string name="usernameHint">Username</string>
+    <string name="middleHint">Middle name</string>
+    <string name="policyContent">I agree to and have read Wala\'s</string>
+    <string name="privacyLinkcntn">Privacy Policy</string>
+    <string name="userInfoCntnt">We will only use this to create your Wala Account. Your information will not be shared with others.</string>
+    <string name="userProfileInfo">USER PROFILE INFO</string>
+    <string name="signUpuserHeader">USER PROFILE</string>
+    <string name="datebalance">9/14/2015</string>
+    <string name="gasoftheCar">Gas for the Car</string>
+    <string name="transporationvalue">60.00</string>
+    <string name="transporation">TRANSPORTATION</string>
+    <string name="entertainmentValue">300.00</string>
+    <string name="purchased">Purchased a Tv</string>
+    <string name="descriptiontxt">This is a long description name of</string>
+    <string name="deptbalance">Debt Balance</string>
+
+    <!--Transactions Manage-->
+    <string name="transactionManageInstruction">Click a Transaction to EDIT, swipe left to DELETE</string>
+
+    <string name="points">120 points</string>
+    <string name="points1">220 points</string>
+    <string name="playbtn">PLAY</string>
+
+    <string name="quizquestion">Question:</string>
+    <string name="quizquestion1">It is generally a good idea to borrow money and repay the amount borrowed with future income when:</string>
+    <string name="answercrct">Your answer was correct!</string>
+    <string name="cngratztxt">Well done! Be sure to come back tomorrow and play the Daily Quiz again!</string>
+    <string name="bonustiptxt">Bonus Financial Tip</string>
+    <string name ="anscontent">It is financially beneficial and an investment in one’s financial wellbeing to buy a car when a person needs it to get to work or to get a new job with a higher salary.</string>
+
+    <string name="wrongcntn">You can always come back tomorrow and play the Daily Quiz again. Until then, here’s a bonus financial tip for playing!</string>
+    <string name="incrctanswer">Your answer was incorrect!</string>
+    <string name="dailyQuiztxt">Daily Quiz</string>
+    <string name="quizPoints"></string>
+
+    <!-- Goals -->
+    <string name="goalheadertxt">GOALS</string>
+    <string name="swipegoaltxt">SWIPE FOR MORE GOALS</string>
+    <string name="weekly_goal">WEEKLY GOAL</string>
+    <string name="daysleft">DAYS LEFT</string>
+    <string name="quizplay3time">Play The Daily Quiz \nThree Times This \nWeek</string>
+    <string name="keepSavings">Keep Your Savings \nBalance Higher Than \n1,500.00</string>
+    <string name="playnow">PLAY NOW IN GAMES</string>
+    <string name="manageTrans">MANAGE YOUR TRANSACTIONS</string>
+    <string name="previousgoal_txt">Previous Goals</string>
+    <string name="quizSavevelue">Save 3,000 This Week</string>
+    <string name="spenttxt">Spent 500 This Week</string>
+
+    <!-- exit message -->
+    <string name="exit_msg">Tap back again to exit.</string>
+
+    <!-- Signup Success -->
+    <string name="signedupcntn">You\'re Signed Up!</string>
+    <string name="filloutcontn">I\'ll fill it out later.</string>
+    <string name="takemetoapp">Take me to the app!</string>
+    <string name="donthaveacc">Don\'t have an account!</string>
+    <string name="signup">SignUp!</string>
+
+    <!-- Refer friend -->
+    <string name="invite">Send invitations!</string>
+    <string name="welcome">App Invite\nQuickstart</string>
+    <string name="referrer_hint">Deep link not provided</string>
+    <string name="deep_link_default">Deep link not set</string>
+    <string name="invitation_id_default">Invitation ID not set</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="invitation_title">Send App Invite Wala Invitation</string>
+    <string name="invitation_message">You have been invited to join Wala!</string>
+    <string name="invitation_deep_link">https://play.google.com/store/apps/details?id=activities.mswift.info.walaapp</string>
+    <string name="invitation_custom_image">https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png</string>
+    <string name="invitation_cta">Install!</string>
+    <string name="invitation_subject">You have been invited to join Wala!</string>
+    <string name="deep_link_fmt" formatted="false">Deep Link: %s</string>
+    <string name="invitation_id_fmt" formatted="false">Invitation ID: %s</string>
+    <string name="sent_invitations_fmt" formatted="false">Sent %d invitations</string>
+    <string name="send_failed">Sending invitations failed</string>
+    <string name="invite_dialog_title">You got an invitation!</string>
+    <string name="google_play_services_error">Google Play Services Error</string>
+    <string name="custom_invite">Custom Invite</string>
+    <!-- deep link -->
+    <string name="action_deep_link">com.google.android.gms.samples.appinvite.DEEP_LINK_ACTION</string>
+
+    <!-- Send invitation -->
+    <string name="ffirstname">Friend\'s First Name</string>commonMargin
+    <string name="flasttname">Friend\'s Last Name</string>
+    <string name="femail">Friend\'s Email Address</string>
+
+    <string name="quiz">The Wala Daily Quiz</string>
+
+    <string name="weeklottery">Weekly Lottery</string>
+    <string name="participant">Participants</string>
+    <string name="leftdays">Days Left</string>
+    <string name="currentPrizeWk">Current Prize</string>
+    <string name="savingsAmntWk">to Savings</string>
+    <string name="buyTkts">BUY TICKETS</string>
+    <string name="enterlottery">Enter the lottery for this week’s great prize! Entry costs XX points. X winners will be chosen!</string>
+
+    <!-- Goals Overlay -->
+    <string name="goalOverlayheader">Goals</string>
+    <string name="goalsOverlayTxt1">Every week a new goal will automatically be created and based on your specific needs. You will see how you are doing so far this week and how much more you need to save, spend, or earn to acheive that goal.</string>
+    <string name="goalsOverlayTxt2">When you reach a goal you will receive bonus points.</string>
+
+    <!-- Transaction Overlay -->
+    <string name="transactionOverlayheader">Transactions</string>
+    <string name="transactionOverlayTxt1">Welcome to your Transaction page! Here you will enter all of the items you paid for (EXPENSES), money you earned (INCOME) and loans you received and loans you paid back (DEBT).</string>
+    <string name="transactionOverlayTxt2">The information you ninput here will impact your goals, account balances, and more.</string>
+
+    <!-- Transaction Overlay -->
+    <string name="balancesOverlayheader">Balances</string>
+    <string name="balancesOverlayTxt1">Your balances will show the amount of money you have saved (SAVINGS) and the amount of money you owe (DEBT). As you input your transactions you will see them on this page. You will also be able to edit those transactions if you need to change a transaction.</string>
+
+    <!-- Redirect -->
+    <string name="redirectText">You Must Complete Your Financial Profile Before You Can Access This Area</string>
+    <string name="completeFinancialTxt">Complete Financial Profile</string>
+
+    <!-- Privacy policy -->
+    <string name="privacyheadertxt">Wala Privacy Policy</string>
+    <string name="policysubtxt">Section Title</string>
+    <string name="privacy_subheader">Sub Header</string>
+    <string name="privacycontent">Every week a new goal will automatically be created based on your specific needs. You will see how you are doing so far this week and how much more you need to save, spend, or earn to achieve that goal.</string>
+    <string name="privacycontent1">When you reach a goal you will receive bonus points.</string>
+
+    <!-- Privacy policy new -->
+    <string name="privacy_policy">
+            <![CDATA[
+            <h1>Wala Privacy Policy</h1>
+            <p>Basic Transfer, Inc. ("Wala") is committed to protecting your privacy. We have prepared this Privacy Policy to describe to you our practices regarding the Personal Data (as defined below) we collect from users of our mobile application, ("App") and the services made available through the App ("Services"). Capitalized terms not defined in this Privacy Policy have the meaning set forth in the Terms of Service.</p>
+            <h1>User Consent</h1>
+            <p>By using our App or Services, you agree to the terms of this Privacy Policy and you expressly consent to the processing of your Personal Data in accordance with this Privacy Policy. Wala collects Personal Data and Anonymous Data from you when you use our App, when you send us information or communications, and/or when you use the Services.</p>
+            <h1>A Note About Children</h1>
+            <p>We do not intentionally gather Personal Data about visitors who are under the age of 13.</p>
+            <h1>Types of Data We Collect</h1>
+            <p>"Personal Data" means data that allows someone to identify or contact you, including, for example, your name, address, telephone number, e-mail address, as well as any other non-public information about you that is associated with or linked to any of the foregoing data.  This also includes financial information such as transactional data and financial goals for which you have provided. "Anonymous Data" means data that is not associated with or linked to your Personal Data; Anonymous Data does not permit the identification of individual persons. </p>
+            <h1>Personal Data You Provide to Us</h1>
+            <p>We collect Personal Data from you, such as your e-mail address, when you register for an account to log in to the Services. If you provide us feedback or contact us via e-mail (e.g., in response to an employment opportunity posted on our App), we will collect your name and e-mail address, as well as any other content included in the e-mail, in order to send you a reply, and any information that you submit to us, such as a resume.
+            When you participate in one of our surveys or games, we may collect additional profile information. When you post messages on the forums or message boards of our App, the information contained in your posting will be stored on our servers and other users will be able to see it. We also collect other types of Personal Data that you provide to us voluntarily, such as first name, last name, mailing address, phone number, salary, age, date of birth, gender, education level, and marital status. We may also collect Personal Data, such as demographic information from you via the Services or at other points in our App that state that Personal Data is being collected. You may choose not to provide us with certain information, but this may limit the features that you can use or the functionality of the Services.</p>
+            <h1>Personal Data Collected via Technology</h1>
+            <p>To make our App and Services more useful to you, our servers (which may be hosted by a third party service provider) collect Personal Data from you, including internet protocol address, geographic location, operating system, browser type, domain name, and a date/time stamp for your visit. Like most Internet services, we automatically gather this Personal Data and store it in log files each time you visit the App or access your account on the Services.</p>
+            <p><b>" \"Cookies\" "</b> are small pieces of information that a website sends to your computer’s hard drive while you are viewing a website. We use Cookies and navigational data like Uniform Resource Locators (URL) to gather information regarding the date and time of your visit and the solutions and information for which you searched and which you viewed.</p
+            <p><b>" \"Web Beacons\" "</b>are images embedded in a Web page or email to measure and analyze App usage and activity. We, or third party providers acting on our behalf, may use Web Beacons to help us analyze App usage and to improve the Services.</p>
+            <p><b>Personal Data That We Collect from You About Others.</b> If you decide to invite a third party to use the Services, we will collect such third party’s name and e-mail address so that we may send such third party an invitation to use the Services. You or the third party may contact us at info@getwala.com to request the removal of this information from our database.</p>
+            <p><b>Personal and/or Anonymous Data Collected by Third Parties</b>We may receive Personal and/or Anonymous Data about you from other sources like telephone or fax, or from companies that offer their products and/or services on the App ("Third Party Companies"). We may add this information to the information we have already collected from you via the App in order to improve the Services.</p>
+
+             <h1>Use of Your Data</h1>
+            <p><b>General Use</b>In general, Personal Data you submit to us is used either to respond to requests that you make, or to aid us in serving you better. Wala uses your Personal Data in the following ways:</p>
+
+                     <p>&#8226; to provide you with the Services;</p>
+                    <p>&#8226; to analyze your personal finance activities and reward you with points for your performance of certain activities;</p>
+                     <p>&#8226; to personalize and better tailor the features, performance and support of the Services for your use;</p>
+                      <p>&#8226; to send you administrative notifications, such as security or support and maintenance advisories;</p>
+                       <p>&#8226; to respond to your inquiries related to employment opportunities or other requests;</p>
+                        <p>&#8226; to send you promotional/marketing information, newsletters, surveys, offers or other information;</p>
+                         <p>&#8226; to provide you with opportunities and functionality that we think would be of particular interest to you;</p>
+                          <p>&#8226; to improve the quality of the App and the Services,</p>
+                           <p>&#8226; to analyze, benchmark and conduct research on, user data and user interactions with the Services; and</p>
+                            <p>&#8226; to conduct market research, planning, troubleshooting, planning problems, detecting and protecting against error, fraud, or other criminal activity;</p>
+                             <p>&#8226; to solicit your feedback.</p>
+
+
+
+             <p><b>Cookies.</b> We may use both session Cookies (which expire once you close your web browser) and persistent Cookies (which stay on your phone until you delete them) to provide you with a more personal and interactive experience on the App, to tailor the App to your interests, to better understand how you interact with the Services, and to monitor aggregate usage and web traffic routing on the App and Services. We may use third party service providers to help us analyze certain online activities. For example, these service providers may help us analyze visitor activity on the App. We may allow these service providers to use Cookies or other technologies to perform these services for us. We do not share any Personal Data about our customers with these third party service providers, and these service providers do not collect Personal Data on our behalf. Persistent Cookies can be removed by following Internet browser help file directions. If you choose to disable Cookies, some areas of the App may not work properly.</p>
+             <p><b>Creation of Anonymous Data.</b> We may create Anonymous Data records from Personal Data by excluding information (such as your name) that make the data personally identifiable to you. We use this Anonymous Data to analyze request and usage patterns so that we may enhance the content of the App or the Services and improve App use. Wala reserves the right to use and disclose Anonymous Data to Third Party Companies in its discretion.</p>
+              <p><b>Feedback.</b> If you provide feedback on the App or the Services to us, we may use such feedback for any purpose, provided we will not associate such feedback with your Personal Data. Wala will collect any information contained in such communication and will treat the Personal Data in such communication in accordance with this Privacy Policy.</p>
+
+             <h1>Disclosure of Your Personal Data</h1>
+             <p>Wala, its subsidiaries, any joint ventures, or other companies under a common control (collectively, "Affiliates"), may in the future share some or all of your Personal Data with each other, in which case we will require our Affiliates to honor this Privacy Policy. </p>
+             <p><b>Forums, Message Boards and Chats. </b>We may make message boards, chat rooms, and other interactive forums available on the Services. You should be aware that any information which you post to these interactive forums or otherwise choose to make publicly available, including your Personal Data, may be disclosed and available to all users who have access to that portion of the Services, and is therefore no longer private. By using these interactive forums, you agree that we are not responsible for any information that you disclose or communicate in such forums, and any disclosures you make are at your own risk. Please be thoughtful about what you post and make publicly available through the Services.</p>
+             <p><b>Other Disclosures. </b>Regardless of any choices you make regarding your Personal Data (as described below), Wala may disclose Personal Data if it believes in good faith that such disclosure is necessary to (a) comply with relevant laws or to respond to subpoenas or warrants served on Wala or (b) protect or defend the rights or property of Wala or other users of the Services.</p>
+             <h1>Third Parties</h1>
+             <p><b>Links to Third Party Websites.</b> The Services may link to websites operated by third parties that we do not control. This includes any sites that you linked to from advertisements that appear on the Services. Our provision of such links is for your convenience and does not signify our endorsement of such other website or location or its products, services, or contents. When you click on such a link, you will leave our site and go to another site. During this process, another entity may collect Personal Data or Anonymous Data from you. We have no control over, do not review, and cannot be responsible for, these outside websites or their products, services, or content. Please be aware that the terms of this Privacy Policy do not apply to these outside websites, or to any collection of data after you click on links to such outside websites.</p>
+
+             <p><b>Disclosure to Thi1rd Party Service Providers.</b> Except as otherwise stated in this policy, we do not generally sell, trade, share, or rent the Personal Data collected from the Services to other entities. However, we may employ, and share your Personal Data with, third party companies and individuals ("Service Providers") to facilitate or enhance our App or Services, to provide the Services on our behalf, to perform tasks (e.g., without limitation, maintenance services, database management, web analytics and improvement of the App or Services), to retrieve and store FI Access Information and FI Account Data, or to assist us in analyzing how our Services are used. These third party service providers are required not to use or disclose your Personal Data other than to provide the services requested by us. You expressly consent to the sharing of your Personal Data with our Service Providers for the sole purpose of providing services requested by us.</p>
+
+             <h1>Your Choices Regarding Your Personal Data</h1>
+
+             <p><b>Choices.</b> We offer you choices regarding the collection, use, and sharing of your Personal Data. We may periodically send you newsletters or messages via e-mail, telephone, postal mail, SMS, or social networks that notify you of new points, prizes, winnings, or opportunities available through the App or Services, provide you with updates regarding the App or Services, and directly promote the use of the App or Services and may contain advertisements for Third Party Companies. When you receive newsletters or promotional communications from us, you may indicate a preference to stop receiving further communications from us and you will have the opportunity to "opt-out" by contacting us directly (please see contact information below). Should you decide to opt-out of receiving future communications, we may share your contact information with third parties to ensure that you do not receive further communications from third parties. Despite your indicated preferences, we may send you notices of any updates to our Terms of Service or Privacy Policy.</p>
+             <p><b>Changes to Personal Data. </b>You may change any of your Personal Data in your account by editing your profile within the Services. You may request deletion of your Personal Data by us, but please note that we may be required (by law or otherwise) to keep this information and not delete it (or to keep this information for a certain time, in which case we will comply with your deletion request only after we have fulfilled such requirements). When we delete any information, it will be deleted from the active database, but may remain in our archives.</p>
+            <h1>Security of Your Personal Data</h1>
+            <p>Wala is committed to protecting the security of your Personal Data. We use a variety of industry-standard physical, electronic, and procedural safeguards to help protect your Personal Data from unauthorized access, use, or disclosure. We also require you to enter a password to access your account information. Please do not disclose your account password to unauthorized people. From the time you submit your username and password, communications between your computer and the Wala are encrypted using secure socket layer technology to make your information unreadable as it passes over the Internet. While the Wala uses these and other reasonable efforts to protect your Personal Data, no method of transmission over the Internet, or method of electronic storage, is 100% secure, however. Therefore, Wala cannot guarantee absolute security of your Personal Data.</p>
+            <h1>Contact Information</h1>
+            <p>Wala welcomes your comments or questions regarding this Privacy Policy. Please e-mail us at info@getwala.com or contact us at the following address:
+            </p>
+
+                    <p>&#8226; Wala</p>
+                    <p>&#8226; Rise Cape Town</p>
+                    <p>&#8226; Floor 5, Woodstock Exchange </p>
+                    <p>&#8226; 66 Albert Road</p>
+                     <p>&#8226; Woodstock, 7915</p>
+
+
+                <h1>Changes to This Privacy Policy</h1>
+                <p>This Privacy Policy is subject to occasional revision, and if we make any substantial changes in the way we use your Personal Data, we will notify you by sending you an e-mail to the last e-mail address you provided to us and/or by prominently posting notice of the changes on our App. Any changes to this Privacy Policy will be effective immediately if you are a new user of the Services and will be effective thirty (30) calendar days after posting of notice of such changes on the App if you are an existing user, provided that, if you are an existing user, any material changes shall be effective for you upon the earlier of thirty (30) calendar days following posting of notice of such changes on the App or thirty (30) calendar days after dispatch of an e-mail notice of such changes to you. Please note that at all times you are responsible for updating your Personal Data to provide us with your most current e-mail address. In the event that the last e-mail address that you have provided us is not valid, or for any reason is not capable of delivering to you the notice described above, our dispatch of the e-mail containing such notice will nonetheless constitute effective notice of the changes described in the notice. In any event, changes to this Privacy Policy may affect our use of Personal Data that you provided to us prior to our notification to you of the changes. If you do not wish to permit changes in our use of your Personal Data, you must notify us prior to the effective date of the changes that you wish to deactivate your account with us. Continued use of the App or Services, following notice of such changes shall indicate your acknowledgement of such changes and agreement to be bound by the terms and conditions of such changes.</p>
+            ]]>
+        </string>
+
+    <!-- mixpanel -->
+    <string name="mixpanel_intro_screen_1">intro_screen_1</string>
+    <string name="mixpanel_intro_screen_2">intro_screen_2</string>
+    <string name="mixpanel_intro_screen_3">intro_screen_3</string>
+    <string name="mixpanel_intro_screen_4">intro_screen_4</string>
+    <string name="mixpanel_intro_screen_4_fb_signup">facebook sign up</string>
+    <string name="mixpanel_intro_screen_4_email_signup">email sign up</string>
+
+    <string name="mixpanel_sign_up_screen_step1">sign up screen step 1</string>
+    <string name="mixpanel_sign_up_screen_step1_next_button">sign up screen step 1 next button</string>
+    <string name="mixpanel_sign_up_screen_step2">sign up screen step 2</string>
+    <string name="mixpanel_sign_up_screen_step2_finish_button">sign up screen step 2 finish button</string>
+
+    <string name="mixpanel_confirm_otp_screen">confirm OTP screen</string>
+
+    <string name="mixpanel_financial_info_screen1">financial info step 1 screen</string>
+    <string name="mixpanel_financial_info_screen2">financial info step 2 screen</string>
+    <string name="mixpanel_financial_info_screen3">financial info step 3 screen</string>
+    <string name="mixpanel_financial_info_screen4">financial info step 4 screen</string>
+    <string name="mixpanel_financial_info_skip1">financial info skip 1</string>
+    <string name="mixpanel_financial_info_skip2">financial info skip 2</string>
+    <string name="mixpanel_financial_info_skip3">financial info skip 3</string>
+    <string name="mixpanel_financial_info_save1">financial info save 1</string>
+    <string name="mixpanel_financial_info_save2">financial info save 2</string>
+    <string name="mixpanel_financial_info_save3">financial info save 3</string>
+    <string name="mixpanel_financial_info_save4">financial info save 4</string>
+
+    <string name="mixpanel_balance_savings_screen">balance savings screen</string>
+    <string name="mixpanel_balance_savings_screen_time_span">balance savings time span</string>
+    <string name="mixpanel_balance_savings_screen_edit_transaction">balance savings edit transaction</string>
+    <string name="mixpanel_balance_debt_screen">balance debt screen</string>
+    <string name="mixpanel_balance_debt_screen_time_span">balance debt time span</string>
+    <string name="mixpanel_balance_debt_screen_edit_transaction">balance debt edit transaction</string>
+
+    <string name="mixpanel_more_screen">more screen</string>
+    <string name="mixpanel_more_screen_personal_info_screen">personal info screen</string>
+    <string name="mixpanel_more_screen_change_password_screen">change password screen</string>
+    <string name="mixpanel_more_screen_refer_friend_screen">refer friend screen</string>
+    <string name="mixpanel_more_screen_contact_us_screen">contact us screen</string>
+    <string name="mixpanel_more_screen_faq_screen">faq screen</string>
+    <string name="mixpanel_more_screen_abaut_wala_screen">about wala screen</string>
+
+    <string name="mixpanel_edit_transaction_screen">edit transaction screen</string>
+    <string name="mixpanel_edit_transaction_screen_complete">edit transaction complete</string>
+
+    <string name="mixpanel_add_transaction_screen">add transaction screen</string>
+    <string name="mixpanel_add_transaction_screen_add_individual_transaction_screen">add individual transaction screen</string>
+    <string name="mixpanel_add_transaction_screen_save_transaction">save transaction</string>
+    <string name="mixpanel_manage_transaction_screen">manage transaction screen</string>
+    <string name="mixpanel_manage_transaction_screen_delete_button">delete transaction</string>
+
+    <string name="mixpanel_login_screen">login screen</string>
+    <string name="mixpanel_login_screen_email_button">login screen email button</string>
+    <string name="mixpanel_login_screen_facebook_button">login screen facebook button</string>
+
+    <string name="mixpanel_goals_screen">goals screen</string>
+    <string name="mixpanel_goals_weekly_quiz_screen">goals screen</string>
+    <string name="mixpanel_goals_monthly_quiz_screen">goals screen</string>
+
+    <string name="mixpanel_games_screen">games screen</string>
+    <string name="mixpanel_games_history_screen">games history screen</string>
+    <string name="mixpanel_games_daily_quiz">games daily quiz</string>
+    <string name="mixpanel_games_weekly_quiz">games weekly quiz</string>
+    <string name="mixpanel_games_monthly_quiz">games monthly quiz</string>
+
+    <string name="mixpanel_games_correct_answer">games correct answer</string>
+    <string name="mixpanel_games_incorrect_answer">games in correct answer</string>
+
+    <!-- Tickets pop-up -->
+    <string name="ticketsHeader">Tickets</string>
+    <string name="ticketsSubTxt">Tickets cost XX points per ticket</string>
+    <string name="ticketsBuyTckt">BUY TICKET</string>
+    <string name="ticketsDropTckt">Drop Ticket</string>
+    <string name="ticketsDoneBtn">DONE</string>
+
+    <string name="forgotPwd">Forgot Password?</string>
+</resources>

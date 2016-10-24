@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        style="@style/LinearLayoutVerticalTheme"
+        android:layout_marginTop="@dimen/marginLowSpace"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/saveQuizLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/goalsDate"
+                style="@style/TextSmallTheme2"
+
+                android:textStyle="bold"
+                android:textColor="@color/healthtabletxt"/>
+            <LinearLayout
+                style="@style/RelativeWrapTheme"
+                android:orientation="horizontal"
+
+                >
+                <ImageView
+                    android:id="@+id/goalsImg"
+                    style="@style/RelativeWrapTheme"
+                    android:layout_marginTop="17dp"
+                    />
+                <TextView
+                    android:id="@+id/goalsDetail"
+                    style="@style/EditTextTheme"
+                    android:layout_marginTop="@dimen/commonSpace"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSizeSmall2"
+                    android:text="test"
+                    android:textColor="@color/popUpTxt"
+                    android:layout_marginLeft="2dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/savePointsLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layForMoneyMargin"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/goalsPoint"
+                style="@style/TextSmallTheme2"
+                android:textStyle="bold"
+                android:textColor="@color/healthtabletxt"
+                android:layout_alignParentRight="true"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/CommonLineTheme" />
+</LinearLayout>

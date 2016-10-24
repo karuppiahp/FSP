@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/HeaderTheme">
+
+            <TextView
+                style="@style/HeaderTextTheme"
+                android:text="@string/financialProfile" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/todoListItemMargin"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtForSteps"
+                    style="@style/Step1of2TextTheme"
+                    android:text="@string/step24" />
+
+                <TextView
+                    android:id="@+id/txtForStepName"
+                    style="@style/AccInfoTextTheme"
+                    android:layout_toRightOf="@+id/txtForSteps"
+                    android:text="@string/savings" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layForSavingsTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/todoListItemMargin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtForSavingsContent"
+                    style="@style/TextSmallTheme"
+                    android:text="@string/savingsContent" />
+
+                <EditText
+                    android:id="@+id/editTxtForSavings"
+                    style="@style/EditTextTheme"
+                    android:layout_marginTop="@dimen/bottmMargin"
+                    android:hint="@string/placeHolderText"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <View style="@style/CommonLineTheme" />
+
+            <LinearLayout
+                android:id="@+id/layForSavingsChoose"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/todoListItemMargin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtForChooseContent"
+                    style="@style/TextSmallTheme"
+                    android:text="@string/whereYouKeep" />
+
+                <RelativeLayout
+                    android:id="@+id/layForChooseSpinner"
+                    style="@style/SpinnerTheme"
+                    android:layout_marginTop="@dimen/bottmMargin">
+
+                    <TextView
+                        android:id="@+id/txtForSavingsSelected"
+                        style="@style/TextMediumTheme"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/layForMoneyMargin"
+                        android:layout_marginRight="@dimen/calendarImgWidth"
+                        android:text="@string/choose" />
+                    <ImageView
+                        style="@style/arrowTheme"
+                        android:src="@drawable/options_arrow"
+                        android:layout_marginRight="@dimen/textSpaceCommon"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/CommonLineTheme" />
+
+            <LinearLayout
+                android:id="@+id/skipsave"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bottmMargin"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnForSkip"
+                    style="@style/SkipBtnThemeShape"
+                    android:background="@drawable/shape_skip"
+                    android:text="SKIP"
+                    />
+
+                <View style="@style/CenterTheme" />
+
+                <Button
+                    android:id="@+id/btnForSave"
+                    style="@style/SaveBtnThemeshape"
+                    android:background="@drawable/shape"
+                    android:text="SAVE"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewForSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/mediumMargin"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:visibility="gone" />
+</RelativeLayout>

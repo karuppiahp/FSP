@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/HeaderTheme">
+        <TextView
+            style="@style/HeaderTextTheme1"
+            android:text="@string/referTxt" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/todoListItemMargin"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    style="@style/InviteHeaderTheme"
+                    android:text="@string/inviteHeader"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSizeLarge"
+                    />
+
+                <TextView
+                    style="@style/TextMediumTheme"
+                    android:layout_marginTop="@dimen/commonMargin"
+                    android:text="@string/inviteTxt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layForSendInvite"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/commonMargin"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    style="@style/RelativeLayoutCommon"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/todoListItemMargin"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/commonMargin"
+                        android:orientation="vertical">
+
+                        <include
+                            android:id="@+id/includeForSendInvitation"
+                            layout="@layout/send_invitation"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/todoListItemMargin"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/InviteHeaderTheme"
+                    android:text="@string/referralHistory"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    style="@style/LinearLayoutVerticalTheme"
+                    android:layout_margin="@dimen/todoListItemMargin"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/friendsentLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/layForMoneyMargin"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/frndsentDate"
+                            style="@style/TextSmallTheme1"
+                            android:text="@string/datebalance"
+                            android:textStyle="bold"
+                            android:textColor="@color/healthtabletxt"/>
+
+                        <TextView
+                            android:id="@+id/sentFrndName"
+                            style="@style/EditTextTheme"
+                            android:layout_marginTop="@dimen/bottmMargin"
+                            android:text="Bruce Wayne"
+                            android:textStyle="bold"
+                            android:textColor="@color/popUpTxt"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layFortransporationDept"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layForMoneyMargin"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtForsentFrnd"
+                            style="@style/TextSmallTheme1"
+                            android:text="Sent"
+                            android:textColor="@color/healthtabletxt"
+                            android:textStyle="bold"
+                            android:layout_alignParentRight="true"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <View style="@style/CommonLineTheme" />
+
+                <LinearLayout
+                    style="@style/LinearLayoutVerticalTheme"
+                    android:layout_margin="@dimen/todoListItemMargin"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/fullmemberLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/layForMoneyMargin"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/fullmemberDate"
+                            style="@style/TextSmallTheme1"
+                            android:text="@string/datebalance"
+                            android:textStyle="bold"
+                            android:textColor="@color/healthtabletxt"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/fullmemtick"
+                                android:layout_marginTop="24dp"
+
+                                />
+                            <TextView
+                                android:id="@+id/fullmemberName"
+                                style="@style/EditTextTheme"
+                                android:layout_marginTop="@dimen/bottmMargin"
+                                android:text="Diana Prince"
+                                android:textStyle="bold"
+                                android:textColor="@color/popUpTxt"
+                                android:layout_marginLeft="2dp"
+                                android:singleLine="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fullmember"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layForMoneyMargin"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="right">
+
+                        <TextView
+                            android:id="@+id/txtForFullmember"
+                            style="@style/TextSmallTheme1"
+                            android:text="Full Member"
+                            android:textStyle="bold"
+                            android:textColor="@color/healthtabletxt"
+                            android:layout_alignParentRight="true"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <View style="@style/CommonLineTheme" />
+
+                <LinearLayout
+                    style="@style/LinearLayoutVerticalTheme"
+                    android:layout_margin="@dimen/todoListItemMargin"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/signedUpLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/layForMoneyMargin"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/signedDate"
+                            style="@style/TextSmallTheme1"
+                            android:textStyle="bold"
+                            android:textColor="@color/healthtabletxt"
+                            android:text="@string/datebalance" />
+
+                        <TextView
+                            android:id="@+id/signedUpFrnd"
+                            style="@style/EditTextTheme"
+                            android:layout_marginTop="@dimen/bottmMargin"
+                            android:text="Clark Kent"
+                            android:textStyle="bold"
+                            android:textColor="@color/popUpTxt"
+                            android:singleLine="true" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layForsignedUp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layForMoneyMargin"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="right">
+
+                        <TextView
+                            android:id="@+id/txtForsignedUp"
+                            style="@style/TextSmallTheme1"
+                            android:text="SignedUp"
+                            android:textStyle="bold"
+                            android:textColor="@color/healthtabletxt"
+                            android:layout_alignParentRight="true"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <View style="@style/CommonLineTheme" />
+
+                <!-- <LinearLayout
+                     android:id="@+id/layForRecentTransactionTableHeader"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_below="@+id/layForRecentTransaction"
+                     android:layout_marginBottom="5dp"
+                     android:layout_marginTop="10dp"
+                     android:orientation="horizontal">
+
+                     <TextView
+                         style="@style/RecentTransactionTableHeaderFontStyle"
+                         android:gravity="left"
+                         android:text="@string/frndName" />
+
+                     <TextView
+                         style="@style/RecentTransactionTableHeaderFontStyle"
+                         android:gravity="right"
+                         android:text="@string/frndNameStatus" />
+                 </LinearLayout>-->
+
+                <LinearLayout
+                    android:id="@+id/layForReferralListItems"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></LinearLayout>
+                <FrameLayout
+                    android:id="@+id/snackbar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="16dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

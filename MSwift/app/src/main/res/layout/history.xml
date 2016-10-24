@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/commonSpace"
+        android:layout_marginTop="@dimen/bottmMargin"
+        >/
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/playanswer"
+            android:textSize="@dimen/textSizeXxLarge"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Points Total"
+            android:textColor="@color/chkBoxColor"
+            android:textSize="@dimen/textSizeLarge"
+            android:layout_marginLeft="@dimen/commonMargin"
+            />
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pointsHistoryList"
+        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        />
+
+    <!--<ListView
+        android:id="@+id/pointsHistoryLis"
+        android:layout_height="match_parent"
+        android:layout_width="fill_parent" />-->
+
+</LinearLayout>

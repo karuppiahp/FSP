@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--    <LinearLayout
+            style="@style/SignUpHeaderTheme"
+            android:orientation="horizontal">
+            <TextView style="@style/SignUpHeaderTextTheme" />
+        </LinearLayout>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <RelativeLayout style="@style/HeaderTheme">
+
+        <TextView
+            style="@style/HeaderTextTheme1"
+            android:text="@string/signUpuserHeader" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            style="@style/signUpLayoutTheme"
+            android:layout_marginTop="@dimen/todoListItemMargin"
+            >
+
+            <TextView
+                android:id="@+id/txtForSteps"
+                style="@style/Step1of2TextTheme"
+                android:text="@string/step12" />
+
+            <TextView
+                android:id="@+id/txtForAccInfo"
+                style="@style/AccInfoTextTheme"
+                android:layout_toRightOf="@+id/txtForSteps"
+                android:text="@string/userProfileInfo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/userProfileInfoCntnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/todoListItemMargin"
+            android:background="@color/popUpBg"
+            >
+            <TextView
+                android:id="@+id/userInfoCntent"
+                style="@style/TextMediumPopUpTheme"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/toggleHeight"
+                android:layout_marginLeft="@dimen/commonMargin"
+                android:layout_marginRight="@dimen/commonMargin"
+                android:layout_marginTop="@dimen/toggleHeight"
+                android:text="@string/userInfoCntnt"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layForEmailId"
+            style="@style/signUpLayoutTheme"
+            android:layout_marginTop="@dimen/todoListItemMargin"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTxtForEmailAddress"
+                    style="@style/EditTextTheme"
+                    android:layout_marginTop="@dimen/layForMoneyMargin"
+                    android:hint="@string/emailAddress"
+                     android:singleLine="true"
+                    android:imeOptions="actionNext" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <View style="@style/CommonLineTheme"
+            android:layout_marginLeft="@dimen/todoListItemMargin"
+            android:layout_marginRight="@dimen/todoListItemMargin"
+            />
+
+        <LinearLayout
+            android:id="@+id/layForPhoneNo"
+            style="@style/signUpLayoutTheme"
+            android:layout_marginTop="@dimen/todoListItemMargin"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTxtForPhoneNo"
+                    style="@style/EditTextTheme"
+                    android:layout_marginTop="@dimen/layForMoneyMargin"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:hint="@string/phNo"
+
+                    android:maxLength="15"
+                    android:imeOptions="actionNext"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <View style="@style/CommonLineTheme"
+            android:layout_marginLeft="@dimen/todoListItemMargin"
+            android:layout_marginRight="@dimen/todoListItemMargin"/>
+
+        <LinearLayout
+            android:id="@+id/layForUserName"
+            style="@style/signUpLayoutTheme"
+            android:layout_marginTop="@dimen/todoListItemMargin"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTxtForUserName"
+                    style="@style/EditTextTheme"
+                    android:layout_marginTop="@dimen/layForMoneyMargin"
+                    android:singleLine="true"
+                    android:hint="@string/userName"
+                    android:imeOptions="actionNext" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <View style="@style/CommonLineTheme"
+            android:layout_marginLeft="@dimen/todoListItemMargin"
+            android:layout_marginRight="@dimen/todoListItemMargin"/>
+
+        <LinearLayout
+            android:id="@+id/layForPwd"
+            style="@style/signUpLayoutTheme"
+            android:layout_marginTop="@dimen/todoListItemMargin"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/editTxtForPwd"
+                    style="@style/EditTextTheme"
+                    android:layout_marginTop="@dimen/layForMoneyMargin"
+                    android:hint="@string/pwd"
+                    android:singleLine="true"
+                    android:focusable="true"
+                    android:imeOptions="actionDone">
+                </EditText>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/privacy"
+            android:layout_marginTop="@dimen/todoListItemMargin"
+            android:layout_marginLeft="@dimen/todoListItemMargin"
+            android:layout_marginRight="@dimen/todoListItemMargin"
+            />
+
+        <LinearLayout
+            android:id="@+id/layForNxtBtn"
+            style="@style/signUpLayoutTheme"
+            android:layout_marginTop="@dimen/todoListItemMargin"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Button
+                android:id="@+id/btnForNextStep"
+                style="@style/SaveBtnThemeshape"
+                android:background="@drawable/shape"
+                android:text="NEXT"
+                android:layout_marginBottom="30dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        style="@style/RelativeLayoutWrapCommonNormal"
+        android:id="@+id/progressBar"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

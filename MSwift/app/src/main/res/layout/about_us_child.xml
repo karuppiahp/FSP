@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgForLogo"
+                style="@style/AboutUsLogo"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/commonSpace" />
+
+            <!--<TextView
+                android:id="@+id/txtForAbtSwift"
+                style="@style/Step1of2TextTheme"
+                android:layout_margin="@dimen/todoListItemMargin"
+                android:text="@string/aboutSwift"
+                android:textStyle="bold" />-->
+
+            <TextView
+                android:id="@+id/txtForAbtSwiftTxt"
+                style="@style/TextMediumTheme"
+                android:layout_marginLeft="@dimen/todoListItemMargin"
+                android:layout_marginRight="@dimen/todoListItemMargin"
+                android:text="@string/aboutSwiftTxt" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

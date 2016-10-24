@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtForTodoListItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/todoListItemMargin"
+        android:textColor="@color/toDoListBg"
+        android:textSize="@dimen/textSizeMedium"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgForArrow"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/todoListItemMargin"
+        android:src="@drawable/red_arrow" />
+
+    <ImageView
+        android:id="@+id/imgForChkBoxUnChkd"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="15dp"
+        android:src="@drawable/check_box_checked"
+        android:visibility="gone" />
+
+</RelativeLayout>

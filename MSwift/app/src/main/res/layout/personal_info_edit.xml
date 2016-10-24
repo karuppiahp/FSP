@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        style="@style/HeaderTheme"
+        android:id="@+id/relPersonalInfo">
+
+        <TextView
+            style="@style/HeaderTextTheme"
+            android:text="@string/editPersonal" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/scrollViewPersonalInfo"
+        android:layout_below="@+id/relPersonalInfo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/todoListItemMargin"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/layForFirstName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/layForMoneyMargin"
+                        android:layout_marginTop="@dimen/todoListItemMargin"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtForFirstName"
+                            style="@style/TextSmallTheme"
+                            android:text="@string/firstName" />
+
+                        <EditText
+                            android:id="@+id/editTxtForFirstName"
+                            style="@style/EditTextTheme"
+                            android:singleLine="true"
+                            android:layout_marginTop="@dimen/layForMoneyMargin"
+                            android:hint="@string/placeHolderText" />
+
+                        <View style="@style/CommonLineTheme" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layForMiddleName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layForMoneyMargin"
+                        android:layout_marginTop="@dimen/todoListItemMargin"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtForMiddleName"
+                            style="@style/TextSmallTheme"
+                            android:text="@string/middleName" />
+
+                        <EditText
+                            android:id="@+id/editTxtForMiddleName"
+                            style="@style/EditTextTheme"
+                            android:singleLine="true"
+                            android:layout_marginTop="@dimen/layForMoneyMargin"
+                            android:hint="@string/placeHolderText" />
+
+                        <View style="@style/CommonLineTheme" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layForLastName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/todoListItemMargin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtForLastName"
+                        style="@style/TextSmallTheme"
+                        android:text="@string/lastName" />
+
+                    <EditText
+                        android:id="@+id/editTxtForLastName"
+                        style="@style/EditTextTheme"
+                        android:singleLine="true"
+                        android:layout_marginTop="@dimen/layForMoneyMargin"
+                        android:hint="@string/placeHolderText" />
+                </LinearLayout>
+
+                <View style="@style/CommonLineTheme" />
+
+                <LinearLayout
+                    android:id="@+id/layForEmailId"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/todoListItemMargin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtForEmailAddress"
+                        style="@style/TextSmallTheme"
+                        android:text="@string/emailAddress" />
+
+                    <EditText
+                        android:id="@+id/editTxtForEmailAddress"
+                        style="@style/EditTextTheme"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:singleLine="true"
+                        android:layout_marginTop="@dimen/layForMoneyMargin"
+                        android:hint="@string/placeHolderText" />
+                </LinearLayout>
+
+                <View style="@style/CommonLineTheme" />
+
+                <LinearLayout
+                    android:id="@+id/layForPhoneNo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/todoListItemMargin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtForPhoneNo"
+                        style="@style/TextSmallTheme"
+                        android:text="@string/phNo" />
+
+                    <EditText
+                        android:id="@+id/editTxtForPhoneNo"
+                        style="@style/EditTextTheme"
+                        android:singleLine="true"
+                        android:layout_marginTop="@dimen/layForMoneyMargin"
+                        android:hint="@string/phNumber"
+                        android:inputType="phone"
+                        android:enabled="false"
+                        android:focusable="false"/>
+                </LinearLayout>
+
+                <View style="@style/CommonLineTheme" />
+
+                <LinearLayout
+                    android:id="@+id/layForCountry"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/todoListItemMargin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtForCountry"
+                        style="@style/TextSmallTheme"
+                        android:text="@string/country" />
+
+                    <RelativeLayout
+                        android:id="@+id/layForCountrySpinner"
+                        style="@style/SpinnerTheme"
+                        android:layout_marginTop="@dimen/layForMoneyMargin">
+
+                        <TextView
+                            android:id="@+id/txtForCountrySpinner"
+                            style="@style/TextMediumTheme"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/layForMoneyMargin"
+                            android:text="@string/chooseCountry" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/layForCity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/layForMoneyMargin"
+                        android:layout_marginTop="@dimen/todoListItemMargin"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtForCity"
+                            style="@style/TextSmallTheme"
+                            android:text="@string/city" />
+
+                        <EditText
+                            android:id="@+id/editTxtForCity"
+                            style="@style/EditTextTheme"
+                            android:singleLine="true"
+                            android:layout_marginTop="@dimen/layForMoneyMargin"
+                            android:hint="@string/placeHolderText" />
+
+                        <View style="@style/CommonLineTheme" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layForDob"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layForMoneyMargin"
+                        android:layout_marginTop="@dimen/todoListItemMargin"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtForDob"
+                            style="@style/TextSmallTheme"
+                            android:text="@string/dateOfBirth" />
+
+                        <TextView
+                            android:id="@+id/txtForDobSelected"
+                            style="@style/TextMediumTheme"
+                            android:layout_centerVertical="true"
+                            android:singleLine="true"
+                            android:layout_marginLeft="@dimen/layForMoneyMargin"
+                            android:layout_marginTop="@dimen/layForMoneyMargin"
+                            android:text="@string/placeHolderText" />
+
+                        <View style="@style/CommonLineTheme" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--<LinearLayout
+                    android:id="@+id/layForGender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/todoListItemMargin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtForGender"
+                        style="@style/TextSmallTheme"
+                        android:text="@string/gender" />
+
+                    <RelativeLayout
+                        android:id="@+id/layForGenderSpinner"
+                        style="@style/SpinnerTheme"
+                        android:layout_marginTop="@dimen/layForMoneyMargin">
+
+                        <TextView
+                            android:id="@+id/txtForGenderSelected"
+                            style="@style/TextMediumTheme"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/layForMoneyMargin"
+                            android:text="@string/choose" />
+                    </RelativeLayout>
+                </LinearLayout>-->
+
+                <LinearLayout
+                    android:id="@+id/layForFinishBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/todoListItemMargin"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3" />
+
+                    <Button
+                        android:id="@+id/btnForSavePersonalInfo"
+                        style="@style/SaveBtnThemeshape"
+                        android:background="@drawable/shape"
+                        android:text="SAVE"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/listViewForSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/mediumMargin"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:visibility="gone" />
+
+</RelativeLayout>

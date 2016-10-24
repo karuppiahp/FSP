@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgForOurTeam"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sample_img" />
+
+    <TextView
+        android:id="@+id/textForAboutTeamTitle"
+        style="@style/Step1of2TextTheme"
+        android:layout_margin="@dimen/todoListItemMargin"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textForAboutTeamContent"
+        style="@style/TextMediumTheme"
+        android:layout_margin="@dimen/todoListItemMargin"
+        android:textStyle="bold" />
+
+   <!-- <View
+        android:id="@+id/aboutusTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/commonview"
+        />-->
+
+</LinearLayout>

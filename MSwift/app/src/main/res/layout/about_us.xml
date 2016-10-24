@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/HeaderTheme">
+
+        <TextView
+            style="@style/HeaderTextTheme"
+            android:text="@string/aboutUs" />
+    </RelativeLayout>
+
+    <activities.mswift.info.walaapp.wala.support.SlidingTabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/merun"
+        android:elevation="2dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <!--<android.support.v4.view.PagerTabStrip
+            android:id="@+id/pagerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="top"
+            android:background="#3d3d3c"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />-->
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

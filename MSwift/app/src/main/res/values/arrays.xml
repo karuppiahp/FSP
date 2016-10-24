@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="toDoListArray">
+        <item>Play the Daily Quiz</item>
+        <item>Input Your Expenses</item>
+        <item>Input Your Income</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="myAcc">
+        <item>Personal Info</item>
+        <item>Financial Profile</item>
+        <item>Change Password</item>
+        <item>Refer a Friend</item>
+    </string-array>
+
+    <string-array name="myAccIcon">
+        <item>@drawable/personal_info_icon</item>
+        <item>@drawable/financial_info_icon</item>
+        <item>@drawable/save_password_icon</item>
+        <item>@drawable/settings_icon</item>
+        <item>@drawable/refer_frnd_icon</item>
+    </string-array>
+
+    <string-array name="other">
+        <item>Contact us</item>
+        <item>FAQ</item>
+        <item>About Wala</item>
+    </string-array>
+
+    <string-array name="otherIcon">
+        <item>@drawable/abauth_us</item>
+        <item>@drawable/faq</item>
+        <item>@drawable/abauth_wala</item>
+    </string-array>
+
+    <string-array name="aboutUsHeader">
+        <item>ABOUT WALA</item>
+        <item>OUR TEAM</item>
+    </string-array>
+
+    <string-array name="savingsType">
+        <item>Bank</item>
+        <item>Home</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="debtOweTypes">
+        <item>Loan Debt</item>
+        <item>Credit Card Debt</item>
+        <item>School Debt</item>
+        <item>Other Debt</item>
+    </string-array>
+
+    <string-array name="empStatus">
+        <item>Full-Time Employed</item>
+        <item>Part-Time Employed</item>
+        <item>Unemployed</item>
+    </string-array>
+
+    <string-array name="incomeType">
+        <item>Salary</item>
+        <item>Hourly Wage</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="incomeFreq">
+        <item>Monthly</item>
+        <item>Bi-Monthly</item>
+        <item>Weekly</item>
+        <item>Everyday</item>
+    </string-array>
+
+    <string-array name="faqQues">
+        <item>What is Wala?</item>
+        <item>Where is Wala located?</item>
+        <item>Why do you need my information in account and financial setup?</item>
+        <item>Is my account information safe?</item>
+        <item>Do I need a smart phone to use the Wala app?</item>
+        <item>When should I log my income and expenses?</item>
+        <item>What are debt and credit?</item>
+        <item>Where do my goals come from?</item>
+        <item>What happens if I reach a goal?</item>
+        <item>How do I earn points?</item>
+        <item>What can I do with points?</item>
+        <item>What are the prizes for Daily Quiz?</item>
+        <item>How do I enter Weekly and Monthly Lottery?</item>
+        <item>What are the prizes for Weekly and Monthly Lottery?</item>
+        <item>How do I invite someone to join Wala?</item>
+        <item>How do I reach a savings goal?</item>
+        <item>What items are in Balances?</item>
+    </string-array>
+
+    <string-array name="faqAns">
+        <item>Wala is a mobile app designed to help you save money. By inputting your financial information, daily expenses, and income you can begin building your personal savings. Wala will automatically generate goals for you every week and reaching those goals will result in points, which can be redeemed for prizes.</item>
+        <item>Wala is based in the United States of America and in the United Kingdom but users anywhere in the world can use the app.</item>
+        <item>By providing your account and financial information, Wala can create a personalized savings plan specifically for you. The more information you provide us the more points you can earn, which are redeemable for cash prizes! Any information provided will stay private and be protected by Wala.</item>
+        <item>Our team takes your privacy and security seriously, and we have taken several measures to make sure our site is secure. However, please do not ever use any service if you feel unsafe or concerned about security.</item>
+        <item>Yes, right now you need a smart phone to use the Wala app. Only smart phones on the Android platform will work currently. We will release additional mobile and a web-based version in the future.</item>
+        <item>You should log your income and expenses the moment you pay for something or receive a payment. That way the transaction is fresh in your mind and gets stored in the app correctly.</item>
+        <item>Debt is money you owe others and Credit is money owed to you. Use the Debt button in the Transactions section (+) when you receive a loan or payoff a loan and use the Credit button when you lend someone money or someone pays you back.</item>
+        <item>Your goals are automatically set using the Wala Algorithm and the account and financial information you provide. These adjust automatically each week as you add more transactions.</item>
+        <item>If you reach a goal you will receive points! You will also have a new goal the next week if you reach or do not reach the goal.</item>
+        <item>The Wala app is designed so that you benefit from positive financial behaviors. You can earn points a number of ways. The easiest way to earn points is by logging your transactions (daily spending and income) as frequently as possible, playing the Daily Quiz, reaching goals, and inviting friends to use the app in Refer a Friend under More.</item>
+        <item>You can redeem your points for the opportunity to win prizes including cash, data/airtime, and gift cards. Once you have earned enough points you can enter the Weekly and Monthly lotteries to win prizes that interest you. And remember, the more points you earn the greater your chances of winning!</item>
+        <item>If you answer the Daily Quiz question correctly you will have the opportunity to select from 3 hidden prizes. All prizes are points but the values are hidden. The prizes range from 5 to 500 points.</item>
+        <item>When you have enough points you can enter the Weekly and Monthly lotteries. Go to the Prizes section in the app. Click on the Weekly or Monthly Lottery button. Use your points to “purchase” as many tickets as you would like. Winners will be announced during the app following the lottery drawing.</item>
+        <item>Prizes include cash, data/airtime, and other gifts.</item>
+        <item>Invite someone to join Wala by going to More and then clicking Refer a Friend. Enter your friend’s email address and an invitation will be sent to your friend’s email. If they sign-up you will receive points. If they sign-up and begin using the app you will receive more points! Invite as many friends as you want!</item>
+        <item>The savings goals change each week. Track your submissions and see how much you have saved during the week. The app will also remind you how much money you need to save the rest of the week so you hit your goal.</item>
+        <item>Balances contains two sections: Savings and Debt. The Savings section lists all of the income and expenses that you entered in addition to your starting balance. Debt contains all of the Debt and Credit transactions that you logged in the app. The Balances show the current amount of money that you have saved “Savings” and the current amount of money that you owe or are owed “Debt”.</item>
+    </string-array>
+
+    <string-array name="ourTeamTitle">
+        <item>Tricia Martinez</item>
+        <item>Samer Saab</item>
+        <item>Dennis Ramirez</item>
+        <item>Emmy Baluye</item>
+    </string-array>
+
+    <string-array name="ourTeamContent">
+        <item>Patricia is the Co-Founder and CEO of Wala. She has dedicated her life to helping people and has started numerous companies that do just that.</item>
+        <item>Samer Co-Founder and Chief Product of Officer. All he thinks about each day is how to make Wala a better money saving tool for people around the globe.</item>
+        <item>Dennis is the Head of Design. Of the hundreds of websites and apps he has designed, none are as amazing and important as Wala!</item>
+        <item>Emmy is the Lead Community Manager. His efforts are driving the Wala savings revolution throughout the world.</item>
+    </string-array>
+
+    <string-array name="ourTeamImage">
+        <item>@drawable/tricia</item>
+        <item>@drawable/sameer</item>
+        <item>@drawable/dennis</item>
+        <item>@drawable/emmy</item>
+    </string-array>
+
+    <string-array name="transactionName">
+        <item>Home</item>
+        <item>Groceries</item>
+        <item>Transportation</item>
+        <item>Health</item>
+        <item>Education</item>
+        <item>Utilities</item>
+        <item>Shopping</item>
+        <item>Dining out</item>
+        <item>Entertainment</item>
+        <item>Travel</item>
+        <item>Other</item>
+        <item>Income</item>
+        <item>New Loan</item>
+        <item>Payoff Loan</item>
+
+    </string-array>
+
+    <string-array name="transactionTip">
+        <item>Money spent on renting, buying, fixing, or improving your home.</item>
+        <item>Money used to purchase food at the market to be made at home.</item>
+        <item>Money spent to travel to and from work or elsewhere.</item>
+        <item>Money spent to pay or doctors, medicines, and other health needs.</item>
+        <item>Money spent on books, schooling, university, and more.</item>
+        <item>Money paid for electricity, gas, water, and more to power the home.</item>
+        <item>Money spent on things that you want like clothes, shoes, or accessories.</item>
+        <item>Money spent at restaurants.</item>
+        <item>Money spent on entertainment like electronics or going out to the theater.</item>
+        <item>Money spent on transportation and housing when traveling for holiday.</item>
+        <item>Any other WANT expense not categorized.</item>
+        <item>Money earned through full-time, part-time, salary, wage or other source.</item>
+        <item>More money borrowed from a bank, lender, or friend.</item>
+        <item>Money spent to pay back a bank, lender, or friend for money you already borrowed.</item>
+    </string-array>
+
+    <string-array name="transactionImage">
+        <item>@drawable/trans_ad_home_icon</item>
+        <item>@drawable/trans_ad_groceries_icon</item>
+        <item>@drawable/trans_ad_transport_icon</item>
+        <item>@drawable/trans_ad_health_icon</item>
+        <item>@drawable/trans_ad_edu_icon</item>
+        <item>@drawable/trans_ad_utilities_icon</item>
+        <item>@drawable/trans_ad_shopping_icon</item>
+        <item>@drawable/trans_ad_dining_icon</item>
+        <item>@drawable/trans_ad_entmnt_icon</item>
+        <item>@drawable/trans_ad_travel_icon</item>
+        <item>@drawable/trans_ad_other_icon</item>
+        <item>@drawable/trans_ad_home_icon</item>
+        <item>@drawable/trans_ad_home_icon</item>
+        <item>@drawable/trans_ad_home_icon</item>
+    </string-array>
+
+    <string-array name="transactionMapping">
+        <item>Rent</item>
+        <item>Groceries</item>
+        <item>ClothingFootware</item>
+        <item>DeliFood</item>
+        <item>ChildSupportPayments</item>
+        <item>HairBeauty</item>
+        <item>Parents</item>
+        <item>PetCosts</item>
+        <item>Postage</item>
+        <item>ChildCare</item>
+        <item>Health</item>
+        <item>HomeContents</item>
+        <item>IncomeProtection</item>
+        <item>Landlord</item>
+    </string-array>
+
+    <string-array name="transBackendMapping">
+        <item>home</item>
+        <item>groceries</item>
+        <item>transportation</item>
+        <item>health</item>
+        <item>education</item>
+        <item>utilities</item>
+        <item>shopping</item>
+        <item>dining out</item>
+        <item>entertainment</item>
+        <item>travel</item>
+        <item>other</item>
+        <item>income</item>
+        <item>new loan</item>
+        <item>pay off loan</item>
+    </string-array>
+</resources>

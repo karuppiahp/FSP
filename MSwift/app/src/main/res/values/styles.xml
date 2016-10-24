@@ -1,0 +1,1150 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="MyMaterialTheme.Base">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Material Theme for App -->
+    <style name="MyMaterialTheme.Base" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/toDoListBg</item>
+    </style>
+
+    <!-- Theme for Sign Up -->
+    <style name="SignUpTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@drawable/intro_bg</item>
+    </style>
+
+    <!-- Theme for Splash Logo -->
+    <style name="SplashLogo">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:background">@drawable/splash_logo</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!-- Theme for Wala white Logo -->
+    <style name="WalaWhiteLogo">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:background">@drawable/wala_white_img</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!-- Theme for Splash Logo white -->
+    <style name="LogoTopWhite">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:background">@drawable/logo_top_white</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!-- Theme for Confirm OTP Logo -->
+    <style name="ConfirmOtpLogo">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:background">@drawable/splash_logo</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!-- Theme for AboutUs Logo -->
+    <style name="AboutUsLogo">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:background">@drawable/about_us_logo</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!-- Theme for TabHost -->
+    <style name="TabTheme">
+        <!-- Change the background color to white -->
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!-- Theme for Home Header -->
+    <style name="HomeHeaderTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">140dp</item>
+        <item name="android:background">@drawable/home_header_bg</item>
+    </style>
+
+    <!-- Theme for Header -->
+    <style name="HeaderTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/header_bg</item>
+    </style>
+
+    <!-- Theme for Header Money font styles -->
+    <style name="HeaderMoneyFontStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeLarge</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="HomeToDoListTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/toDoListBg</item>
+    </style>
+
+    <style name="HomeToDoListHeaderTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/todoListHeaderHt</item>
+        <item name="android:background">@color/toDoListHeaderBg</item>
+    </style>
+
+    <style name="RecentTransactionsPrevNextTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">@dimen/prvNextBtnHt</item>
+        <item name="android:layout_marginLeft">@dimen/prevNextBtnMargin</item>
+    </style>
+
+    <style name="RecentTransactionTableHeaderFontStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/headerLightGrey</item>
+    </style>
+
+    <style name="RecentTransactionTableFontStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:textColor">@color/recentTransactionsDate</item>
+    </style>
+
+    <!-- Theme for Relative layout common -->
+    <style name="RelativeLayoutCommon">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_margin">@dimen/commonMargin</item>
+    </style>
+
+    <!-- Theme for Relative layout common -->
+    <style name="RelativeLayoutCommonWithoutMargin">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <!-- Theme for Relative layout common wrapcontent -->
+    <style name="RelativeLayoutWrapCommon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <!-- Theme for Relative layout common wrapcontent normal -->
+    <style name="RelativeLayoutWrapCommonNormal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Theme for sign up ready to go font styles -->
+    <style name="ReadyToGoFontStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeLarge</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginTop">@dimen/mediumMargin</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:text">@string/readyToGo</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="WhatNextFontStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:textColor">@color/headerLightGrey</item>
+        <item name="android:layout_marginTop">@dimen/commonMargin</item>
+    </style>
+
+    <style name="FbImageButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/todoListHeaderHt</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginRight">@dimen/signUpBtnMargin</item>
+        <item name="android:layout_marginLeft">@dimen/signUpBtnMargin</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <!-- Theme for SignUp Header -->
+    <style name="SignUpHeaderTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:background">@drawable/home_header_bg</item>
+    </style>
+
+    <!-- Theme for SignUp Header -->
+    <style name="SignUpHeaderLogoTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:src">@drawable/splash_logo</item>
+        <item name="android:layout_marginBottom">@dimen/bottmMargin</item>
+        <item name="android:layout_marginTop">@dimen/bottmMargin</item>
+    </style>
+
+    <!-- Theme for SignUp Header text -->
+    <style name="SignUpHeaderTextTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:text">@string/signUp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textSubHeader</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:layout_marginBottom">@dimen/bottmMargin</item>
+        <item name="android:layout_marginTop">@dimen/bottmMargin</item>
+    </style>
+
+    <!-- Theme for SignUp Header text -->
+    <style name="HeaderTextTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/pointsGrey</item>
+        <item name="android:textSize">@dimen/textSubHeader</item>
+        <item name="android:layout_marginLeft">@dimen/commonMargin</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!-- Theme for Header normal text -->
+    <style name="HeaderTextNormalTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textSubHeader</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <!-- Theme for SignUp Header text -->
+    <style name="Step1of2TextTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSubHeader</item>
+        <item name="android:textColor">@color/stepsHeader</item>
+    </style>
+
+    <!-- Theme for SignUp Header text -->
+    <style name="AccInfoTextTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/accInfo</item>
+        <item name="android:textSize">@dimen/textSubHeader</item>
+        <item name="android:textColor">@color/accInfo</item>
+        <item name="android:layout_marginRight">@dimen/layForMoneyMargin</item>
+    </style>
+
+    <style name="TextSmallTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/emailAddress</item>
+        <item name="android:textSize">@dimen/textSizeSmall2</item>
+        <item name="android:textColor">@color/toDoListBg</item>
+    </style>
+
+    <style name="TextSmallWhiteTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/emailAddress</item>
+        <item name="android:textSize">@dimen/textSizeSmallLarge</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextSmallLargeTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/emailAddress</item>
+        <item name="android:textSize">@dimen/textSizeSmallLarge</item>
+        <item name="android:textColor">@color/pointsGrey</item>
+    </style>
+
+    <style name="EditTextTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:textColor">@color/recentTransactionsDate</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="EditTextThemeWhite">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="CommonLineTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/lineGrey</item>
+        <item name="android:layout_marginTop">@dimen/commonMargin</item>
+    </style>
+
+    <style name="CommonLineThemeWhite">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_marginTop">@dimen/commonMargin</item>
+    </style>
+
+    <style name="NextBtnTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/lineGrey</item>
+    </style>
+
+    <style name="SpinnerTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextMediumTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:textColor">@color/popUpTxt</item>
+    </style>
+
+    <style name="TextMediumWhiteTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextMediumBlueTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:textColor">@color/toDoListBg</item>
+    </style>
+
+    <style name="TextMediumBlackTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextMediumBlackBoldTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextMediumPopUpTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeSmallLarge</item>
+        <item name="android:textColor">@color/popUpTxt</item>
+    </style>
+
+    <style name="TextMediumRedTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeSmallLarge</item>
+        <item name="android:textColor">@color/currentProgressred</item>
+    </style>
+
+    <style name="SkipBtnTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="CenterTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <style name="CenterThemeLarge">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_weight">3</item>
+    </style>
+
+    <style name="CenterThemeXLarge">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_weight">4</item>
+    </style>
+
+    <style name="SaveBtnTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="iconTheme">
+        <item name="android:layout_width">@dimen/iconCommon</item>
+        <item name="android:layout_height">@dimen/iconCommon</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="arrowTheme">
+        <item name="android:layout_width">@dimen/arrowCommon</item>
+        <item name="android:layout_height">@dimen/arrowCommon</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="imgThemeSmall">
+        <item name="android:layout_width">@dimen/arrowCommon</item>
+        <item name="android:layout_height">@dimen/arrowCommon</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="toggleTheme">
+        <item name="android:layout_width">@dimen/toggleWidth</item>
+        <item name="android:layout_height">@dimen/toggleHeight</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <!-- Theme for prizes row theme -->
+    <style name="prizesRowTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/prizesHeight</item>
+    </style>
+
+    <!-- Theme for prizes row header text -->
+    <style name="prizesHeaderTxt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textSizeLarge</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <!-- Theme for prizes play theme -->
+    <style name="prizesPlayTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/prizesPlayHeight</item>
+        <item name="android:layout_marginTop">@dimen/commonMargin</item>
+        <item name="android:background">@drawable/prizes_inner_bg</item>
+    </style>
+
+    <!-- Theme for Refer friend Header text -->
+    <style name="InviteHeaderTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeXLarge</item>
+        <item name="android:textColor">@color/stepsHeader</item>
+    </style>
+
+    <!-- Theme for Login Header text -->
+    <style name="LoginHeaderTextTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:text">@string/loginTxt</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textSubHeader</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:layout_marginBottom">@dimen/bottmMargin</item>
+        <item name="android:layout_marginTop">@dimen/bottmMargin</item>
+    </style>
+
+    <!-- Theme for Prizes header image -->
+    <style name="PrizesHeaderImage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">160dp</item>
+    </style>
+
+    <!-- Theme for text grey bold -->
+    <style name="TextMediumGreyBoldTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:textColor">@color/recentTransactionsDate</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Theme for text grey -->
+    <style name="TextMediumGreyTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:textColor">@color/recentTransactionsDate</item>
+    </style>
+
+    <!-- Theme for text grey small-->
+    <style name="TextSmallGreyTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeSmallLarge</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/recentTransactionsDate</item>
+    </style>
+
+    <!-- Theme for text rose small-->
+    <style name="TextSmallRoseTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeSmallLarge</item>
+        <item name="android:textColor">@color/otpInput</item>
+    </style>
+
+    <!-- Theme for options image -->
+    <style name="optionsTheme">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <!-- Theme for text grey bold -->
+    <style name="TextLargeBlueBoldTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeLarge</item>
+        <item name="android:textColor">@color/youEarned</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Theme for text large white -->
+    <style name="TextLargeWhiteTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeXLarge</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- Theme for text large white -->
+    <style name="TextSemiLargeWhiteTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeLarge</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- Transaction add  -->
+    <style name="TextMediumStepsHeaderBoldTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeSmall2</item>
+        <item name="android:textColor">@color/stepsHeader</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextMediumBlueBoldTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeSmall2</item>
+        <item name="android:textColor">@color/toDoListBg</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TransactionDetailTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">9dp</item>
+        <item name="android:textColor">@color/accountbalancetrans</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+    </style>
+
+    <!-- Theme for dollar image -->
+    <style name="DollarImageTheme">
+        <item name="android:layout_width">@dimen/calendarImgWidth</item>
+        <item name="android:layout_height">@dimen/calendarImgHeight</item>
+    </style>
+
+    <!-- Theme for dollar image -->
+    <style name="commonViewTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- Theme for get tickets button -->
+    <style name="getTicketsTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- Theme for get transactions images layout -->
+    <style name="TransactionImagesLayTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/transactionImgHt</item>
+    </style>
+
+    <!-- Theme for transaction images -->
+    <style name="TransactionImagesTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- Theme for transaction fiancial layout -->
+    <style name="TransactionFiancialsTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/transFinancialsHt</item>
+    </style>
+
+    <!--22-12-2015 Work modifiyed design-->
+
+    <style name="ProgressViewPageTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginTop">105dp</item>
+        <item name="android:background">@color/subtabheader</item>
+    </style>
+
+
+
+    <style name="BalanceViewPageTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="BalancesavingsTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/commonMargin</item>
+        <item name="android:layout_marginTop">@dimen/commonMargin</item>
+    </style>
+    <style name="BalancesavingsText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/balsavingstrans</item>
+        <item name="android:textSize">@dimen/textSizeXLarge</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="AccountBalanceTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">9dp</item>
+        <item name="android:textColor">@color/accountbalancetrans</item>
+        <item name="android:textSize">@dimen/textSubHeader</item>
+    </style>
+
+    <style name="TransBegnTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/todoListItemMargin</item>
+        <item name="android:weightSum">2</item>
+    </style>
+
+    <style name="TransDetailsTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingRight">12dp</item>
+    </style>
+
+    <style name="BeginTransactiondetailTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/transactionBegin</item>
+    </style>
+
+    <style name="CommonViewTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginTop">@dimen/commonMargin</item>
+        <item name="android:background">@color/viewColorbal</item>
+    </style>
+
+    <style name="TransactiontableincludeTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/commonMargin</item>
+    </style>
+
+    <style name="AccountHealthBachgroundTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">@dimen/commonMargin</item>
+    </style>
+
+    <style name="AccHealthTextBacgroundTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/commonMargin</item>
+        <item name="android:layout_marginLeft">@dimen/commonMargin</item>
+    </style>
+
+    <style name="AccHealthTextTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSubHeader</item>
+    </style>
+
+    <style name="AccHealthPercentageTextTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeXLarge</item>
+    </style>
+
+    <style name="AccountContentTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:textColor">@color/accounthealthtext</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+    </style>
+
+    <style name="GraphlayoutTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">230dp</item>
+        <item name="android:layout_marginTop">@dimen/commonMargin</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+    <style name="HealthHistoryBackgrounndTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:paddingTop">14dp</item>
+    </style>
+
+    <style name="HealthHistoryTextTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/balsavingstrans</item>
+        <item name="android:layout_marginLeft">@dimen/commonMargin</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:textSize">@dimen/textSizeXLarge</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="GoalsMainTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">@dimen/layForMoneyMargin</item>
+        <item name="android:background">@color/subtabheader</item>
+    </style>
+
+    <style name="WinCupTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:background">@drawable/goalimag</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="WeekTextTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/textSizeSmallLarge</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/subtabunclicked</item>
+    </style>
+
+    <style name="WeekGoalBackgroundTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="WeekGoalTextTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/layForMoneyMargin</item>
+        <item name="android:textColor">@color/balsavingstrans</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:text">@string/weekgoaltxt</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="GoalsCommonViewTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginLeft">@dimen/layForMoneyMargin</item>
+        <item name="android:layout_marginTop">@dimen/layForMoneyMargin</item>
+        <item name="android:background">@color/goalviewcolor</item>
+    </style>
+
+    <style name="GoalsTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/layForMoneyMargin</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="GoalsTheme1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="TabLayout.Theme" parent="Widget.Design.TabLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="tabIndicatorColor">@color/subtabheader</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="tabBackground">@color/merun</item>
+        <item name="android:background">@color/merun</item>
+
+    </style>
+
+    <style name="Balance.Theme" parent="Widget.Design.TabLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="tabIndicatorColor">@color/tabscolor</item>
+        <item name="tabSelectedTextColor">@android:color/black</item>
+        <item name="tabBackground">@color/subtabheader</item>
+        <item name="android:background">@color/tabscolor</item>
+    </style>
+
+    <style name="TransAddSubHeaderTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:background">@drawable/transactions_add_bg</item>
+    </style>
+
+    <style name="TransAddImgIconTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">20dp</item>
+    </style>
+
+    <style name="TransAddSubTextLayTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="introImgLay">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1.2</item>
+    </style>
+
+    <style name="introTxtLay">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <style name="intro3of4Img">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/calendarImgWidth</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginBottom">@dimen/introBottomMargin</item>
+    </style>
+
+    <style name="intro4of4Img">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/calendarImgWidth</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- Theme for Header normal text -->
+    <style name="HeaderTextIntroTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textSizeLarge</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!-- Theme for Header Grey normal text -->
+    <style name="HeaderTextGreyTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/pointsGrey</item>
+        <item name="android:textSize">@dimen/textSizeLarge</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="signupBtnStyles">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/singUpBtnHt</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="chkBoxTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/imageCommonWidth</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+    <style name="LinearLayoutVerticalTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="RelativeWrapTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <style name="signUpLayoutTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/todoListItemMargin</item>
+        <item name="android:layout_marginRight">@dimen/todoListItemMargin</item>
+    </style>
+
+    <style name="HeaderTextTheme1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textSubHeader</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/commonMargin</item>
+    </style>
+
+
+    <style name="BtnSignup">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Btnredlength">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="SkipBtnThemeShape">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SaveBtnThemeshape">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="LoginButton">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Balance1.Theme" parent="Widget.Design.TabLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="tabIndicatorColor">@color/tabindicator</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="android:background">@color/balanceback</item>
+    </style>
+
+    <style name="TextSmallTheme1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">emailAddress</item>
+        <item name="android:textSize">@dimen/textSizeSmall2</item>
+        <item name="android:textColor">@color/balsavingstabletitle</item>
+    </style>
+
+    <style name="TextSmallTheme2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeSmall2</item>
+        <item name="android:textColor">@color/balsavingstabletitle</item>
+    </style>
+
+    <style name="TextMediumMerunTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:textColor">@color/merun</item>
+    </style>
+
+    <style name="TextSubHederMerunTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSubHeader</item>
+        <item name="android:textColor">@color/merun</item>
+    </style>
+
+    <style name="TextMediumPopUpMerunTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:textColor">@color/merun</item>
+    </style>
+
+    <style name="TransactionBackButton">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">#0000</item>
+        <item name="android:src">@drawable/ic_arrow_back_white_24dp</item>
+    </style>
+
+    <style name="TransactionSaveButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:text">@string/transactionSave</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#0000</item>
+    </style>
+
+    <style name="playscreenbtnTheme">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="PrizesHeaderImage1">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">180dp</item>
+    </style>
+
+    <style name="goalsweekLeftTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/pointsGrey</item>
+        <item name="android:textSize">@dimen/textSizeSmall2</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginRight">@dimen/commonMargin</item>
+        <item name="android:layout_marginTop">@dimen/commonMargin</item>
+    </style>
+
+    <!-- Dialog Activity with no Title -->
+    <style name="ThemeOverlay.MyDialogActivity" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Theme for header bird -->
+    <style name="OverlayHeaderBird">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:src">@drawable/header_bird</item>
+    </style>
+
+    <!-- Theme for header bird large -->
+    <style name="RedirectHeaderBird">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:src">@drawable/header_bird</item>
+    </style>
+
+    <!-- Theme for header bird large -->
+    <style name="FiancialRedirectTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@drawable/complete_financial_prof_bg</item>
+    </style>
+
+    <style name="FullyTranslucent" parent="android:Theme.Translucent.NoTitleBar">
+        <item name="android:progressBarStyle">@style/InvisibleProgress</item>
+    </style>
+
+    <style name="InvisibleProgress">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="PrivacyheaderTxt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/policyheader</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="PrivacysubTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeXLarge</item>
+        <item name="android:textColor">@color/otpInput</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="SubHeader">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSubHeader</item>
+        <item name="android:textColor">@color/otpInput</item>
+    </style>
+
+    <style name="PrivacyContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/otpInput</item>
+    </style>
+
+    <style name="signupFbBtnStyles">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/textSizeXxLarge</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="OtpButtonTheme">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/shape_blue</item>
+        <item name="android:textSize">@dimen/iconCommon</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginLeft">@dimen/todoListItemMargin</item>
+        <item name="android:layout_marginRight">@dimen/todoListItemMargin</item>
+        <item name="android:layout_marginTop">@dimen/singUpBtnHt</item>
+    </style>
+
+    <!-- Theme for Tickets header img -->
+    <style name="TicketsHeaderImg">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:src">@drawable/tickets_img</item>
+    </style>
+
+    <style name="loginLayoutStyles">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+</resources>

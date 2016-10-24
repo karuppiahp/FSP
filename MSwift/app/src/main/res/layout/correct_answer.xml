@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/PrizesHeaderImage1"
+                android:background="@drawable/dailyquilz_play_bg" />
+            <LinearLayout
+                style="@style/RelativeWrapTheme"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/commonMargin"
+                android:layout_marginLeft="@dimen/commonSpace">
+                <ImageView
+                    style="@style/RelativeWrapTheme"
+                    android:background="@drawable/playquiztick"
+                    android:layout_gravity="center_vertical"
+                    />
+                <TextView
+                    style="@style/GoalsTheme1"
+                    android:text="@string/quiz"
+                    android:textSize="@dimen/textSizeLarge"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/layForMoneyMargin"
+                    android:textColor="@color/recentTransactionsHeader"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                style="@style/GoalsTheme1"
+                android:text="@string/answercrct"
+                android:textSize="@dimen/textSizeSmall2"
+                android:textColor="@color/playanswer"
+                android:layout_marginTop="@dimen/commonMargin"
+                android:layout_marginLeft="@dimen/commonSpace"
+                android:layout_marginRight="@dimen/commonMargin"
+                />
+
+            <TextView
+                android:id="@+id/answerresp"
+                style="@style/RelativeWrapTheme"
+                android:text="@string/quizquestion1"
+                android:layout_marginLeft="@dimen/commonSpace"
+                android:textSize="@dimen/textSizeMedium"
+                android:textColor="@color/recentTransactionsHeader"
+                android:layout_marginTop="@dimen/commonMargin"
+                android:layout_marginRight="@dimen/commonMargin"
+                />
+
+
+
+            <View style="@style/CommonLineTheme" />
+
+            <LinearLayout
+                style="@style/LinearLayoutVerticalTheme"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/calendarImgHeight"
+                >
+                <ImageView
+                    style="@style/RelativeWrapTheme"
+                    android:background="@drawable/pricecupimg"
+                    android:layout_marginLeft="@dimen/calendarImgHeight"
+                    />
+                <LinearLayout
+                    style="@style/RelativeWrapTheme"
+                    android:layout_marginLeft="@dimen/moreIcon"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/RelativeWrapTheme"
+                        android:text="Your Prize"
+                        android:textColor="@color/chkBoxColor"/>
+                    <TextView
+                        android:id="@+id/priceamount"
+                        style="@style/RelativeWrapTheme"
+                        android:text="3000.00 to Savings"
+                        android:textColor="@color/prizeamt"
+                        android:textSize="@dimen/textSizeLarge"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <View style="@style/CommonLineTheme"
+                android:layout_marginTop="@dimen/calendarImgHeight"/>
+
+            <TextView
+                style="@style/RelativeWrapTheme"
+                android:layout_marginTop="@dimen/calendarImgHeight"
+                android:text="@string/cngratztxt"
+                android:textColor="@color/popUpTxt"
+                android:layout_marginRight="@dimen/commonMargin"
+                android:layout_marginLeft="@dimen/commonSpace"
+                />
+
+            <LinearLayout
+                style="@style/RelativeWrapTheme"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/commonSpace"
+                android:layout_marginTop="@dimen/calendarImgHeight"
+                >
+                <ImageView
+                    style="@style/GoalsTheme1"
+                    android:background="@drawable/bonustipimg"
+                    />
+                <TextView
+                    style="@style/RelativeWrapTheme"
+                    android:text="@string/bonustiptxt"
+                    android:textSize="@dimen/textSizeMedium"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/marginLowSpace"
+                    android:textColor="@color/balsavingstrans"
+                    />
+            </LinearLayout>
+
+            <TextView
+                style="@style/RelativeWrapTheme"
+                android:textColor="@color/popUpTxt"
+                android:layout_marginLeft="@dimen/commonSpace"
+                android:layout_marginTop="@dimen/calendarImgHeight"
+                android:layout_marginRight="@dimen/commonMargin"
+                android:text="@string/anscontent"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

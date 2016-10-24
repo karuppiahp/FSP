@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<RelativeLayout style="@style/HeaderTheme">
+
+            <TextView
+                android:id="@+id/txtForHeader"
+                style="@style/HeaderTextTheme1"
+                android:text="@string/gamesHeader" />
+        </RelativeLayout>-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/PrizesHeaderImage1"
+                    android:background="@drawable/dailyquilz_play_bg" />
+
+                <TextView
+                    style="@style/GoalsTheme1"
+                    android:text="@string/quiz"
+                    android:textSize="@dimen/textSizeLarge"
+                    android:textColor="@color/recentTransactionsHeader"
+                    android:layout_marginTop="@dimen/commonMargin"
+                    android:layout_marginLeft="@dimen/commonSpace"
+                    />
+
+                <TextView
+                    style="@style/GoalsTheme1"
+                    android:text="@string/quizquestion"
+                    android:textSize="@dimen/textSizeSmall2"
+                    android:textColor="@color/chkBoxColor"
+                    android:layout_marginTop="@dimen/commonMargin"
+                    android:layout_marginLeft="@dimen/commonSpace"
+                    />
+
+                <TextView
+                    android:id="@+id/dailyquizquestion"
+                    style="@style/GoalsTheme1"
+                    android:text="@string/quizquestion1"
+                    android:textSize="@dimen/textSizeMedium"
+                    android:textColor="@color/recentTransactionsHeader"
+                    android:layout_marginTop="@dimen/commonMargin"
+                    android:layout_marginLeft="@dimen/commonSpace"
+                    />
+
+
+                <View style="@style/CommonLineTheme" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/commonMargin"
+                    android:layout_marginTop="@dimen/commonMargin"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/layForOptionA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/commonMargin"
+                        android:layout_marginRight="@dimen/marginLowSpace"
+                        android:layout_marginTop="@dimen/layForMoneyMargin"
+                        >
+
+                        <ImageView
+                            android:id="@+id/imgForOptionA"
+                            style="@style/optionsTheme"
+                            android:background="@drawable/a_option" />
+
+                        <TextView
+                            android:id="@+id/txtForOptionA"
+                            style="@style/TextMediumTheme"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/calendarImgWidth"
+                            android:layout_toRightOf="@+id/imgForOptionA"
+                            android:text="@string/answer1" />
+                    </RelativeLayout>
+                    <View style="@style/CommonLineTheme" />
+                    <RelativeLayout
+                        android:id="@+id/layForOptionB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/commonMargin"
+                        android:layout_marginRight="@dimen/marginLowSpace"
+                        android:layout_marginTop="@dimen/commonMargin">
+
+                        <ImageView
+                            android:id="@+id/imgForOptionB"
+                            style="@style/optionsTheme"
+                            android:background="@drawable/b_option" />
+
+                        <TextView
+                            android:id="@+id/txtForOptionB"
+                            style="@style/TextMediumTheme"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/calendarImgWidth"
+                            android:layout_toRightOf="@+id/imgForOptionB"
+                            android:text="@string/answer2" />
+                    </RelativeLayout>
+                    <View style="@style/CommonLineTheme" />
+                    <RelativeLayout
+                        android:id="@+id/layForOptionC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/commonMargin"
+                        android:layout_marginRight="@dimen/marginLowSpace"
+                        android:layout_marginTop="@dimen/commonMargin">
+
+                        <ImageView
+                            android:id="@+id/imgForOptionC"
+                            style="@style/optionsTheme"
+                            android:background="@drawable/c_option" />
+
+                        <TextView
+                            android:id="@+id/txtForOptionC"
+                            style="@style/TextMediumTheme"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/calendarImgWidth"
+                            android:layout_toRightOf="@+id/imgForOptionC"
+                            android:text="@string/answer3" />
+                    </RelativeLayout>
+                    <View style="@style/CommonLineTheme" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

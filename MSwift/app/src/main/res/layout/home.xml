@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/layforHomeHeader"
+                style="@style/HomeHeaderTheme"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/header_bird" />
+
+                <TextView
+                    android:id="@+id/txtForWeeksGoal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/thisWkGoal"
+                    android:textColor="@color/headerLightGrey"
+                    android:textSize="@dimen/textSizeMedium" />
+
+                <TextView
+                    android:id="@+id/txtForSaveMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="SAVE $0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeXLarge" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layForMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layforHomeHeader"
+                android:layout_marginBottom="@dimen/layForMoneyMargin"
+                android:layout_marginTop="@dimen/layForMoneyMargin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layForEarnedMoney"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtForEarned"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/youEarned"
+                        android:textColor="@color/youEarned"
+                        android:textSize="@dimen/textSizeSmall" />
+
+                    <TextView
+                        android:id="@+id/txtForEarnedMoney"
+                        style="@style/HeaderMoneyFontStyle"
+                        android:layout_gravity="center_horizontal"
+                        android:text="$0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layForSpentMoney"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtForSpent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/youSpent"
+                        android:textColor="@color/youSpent"
+                        android:textSize="@dimen/textSizeSmall" />
+
+                    <TextView
+                        android:id="@+id/txtForSpentMoney"
+                        style="@style/HeaderMoneyFontStyle"
+                        android:layout_gravity="center_horizontal"
+                        android:text="$0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layForSavedMoney"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtForSaved"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/youSaved"
+                        android:textColor="@color/youSaved"
+                        android:textSize="@dimen/textSizeSmall" />
+
+                    <TextView
+                        android:id="@+id/txtForSavedMoney"
+                        style="@style/HeaderMoneyFontStyle"
+                        android:layout_gravity="center_horizontal"
+                        android:text="$0" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layForToDoLost"
+                style="@style/HomeToDoListTheme"
+                android:layout_below="@+id/layForMoney"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    style="@style/HomeToDoListHeaderTheme"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/imgForCalendar"
+                        android:layout_width="@dimen/calendarImgWidth"
+                        android:layout_height="@dimen/calendarImgHeight"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/my_todo_list_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imgForCalendar"
+                        android:text="@string/myTodoList"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSubHeader"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shadow_view_background">
+
+                    <ListView
+                        android:id="@+id/listViewForTodoList"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawSelectorOnTop="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layForTransactionsheader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layForToDoLost"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/imgForRecentCalendar"
+                    android:layout_width="@dimen/calendarImgWidth"
+                    android:layout_height="@dimen/calendarImgHeight"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/recent_transactions_img" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imgForRecentCalendar"
+                    android:text="@string/recentTransactions"
+                    android:textColor="@color/recentTransactionsHeader"
+                    android:textSize="@dimen/textSubHeader"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layForRecentTransaction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layForTransactionsheader"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgForPrevious"
+                    style="@style/RecentTransactionsPrevNextTheme"
+                    android:src="@drawable/previous_btn" />
+
+                <TextView
+                    android:id="@+id/txtForTransactionDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="02 OCTOBER,2015"
+                    android:textColor="@color/recentTransactionsDate"
+                    android:textSize="@dimen/textSizeMedium" />
+
+                <ImageView
+                    android:id="@+id/imgForNext"
+                    style="@style/RecentTransactionsPrevNextTheme"
+                    android:src="@drawable/next_btn" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layForRecentTransactionTableHeader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layForRecentTransaction"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/RecentTransactionTableHeaderFontStyle"
+                    android:gravity="left"
+                    android:text="@string/category" />
+
+                <TextView
+                    style="@style/RecentTransactionTableHeaderFontStyle"
+                    android:gravity="left"
+                    android:text="@string/description" />
+
+                <TextView
+                    style="@style/RecentTransactionTableHeaderFontStyle"
+                    android:gravity="right"
+                    android:text="@string/amount" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layForRecentTransactionTableItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layForRecentTransactionTableHeader"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"></LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

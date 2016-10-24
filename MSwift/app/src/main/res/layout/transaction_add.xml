@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/HeaderTheme">
+
+        <TextView
+            android:id="@+id/txtForHeader"
+            style="@style/HeaderTextNormalTheme"
+            android:text="@string/transAdHeader" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/TransAddSubHeaderTheme"
+                android:orientation="horizontal">
+
+                <ImageView style="@style/TransAddImgIconTheme" />
+
+                <LinearLayout style="@style/TransAddSubTextLayTheme">
+
+                    <TextView
+                        style="@style/TextMediumWhiteTheme"
+                        android:text="@string/addingTransFor" />
+
+                    <TextView
+                        style="@style/prizesHeaderTxt"
+                        android:layout_marginTop="@dimen/textSpaceCommon"
+                        android:text="@string/transTransport" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/commonSpace"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layForxpense"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/layForMoneyMargin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtForExpense"
+                        style="@style/TextSmallTheme"
+                        android:text="@string/transExpenseAmt" />
+
+                    <EditText
+                        android:id="@+id/editTxtForExpense"
+                        style="@style/EditTextTheme"
+                        android:layout_marginTop="@dimen/bottmMargin"
+                        android:hint="@string/placeHolderText"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true" />
+
+                    <View style="@style/CommonLineTheme" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layForDateTrans"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layForMoneyMargin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtForDateTrans"
+                        style="@style/TextSmallTheme"
+                        android:text="@string/transDate" />
+
+                    <EditText
+                        android:id="@+id/editTxtForDateTrans"
+                        style="@style/EditTextTheme"
+                        android:layout_marginTop="@dimen/bottmMargin"
+                        android:hint="@string/placeHolderText"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true" />
+
+                    <View style="@style/CommonLineTheme" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layFortransDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/commonSpace"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextSmallTheme"
+                    android:text="@string/transDesc" />
+
+                <TextView
+                    android:id="@+id/txtForDescription"
+                    style="@style/TextMediumTheme"
+                    android:text="@string/aboutSwiftTxt" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

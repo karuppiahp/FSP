@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/HeaderTheme">
+
+        <TextView
+            style="@style/HeaderTextTheme"
+            android:text="@string/financialProfile" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/commonMargin">
+
+                <TextView
+                    android:id="@+id/txtForSteps"
+                    style="@style/Step1of2TextTheme"
+                    android:text="@string/step44" />
+
+                <TextView
+                    android:id="@+id/txtForStepName"
+                    style="@style/AccInfoTextTheme"
+                    android:layout_toRightOf="@+id/txtForSteps"
+                    android:text="@string/expenses" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layForPopUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/popUpBg"
+                >
+
+                <TextView
+                    android:id="@+id/txtForPopUp1"
+                    style="@style/TextMediumPopUpTheme"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/toggleHeight"
+                    android:layout_marginLeft="@dimen/commonMargin"
+                    android:layout_marginRight="@dimen/commonMargin"
+                    android:layout_marginTop="@dimen/toggleHeight"
+                    android:text="@string/popUpStep1" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/todoListItemMargin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layForRent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/layForMoneyMargin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtForRent"
+                        style="@style/TextSmallTheme"
+                        android:text="@string/rent" />
+
+                    <EditText
+                        android:id="@+id/editTxtForRent"
+                        style="@style/EditTextTheme"
+                        android:layout_marginTop="@dimen/bottmMargin"
+                        android:hint="@string/placeHolderText"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true" />
+
+                    <View style="@style/CommonLineTheme" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layForGroceries"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layForMoneyMargin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtForGroceries"
+                        style="@style/TextSmallTheme"
+                        android:text="@string/groceries" />
+
+                    <EditText
+                        android:id="@+id/editTxtForGroceries"
+                        style="@style/EditTextTheme"
+                        android:layout_marginTop="@dimen/bottmMargin"
+                        android:hint="@string/placeHolderText"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true" />
+
+                    <View style="@style/CommonLineTheme" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/todoListItemMargin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layForTransportation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/layForMoneyMargin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtForTransportation"
+                        style="@style/TextSmallTheme"
+                        android:text="@string/transportation" />
+
+                    <EditText
+                        android:id="@+id/editTxtForTransportation"
+                        style="@style/EditTextTheme"
+                        android:layout_marginTop="@dimen/bottmMargin"
+                        android:hint="@string/placeHolderText"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true" />
+
+                    <View style="@style/CommonLineTheme" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layForHealth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layForMoneyMargin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtForHealth"
+                        style="@style/TextSmallTheme"
+                        android:text="@string/health" />
+
+                    <EditText
+                        android:id="@+id/editTxtForHealth"
+                        style="@style/EditTextTheme"
+                        android:layout_marginTop="@dimen/bottmMargin"
+                        android:hint="@string/placeHolderText"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true" />
+
+                    <View style="@style/CommonLineTheme" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/todoListItemMargin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layForEducation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/layForMoneyMargin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtForEducation"
+                        style="@style/TextSmallTheme"
+                        android:text="@string/education" />
+
+                    <EditText
+                        android:id="@+id/editTxtForEducation"
+                        style="@style/EditTextTheme"
+                        android:layout_marginTop="@dimen/bottmMargin"
+                        android:hint="@string/placeHolderText"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true" />
+
+                    <View style="@style/CommonLineTheme" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layForUtilities"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layForMoneyMargin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtForUtilities"
+                        style="@style/TextSmallTheme"
+                        android:text="@string/utilities" />
+
+                    <EditText
+                        android:id="@+id/editTxtForUtilities"
+                        style="@style/EditTextTheme"
+                        android:layout_marginTop="@dimen/bottmMargin"
+                        android:hint="@string/placeHolderText"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true" />
+
+                    <View style="@style/CommonLineTheme" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layForPopUp2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/popUpBg"
+                >
+
+                <TextView
+                    android:id="@+id/txtForPopUp2"
+                    style="@style/TextMediumPopUpTheme"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/toggleHeight"
+                    android:layout_marginLeft="@dimen/commonMargin"
+                    android:layout_marginRight="@dimen/commonMargin"
+                    android:layout_marginTop="@dimen/toggleHeight"
+                    android:text="@string/popUpStep1" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/todoListItemMargin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layForShopping"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/layForMoneyMargin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtForShopping"
+                        style="@style/TextSmallTheme"
+                        android:text="@string/shopping" />
+
+                    <EditText
+                        android:id="@+id/editTxtForShopping"
+                        style="@style/EditTextTheme"
+                        android:layout_marginTop="@dimen/bottmMargin"
+                        android:hint="@string/placeHolderText"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true" />
+
+                    <View style="@style/CommonLineTheme" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layForEntertainment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layForMoneyMargin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtForEntertainment"
+                        style="@style/TextSmallTheme"
+                        android:text="@string/entertainment" />
+
+                    <EditText
+                        android:id="@+id/editTxtForEntertainment"
+                        style="@style/EditTextTheme"
+                        android:layout_marginTop="@dimen/bottmMargin"
+                        android:hint="@string/placeHolderText"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true" />
+
+                    <View style="@style/CommonLineTheme" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/todoListItemMargin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layForDining"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/layForMoneyMargin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtForDining"
+                        style="@style/TextSmallTheme"
+                        android:text="@string/diningOut" />
+
+                    <EditText
+                        android:id="@+id/editTxtForDining"
+                        style="@style/EditTextTheme"
+                        android:layout_marginTop="@dimen/bottmMargin"
+                        android:hint="@string/placeHolderText"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true" />
+
+                    <View style="@style/CommonLineTheme" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layForTravel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layForMoneyMargin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtForTravel"
+                        style="@style/TextSmallTheme"
+                        android:text="@string/travel" />
+
+                    <EditText
+                        android:id="@+id/editTxtForTravel"
+                        style="@style/EditTextTheme"
+                        android:layout_marginTop="@dimen/bottmMargin"
+                        android:hint="@string/placeHolderText"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true" />
+
+                    <View style="@style/CommonLineTheme" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/todoListItemMargin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layForOther"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/layForMoneyMargin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtForOther"
+                        style="@style/TextSmallTheme"
+                        android:text="@string/other" />
+
+                    <EditText
+                        android:id="@+id/editTxtForOther"
+                        style="@style/EditTextTheme"
+                        android:layout_marginTop="@dimen/bottmMargin"
+                        android:hint="@string/placeHolderText"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true" />
+
+                    <View style="@style/CommonLineTheme" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layForView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layForMoneyMargin"
+                    android:layout_weight="1"
+                    android:orientation="vertical"></LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/skipsave"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/todoListItemMargin"
+                android:layout_marginRight="@dimen/todoListItemMargin"
+                android:layout_marginTop="@dimen/bottmMargin"
+                android:orientation="horizontal">
+
+                <View style="@style/CenterThemeLarge" />
+
+                <Button
+                    android:id="@+id/btnForSave"
+                    style="@style/SaveBtnThemeshape"
+                    android:background="@drawable/shape"
+                    android:text="SAVE"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

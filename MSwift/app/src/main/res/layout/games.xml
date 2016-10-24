@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <RelativeLayout style="@style/HeaderTheme">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            style="@style/TransactionBackButton"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/witoutArrowTxt"
+            style="@style/HeaderTextTheme"
+            android:text="@string/gamesHeader"
+
+            />
+        <TextView
+            android:id="@+id/withArrow"
+            style="@style/HeaderTextTheme"
+            android:text="@string/gamesHeader"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/backButton"/>
+    </RelativeLayout>
+
+    <!--<activities.mswift.info.mswift.mswift.support.SlidingTabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/merun"
+        android:elevation="2dp" />-->
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        android:background="@color/merun"
+        app:tabIndicatorColor="@color/tabindicator"
+        app:tabGravity="fill"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+        </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layForPopUp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <include layout="@layout/tickets_pop_up" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layForTouch">
+
+    <ImageView
+        style="@style/introImgLay"
+        android:background="@drawable/intro_4_half_img" />
+
+    <RelativeLayout style="@style/introTxtLay">
+
+        <TextView
+            android:id="@+id/txtForHeaderIntro4"
+            style="@style/HeaderTextIntroTheme"
+            android:layout_margin="@dimen/bottmMargin"
+            android:text="@string/intro4HeaderTxt" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtForHeaderIntro4"
+            android:layout_marginLeft="@dimen/mediumMargin"
+            android:layout_marginRight="@dimen/mediumMargin"
+            android:layout_marginTop="@dimen/bottmMargin">
+
+            <TextView
+                android:id="@+id/txtForIntro4Cntnt"
+                style="@style/TextSmallLargeTheme"
+                android:text="@string/intro4BelowTxt"
+                />
+
+            <ImageView
+                android:id="@+id/btnForEmail"
+                style="@style/signupBtnStyles"
+                android:layout_below="@+id/txtForIntro4Cntnt"
+                android:layout_marginTop="@dimen/commonMargin"
+                android:src="@drawable/email_btn_img" />
+
+            <ImageView
+                android:id="@+id/btnForFb"
+                style="@style/signupBtnStyles"
+                android:layout_below="@+id/btnForEmail"
+                android:layout_marginTop="@dimen/commonMargin"
+                android:src="@drawable/fb_btn_img" />
+
+            <ImageView
+                android:id="@+id/btnForLogin"
+                style="@style/signupBtnStyles"
+                android:layout_below="@+id/btnForFb"
+                android:layout_marginTop="@dimen/commonMargin"
+                android:src="@drawable/login_btn_img" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/calendarImgWidth">
+
+            <ImageView
+                style="@style/intro4of4Img"
+                android:background="@drawable/img_4_of_4" />
+
+            <View style="@style/intro4of4Img" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

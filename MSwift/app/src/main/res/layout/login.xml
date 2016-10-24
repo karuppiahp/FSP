@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SignUpTheme"
+    android:orientation="vertical">
+
+    <!--<RelativeLayout style="@style/RelativeLayoutCommon">-->
+
+    <ScrollView
+        style="@style/loginLayoutStyles"
+        >
+        <LinearLayout
+            style="@style/loginLayoutStyles"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                style="@style/SpinnerTheme"
+                android:background="@drawable/logo_top_change"
+                />
+
+            <RelativeLayout
+                style="@style/SpinnerTheme"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgForLogo"
+                    android:layout_margin="@dimen/bottmMargin"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layForEmailId"
+                        style="@style/SpinnerTheme"
+                        android:layout_marginTop="@dimen/todoListItemMargin"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtForEmailAddress"
+                            style="@style/TextSmallTheme"
+                            android:text="@string/loginUsername"
+                            android:visibility="gone"/>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <EditText
+                                android:id="@+id/editTxtForEmailAddress"
+                                style="@style/EditTextThemeWhite"
+                                android:layout_marginTop="@dimen/layForMoneyMargin"
+                                android:hint="@string/loginUsername"
+                                android:imeOptions="actionNext"
+                                android:singleLine="true"
+                                android:textColorHint="@color/toDoListBg" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <View style="@style/CommonLineThemeWhite" />
+
+                    <LinearLayout
+                        android:id="@+id/layForPwd"
+                        style="@style/SpinnerTheme"
+                        android:layout_marginTop="@dimen/todoListItemMargin"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtForPwd"
+                            style="@style/TextSmallTheme"
+                            android:text="@string/loginPwd"
+                            android:visibility="gone"/>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <EditText
+                                android:id="@+id/editTxtForPwd"
+                                style="@style/EditTextThemeWhite"
+                                android:layout_marginTop="@dimen/layForMoneyMargin"
+                                android:hint="@string/loginPwd"
+                                android:imeOptions="actionDone"
+                                android:inputType="textPassword"
+                                android:singleLine="true"
+                                android:textColorHint="@color/white" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <View style="@style/CommonLineThemeWhite" />
+
+                    <TextView
+                        android:id="@+id/txtForFrgtPwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/forgotPwd"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="@dimen/commonMargin"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="@dimen/textSizeMedium"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/layForLoginBtn"
+                        style="@style/SpinnerTheme"
+                        android:layout_marginTop="@dimen/bottmMargin"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="3" />
+
+                        <Button
+                            android:id="@+id/btnForLogin"
+                            style="@style/SaveBtnThemeshape"
+                            android:background="@drawable/shape"
+                            android:text="LOGIN"
+                            android:layout_marginTop="@dimen/toggleHeight"
+                            />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/btnForFbLogin"
+                        style="@style/RelativeLayoutWrapCommonNormal"
+                        android:background="@drawable/facebook_login"
+                        android:layout_marginTop="@dimen/signUpBtnMargin"
+                        android:layout_marginLeft="@dimen/singUpBtnHt"
+                        android:layout_marginRight="@dimen/singUpBtnHt"
+                        >
+
+                        <TextView
+                            style="@style/GoalsTheme1"
+                            android:text="@string/facebook_login"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/subtitle_text_size"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/commonSpace"
+                            />
+
+                        <ImageView
+                            style="@style/GoalsTheme1"
+                            android:background="@drawable/fblogo1"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/commonSpace"
+                            />
+                    </RelativeLayout>
+
+                    <!--<ImageView
+                        android:id="@+id/btnForFbLogin"
+                        style="@style/signupFbBtnStyles"
+                        android:layout_marginTop="@dimen/signUpBtnMargin"
+                        android:src="@drawable/loginfb" />-->
+
+                    <!-- <Button
+                         android:id="@+id/btnForFbLogin"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:background="@drawable/facebook_login"
+                         android:layout_marginTop="@dimen/signUpBtnMargin"
+                         android:layout_marginLeft="@dimen/commonMargin"
+                         android:layout_marginRight="@dimen/commonMargin"
+                         android:text="Login with Facebook"
+                         android:textAllCaps="false"
+                         android:textColor="@android:color/white"
+                         />-->
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <!--</RelativeLayout>-->
+
+            <RelativeLayout
+                android:id="@+id/layForSignUpTxt"
+                style="@style/RelativeWrapTheme"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/mediumMargin"
+                >
+                <TextView
+                    android:id="@+id/signuptxt"
+                    style="@style/RelativeWrapTheme"
+                    android:text="@string/dontHaveAcc"
+                    android:textColor="@android:color/white"
+                    />
+                <TextView
+                    android:id="@+id/signup"
+                    style="@style/RelativeWrapTheme"
+                    android:layout_toRightOf="@+id/signuptxt"
+                    android:layout_marginLeft="@dimen/prevNextBtnMargin"
+                    android:text="@string/loginSingup"
+                    android:textColor="@color/privacy"
+                    />
+            </RelativeLayout>
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/RelativeWrapTheme"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

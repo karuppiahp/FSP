@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/HeaderTheme"
+        android:id="@+id/transaction_relative_layout_header">
+
+        <TextView
+            style="@style/HeaderTextTheme"
+            android:text="@string/transactionAdd"
+            android:id="@+id/textView2"
+            android:layout_toRightOf="@+id/transaction_edit_back_button"/>
+
+        <ImageButton
+            android:id="@+id/transaction_edit_back_button"
+            style="@style/TransactionBackButton" />
+
+        <Button
+            android:id="@+id/btnForSaveTransactionAdd"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            style="@style/TransactionSaveButton"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:padding="@dimen/todoListItemMargin">
+
+                <TextView
+                    android:id="@+id/txtForAddTransactionType"
+                    style="@style/TextSmallTheme"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/transactionAddType" />
+
+                <TextView
+                    android:id="@+id/txtForAddTransactionValue"
+                    android:text="@string/transactionAddValue"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    style="@style/TextMediumTheme" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/im_transaction"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/ic_launcher"
+                    android:tint="@color/toDoListBg" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tw_transaction_tip"
+                android:text="@string/transactionDetailHeader"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="left"
+                android:background="@color/popUpBg"
+                android:padding="@dimen/todoListItemMargin"
+                style="@style/TextMediumTheme" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/todoListItemMargin">
+
+                <LinearLayout
+                    android:id="@+id/layDebtAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/layForMoneyMargin"
+                    android:layout_marginTop="@dimen/todoListItemMargin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtForDebtAmount"
+                        style="@style/TextSmallTheme"
+                        android:text="@string/amount" />
+
+                    <EditText
+                        android:id="@+id/editTxtForDebt"
+                        style="@style/EditTextTheme"
+                        android:layout_marginTop="@dimen/layForMoneyMargin"
+                        android:inputType="numberDecimal" />
+
+                    <View style="@style/CommonLineTheme" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layForDob"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layForMoneyMargin"
+                    android:layout_marginTop="@dimen/todoListItemMargin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtForDot"
+                                style="@style/TextSmallTheme"
+                                android:text="@string/dateOfTransaction" />
+
+                            <TextView
+                                android:id="@+id/txtForDotSelected"
+                                style="@style/TextMediumTheme"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/layForMoneyMargin"
+                                android:layout_marginTop="@dimen/layForMoneyMargin"
+                                android:text="@string/placeHolderText" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="bottom">
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/weekly_calendar"
+                                android:layout_gravity="right"
+                                android:tint="@color/lineGrey" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <View style="@style/CommonLineTheme" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layForLastName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/todoListItemMargin"
+                android:orientation="vertical"
+                android:padding="@dimen/todoListItemMargin">
+
+                <TextView
+                    android:id="@+id/txtForLastName"
+                    style="@style/TextSmallTheme"
+                    android:text="@string/transactionDescription" />
+
+                <EditText
+                    android:id="@+id/editTxtForDescription"
+                    style="@style/EditTextTheme"
+                    android:layout_marginTop="@dimen/layForMoneyMargin"
+                    android:hint="@string/placeHolderText" />
+            </LinearLayout>
+
+            <View
+                style="@style/CommonLineTheme"
+                android:layout_marginLeft="@dimen/todoListItemMargin"
+                android:layout_marginRight="@dimen/todoListItemMargin"/>
+
+            <LinearLayout
+                android:id="@+id/layForSaveBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/todoListItemMargin"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+
+                <ImageButton
+                    android:id="@+id/btnForSaveTransactionAdd1"
+                    style="@style/NextBtnTheme"
+                    android:layout_marginTop="@dimen/layForMoneyMargin"
+                    android:background="@drawable/save_btn" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

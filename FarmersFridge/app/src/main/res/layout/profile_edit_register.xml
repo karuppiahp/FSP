@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--<include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>-->
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar"
+        android:layout_marginTop="@dimen/highMargin"
+        android:layout_marginRight="@dimen/normalMargin"
+        android:layout_marginLeft="@dimen/normalMargin">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/normalMargin"
+            >
+            <TextView
+                android:id="@+id/firstNameTxt"
+                style="@style/TableRowTxtTheme"
+                android:text="@string/firstName"
+                />
+
+            <EditText
+                android:id="@+id/edittxtForfName"
+                android:background="@drawable/settings_edittxt_shape"
+                style="@style/editStyleTableRow"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/normalMargin"
+            >
+            <TextView
+                android:id="@+id/lastNameTxt"
+                style="@style/TableRowTxtTheme"
+                android:text="@string/lastName"
+                />
+
+            <EditText
+                android:id="@+id/edittxtForLName"
+                android:background="@drawable/settings_edittxt_shape"
+                style="@style/editStyleTableRow"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/normalMargin"
+            >
+            <TextView
+                android:id="@+id/phoneTxt"
+                style="@style/TableRowTxtTheme"
+                android:text="@string/phone"/>
+
+            <EditText
+                android:id="@+id/edittxtForPhone"
+                android:background="@drawable/settings_edittxt_shape"
+                style="@style/editStyleTableRow"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/normalMargin"
+            >
+            <TextView
+                android:id="@+id/email"
+                style="@style/TableRowTxtTheme"
+                android:text="@string/email"/>
+
+            <EditText
+                android:id="@+id/edittxtForEmail"
+                android:background="@drawable/settings_edittxt_shape"
+                style="@style/editStyleTableRow"/>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/layForNxtBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/highMargin"
+        android:layout_below="@+id/tableLayout"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnForSave"
+            style="@style/SaveBtnThemeshape"
+            android:background="@drawable/shape_rectangle"
+            android:text="Save"
+            android:layout_marginLeft="@dimen/normalMargin"
+            android:onClick="onSave"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

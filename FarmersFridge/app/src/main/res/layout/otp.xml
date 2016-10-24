@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/otpHeader"
+        android:text="@string/otpHeader"
+        android:layout_above="@+id/imageForOTP"
+        style="@style/LoginTextTheme"/>
+
+
+    <ImageView
+        android:id="@+id/imageForOTP"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/loginbuttonbg"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/otpBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rightgrayarrow"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imageForOTP"
+        android:layout_gravity="right" />
+    <EditText
+        android:id="@+id/editTxtForOtp"
+        android:hint="@string/otpTxt"
+        style="@style/FirstNameLogin"
+        />
+</RelativeLayout>

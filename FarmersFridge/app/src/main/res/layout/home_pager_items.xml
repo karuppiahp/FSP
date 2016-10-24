@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/highMargin">
+
+        <ImageView
+            android:id="@+id/imgForHomePager"
+            style="@style/HomePagerImageTheme"
+            android:src="@drawable/salad1" />
+
+        <TextView
+            android:id="@+id/txtForPagerContent"
+            style="@style/TextMediumTheme"
+            android:layout_below="@+id/imgForHomePager"
+            android:layout_margin="@dimen/normalMargin"
+            android:text="@string/homePagerCntnt" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

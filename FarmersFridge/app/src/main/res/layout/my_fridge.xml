@@ -1,0 +1,70 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_texture">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstlayout"
+        android:orientation="vertical">
+
+        <!--<android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerForRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerForOffers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />-->
+
+        <include
+            layout="@layout/my_fridge_rating"
+            />
+
+        <include
+            layout="@layout/my_fridge_offers"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <farmersfridge.farmersfridge.support.FlingRecyclerView
+            android:id="@+id/recyclerForFavrts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:id="@+id/arrowLeft"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/arrow_left_gray"
+                android:clickable="false"
+                android:paddingRight="20dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:id="@+id/arrowRight"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/arrow_right_gray"
+                android:clickable="false"
+                android:paddingRight="0dp"
+                android:paddingLeft="20dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

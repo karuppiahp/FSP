@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layForInfoDetail"
+    android:onClick="layClicks"
+    android:background="@drawable/info_bg">
+
+    <ImageView
+        android:id="@+id/imgForClose"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_vertical"
+        />
+
+    <TextView
+        android:id="@+id/txtForInfoHeader"
+        style="@style/TextMediumLargeTheme"
+        android:gravity="center"
+        android:text="@string/infoHeaderTxt"
+        android:layout_below="@+id/imgForClose"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/smallSpace"
+        />
+
+    <TextView
+        android:id="@+id/txtForInfoPts"
+        style="@style/TextMediumNormalThemeWhite"
+        android:gravity="center"
+        android:text="@string/infoHeaderTxt"
+        android:layout_below="@+id/txtForInfoHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/smallSpace"
+        />
+
+    <TextView
+        android:id="@+id/txtForInfoSubTitle"
+        style="@style/TextMediumThemeWhite"
+        android:gravity="center"
+        android:text="@string/infoHeaderTxt"
+        android:layout_below="@+id/txtForInfoPts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/smallSpace"
+        />
+
+    <TextView
+        android:id="@+id/txtForInfoDesc"
+        style="@style/TextSmallThemeWhite"
+        android:gravity="center"
+        android:text="@string/infoHeaderTxt"
+        android:layout_below="@+id/txtForInfoSubTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/smallSpace"
+        />
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/imgForChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtForInfoDesc"
+        android:layout_above="@+id/layForBtm"
+        android:layout_margin="@dimen/normalMargin"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layForBtm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/normalMargin"
+        >
+        <ImageView
+            android:id="@+id/imgForInfoFav"
+            android:layout_width="32dp"
+            android:layout_height="35dp"
+            android:src="@drawable/favorite_unselected"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_vertical"
+            />
+        <ImageView
+            android:id="@+id/imgForInfoFind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgForInfoFav"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/highMargin"
+            android:src="@drawable/find_btn"
+            android:layout_gravity="center_vertical"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

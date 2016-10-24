@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">FarmersFridge</string>
+
+    <string name="google_api_key">AIzaSyDAbp6fSwLMqVkwcKTlD9ktcP73c3gwd2c</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- exit message -->
+    <string name="exit_msg">Tap back again to exit.</string>
+
+    <!-- Home Screen -->
+    <string name="instantTxt">Instant Money</string>
+    <string name="instantMoneyTxt">$10</string>
+    <string name="homePagerCntnt">Coconut chiken, red cabbage, cuccumbers, show peas, red ball pepper, carrots, radishes, scollions, peanuts &amp; seasame ginger dressing.</string>
+
+    <!-- Instant Money Screen -->
+    <string name="instantHeader">To Get Your</string>
+    <string name="instantMoney">In$tant Money!</string>
+    <string name="instantMoneyValue">$10</string>
+    <string name="scanBarcode">Scan Barcode:</string>
+    <string name="qrEnterCode">OR Enter Code:</string>
+    <string name="qrCode">GIMME10BUCKS</string>
+
+    <!--Settings Screen-->
+    <string name="profile">Profile/Register</string>
+    <string name="feedback">Feedback</string>
+    <string name="faq">Faq</string>
+    <string name="tandc">Terms and Conditions</string>
+
+    <!--Profile Screen-->
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="name1">Phone</string>
+    <string name="lastname1">Smith</string>
+    <string name="phone1">+1 (123) 4444</string>
+    <string name="email1">John@gmail.com</string>
+    <string name="code">Code</string>
+
+    <!--Feedback Screen-->
+    <string name="thankYouCntnt">Greetings and thank you once again for your decision to use Farmer\'s Fridge. Please complete the following questionnaire so that we can better serve them. Thank you in advance for your time, and please don\'t hesitate to call us if you have questions or concerns about your landscape and our service</string>
+
+    <!-- Slider Fragment -->
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!-- Helping Hand Screen -->
+    <string name="helpingHandTxt">A New Helping Hand to Farmer\'s Fridge</string>
+    <string name="helpingHandSubTxt">Meet our friends at Westwood Farm and learn how they are bringing \"fresh\" to a new level</string>
+
+    <!-- Offer Screen -->
+    <string name="offTxt">20% OFF</string>
+    <string name="offSubTxt">YOUR NEXT PURCHASE</string>
+
+    <!-- Bonus Screen -->
+    <string name="bonusTxt">BONUS</string>
+    <string name="bonusSubTxt">Receive an extra salad dressing of your choice when you spend $10 or more. Offer valid 6/2.</string>
+
+    <!-- hh Screen -->
+    <string name="hhHeaderTxt">CLAY WETWOOD</string>
+    <string name="hhHeaderSubTxt">WESTWOOD FARMS</string>
+    <string name="hhDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit molestie ex eget ultrices. Phasellus ut massa suscipit, tempus sapien a, varius tortor. Sed eu erat at libero efficitur sagittis at vestibulum augue.</string>
+
+    <!-- Offer Screen detailed -->
+    <string name="offDetTxt">20% OFF</string>
+    <string name="offDetSubTxt">USE AT YOUR FAVORITE FARMER\'S FRIDGE MACHINE. OFFER VALID 6/1-6/7.</string>
+    <string name="offDetQr">OR ENTER CODE:</string>
+    <string name="offDetQrCode">20.OFF</string>
+
+    <!-- Menu Info Screen -->
+    <string name="infoHeaderTxt">The North Napa</string>
+    <string name="balsamicTxt">WITH BALSAMIC VINAIGRETTE</string>
+
+    <!--Login Screen-->
+    <string name="LoginText">Log In</string>
+    <string name="LogoutText">LOGOUT</string>
+    <string name="RegisterText">Register</string>
+    <string name="SignupText">Sign up for special offers on all \nof our products!</string>
+    <string name="JoinNowText">Join Now</string>
+    <string name="ThankyouText">Thank you for \nregistering!</string>
+    <string name="WelcomeText">Welcome to the Farmer\'s Fridge \nFamily</string>
+    <string name="ConfirmationText">You will soon be receiving a confirmation email.
+   \nFor more information about Farmer\'s Fridge and our special offerings, visit www.farmersfridge.com</string>
+    <string name="FaqHeader">FAQ</string>
+    <string name="FaqText">View frequently asked questions by other \ncustomers.</string>
+    <string name="TermsHeader">TERMS AND CONDITIONS</string>
+    <string name="TermsDesc">View Terms and conditions..</string>
+
+    <string name="thankyouDesc">Submit your thoughts about Farmer\'s Fridge. \nWe\'d love to hear from you.</string>
+    <string name="yourFBack">YOUR FEEDBACK</string>
+
+    <string name="yourewards">YOUR REWARD PROGRESS </string>
+    <string name="yourrewardsDesc">Click here to redeem your free dressing or \ncontinue collecting for additional prizes</string>
+    <string name="myfridgeheader">YOUR OFFERS AND COUPONS</string>
+    <string name="myfridgefav">FAVOURITES</string>
+    <string name="bottomtext">The North Napa</string>
+
+    <!--OTP Screen-->
+    <string name="otpHeader">OTP</string>
+    <string name="otpTxt">Code</string>
+
+    <!--Locations Screen-->
+    <string name="itemlocation">ITEM BY LOCATION</string>
+    <string name="findyournapaheader">Find Your North Napa!</string>
+    <string name="findyournapasubtitle">FRIDGES</string>
+
+    <string name="aboutHeader">SALADS</string>
+</resources>

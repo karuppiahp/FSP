@@ -1,0 +1,54 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="headerTxt">18sp</dimen>
+    <dimen name="textSizeSmallMedium">17sp</dimen>
+    <dimen name="textSizeMedium">16sp</dimen>
+    <dimen name="textSizeSmall">13sp</dimen>
+    <dimen name="textSizeMediumSmall">14sp</dimen>
+    <dimen name="textSizeLarge">20sp</dimen>
+    <dimen name="textSizeMediumLarge">25sp</dimen>
+    <dimen name="textSizeMediumXLarge">30sp</dimen>
+    <dimen name="textSizeXLarge">45sp</dimen>
+    <dimen name="textSizeXXLarge">60sp</dimen>
+    <dimen name="normalMargin">10dp</dimen>
+    <dimen name="smallSpace">5dp</dimen>
+    <dimen name="highMargin">20dp</dimen>
+    <dimen name="highXMargin">25dp</dimen>
+    <dimen name="highXMarginInclude">0dp</dimen>
+    <dimen name="normalXMargin">15dp</dimen>
+    <dimen name="marginTopHigh">30dp</dimen>
+    <dimen name="marginBottom30">30dp</dimen>
+    <dimen name="splashImgSize">300dp</dimen>
+    <dimen name="backImgSize">25dp</dimen>
+    <dimen name="homePageMargin">150dp</dimen>
+    <dimen name="noMargin">0dp</dimen>
+    <dimen name="saveBtn">45dp</dimen>
+    <dimen name="arrowIcon">35dp</dimen>
+    <dimen name="navHeaderWt">160dp</dimen>
+    <dimen name="navHeaderHt">200dp</dimen>
+    <dimen name="offWt">200dp</dimen>
+    <dimen name="offHt">140dp</dimen>
+    <dimen name="loginWt">200dp</dimen>
+    <dimen name="loginHt">50dp</dimen>
+    <dimen name="nextArrow">30dp</dimen>
+    <dimen name="editTxtWt">230dp</dimen>
+    <dimen name="editTxtHt">30dp</dimen>
+    <dimen name="ratingBar">70dp</dimen>
+    <dimen name="loginBtnWt">200dp</dimen>
+    <dimen name="loginBtnHt">50dp</dimen>
+    <dimen name="menuImgHt">200dp</dimen>
+    <dimen name="menuDetailImgHt">210dp</dimen>
+    <dimen name="directnBtnHt">30dp</dimen>
+
+    <dimen name="marginBottomLarge">50dp</dimen>
+    <dimen name="marginBottomLargeBorder">50dp</dimen>
+    <dimen name="homeGrayGrndHt">100dp</dimen>
+    <dimen name="layWtHtNotNormal">100dp</dimen>
+    <dimen name="tractorSize">175dp</dimen>
+    <dimen name="meterWt">35dp</dimen>
+    <dimen name="meterHt">175dp</dimen>
+
+</resources>

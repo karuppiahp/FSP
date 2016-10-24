@@ -1,0 +1,54 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="headerTxt">16sp</dimen>
+    <dimen name="textSizeMedium">14sp</dimen>
+    <dimen name="textSizeSmall">12sp</dimen>
+    <dimen name="textSizeMediumSmall">13sp</dimen>
+    <dimen name="textSizeLarge">18sp</dimen>
+    <dimen name="textSizeMediumLarge">23sp</dimen>
+    <dimen name="textSizeMediumXLarge">28sp</dimen>
+    <dimen name="textSizeXLarge">43sp</dimen>
+    <dimen name="textSizeXXLarge">58sp</dimen>
+    <dimen name="normalMargin">10dp</dimen>
+    <dimen name="smallSpace">5dp</dimen>
+    <dimen name="highMargin">18dp</dimen>
+    <dimen name="highXMargin">23dp</dimen>
+    <dimen name="highXMarginInclude">23dp</dimen>
+    <dimen name="normalXMargin">13dp</dimen>
+    <dimen name="marginTopHigh">12dp</dimen>
+    <dimen name="marginBottom30">28dp</dimen>
+    <dimen name="splashImgSize">280dp</dimen>
+    <dimen name="backImgSize">23dp</dimen>
+    <dimen name="homePageMargin">130dp</dimen>
+    <dimen name="noMargin">0dp</dimen>
+    <dimen name="saveBtn">42dp</dimen>
+    <dimen name="arrowIcon">32dp</dimen>
+    <dimen name="navHeaderWt">80dp</dimen>
+    <dimen name="navHeaderHt">120dp</dimen>
+    <dimen name="offWt">180dp</dimen>
+    <dimen name="offHt">120dp</dimen>
+    <dimen name="loginWt">180dp</dimen>
+    <dimen name="loginHt">45dp</dimen>
+    <dimen name="nextArrow">27dp</dimen>
+    <dimen name="editTxtWt">210dp</dimen>
+    <dimen name="editTxtHt">27dp</dimen>
+    <dimen name="ratingBar">65dp</dimen>
+    <dimen name="loginBtnWt">180dp</dimen>
+    <dimen name="loginBtnHt">45dp</dimen>
+    <dimen name="menuImgHt">170dp</dimen>
+    <dimen name="menuDetailImgHt">180dp</dimen>
+
+    <dimen name="marginBottomLarge">40dp</dimen>
+    <dimen name="homeGrayGrndHt">80dp</dimen>
+    <dimen name="layWtHtNotNormal">80dp</dimen>
+    <dimen name="tractorSize">140dp</dimen>
+    <dimen name="meterWt">30dp</dimen>
+    <dimen name="meterHt">140dp</dimen>
+
+    <dimen name="mediumSpace">10dp</dimen>
+    <dimen name="largespace">10dp</dimen>
+
+</resources>

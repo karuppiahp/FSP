@@ -1,0 +1,502 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="MyMaterialTheme.Base">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Material Theme for App -->
+    <style name="MyMaterialTheme.Base" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Theme for TabHost -->
+    <style name="TabTheme">
+        <!-- Change the background color to white -->
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!-- Theme for Splash image -->
+    <style name="SplashImgTheme">
+        <item name="android:layout_width">@dimen/splashImgSize</item>
+        <item name="android:layout_height">@dimen/splashImgSize</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:src">@drawable/splash_img</item>
+    </style>
+
+    <!-- Theme for header text -->
+    <style name="HeaderTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/headerTxt</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginTop">@dimen/normalMargin</item>
+    </style>
+
+    <!-- Theme for back image -->
+    <style name="BackImgTheme">
+        <item name="android:layout_width">@dimen/backImgSize</item>
+        <item name="android:layout_height">@dimen/backImgSize</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/back_img</item>
+        <item name="android:layout_marginTop">@dimen/normalMargin</item>
+        <item name="android:layout_marginLeft">@dimen/normalMargin</item>
+    </style>
+
+    <!-- Theme for medium text bold -->
+    <style name="TextMediumThemeBold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Theme for text grey -->
+    <style name="TextMediumGreyTheme">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Theme for small text -->
+    <style name="TextSmallTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeSmall</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Theme for small text white -->
+    <style name="TextSmallThemeWhite">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeSmall</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Theme for small text bold -->
+    <style name="TextSmallThemeBold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeSmall</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Theme for medium text -->
+    <style name="TextMediumTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Theme for medium white text -->
+    <style name="TextMediumThemeWhite">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Theme for medium white text -->
+    <style name="TextMediumNormalTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/headerTxt</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Theme for medium white text -->
+    <style name="TextMediumNormalThemeWhite">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/headerTxt</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Theme for large bold text -->
+    <style name="TextLargeTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeLarge</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Theme for large white text -->
+    <style name="TextLargeThemeWhite">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeLarge</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Theme for small white text -->
+    <style name="TextSmallThemeXWhite">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeLarge</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Theme for small white text -->
+    <style name="TextSmallThemeMediumWhite">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeSmallMedium</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Theme for small black text -->
+    <style name="TextSmallThemeMediumBlack">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeSmallMedium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Theme for small medium black text -->
+    <style name="TextSmallMediumThemeBlack">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeMediumSmall</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Theme for medium large green text -->
+    <style name="TextMediumLargeTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeMediumLarge</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Theme for Xlarge black text -->
+    <style name="TextXLargeThemeBlack">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeXLarge</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Theme for Xlarge white text -->
+    <style name="TextXLargeTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeXLarge</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Theme for XXlarge red text -->
+    <style name="TextXXLargeTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeXXLarge</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Theme for home pager image -->
+    <style name="HomePagerImageTheme">
+        <item name="android:layout_width">@dimen/homePageMargin</item>
+        <item name="android:layout_height">@dimen/homePageMargin</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_margin">@dimen/normalMargin</item>
+    </style>
+
+    <!-- Theme for BarCode image -->
+    <style name="BarCodeImageTheme">
+        <item name="android:layout_width">@dimen/homePageMargin</item>
+        <item name="android:layout_height">@dimen/homePageMargin</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_margin">@dimen/normalMargin</item>
+    </style>
+
+    <style name="MenuRecyclerView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="CustomViewGray">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/grey</item>
+    </style>
+
+    <style name="MenuDetailButton">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/shape_rectangle</item>
+        <item name="android:layout_margin">@dimen/normalMargin</item>
+    </style>
+
+    <style name="editStyleTableRow">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeMediumSmall</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="editTxtStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:textSize">@dimen/textSizeMediumSmall</item>
+    </style>
+
+    <!-- Theme for right arrow -->
+    <style name="arrowRight">
+        <item name="android:layout_height">@dimen/normalMargin</item>
+        <item name="android:layout_width">@dimen/normalXMargin</item>
+        <item name="android:layout_margin">@dimen/normalMargin</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:src">@drawable/next_arrow</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!-- Theme for edit image -->
+    <style name="EditImage">
+        <item name="android:layout_height">@dimen/highMargin</item>
+        <item name="android:layout_width">@dimen/marginTopHigh</item>
+        <item name="android:layout_margin">@dimen/highMargin</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:src">@drawable/edit_pen</item>
+    </style>
+
+    <!-- Theme for text in table row -->
+    <style name="TableRowTxtTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Theme for save button -->
+    <style name="SaveBtnThemeshape">
+        <item name="android:layout_width">@dimen/noMargin</item>
+        <item name="android:layout_height">@dimen/saveBtn</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Theme for navigation images -->
+    <style name="NavigationImageTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/noMargin</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- Theme for Arrow right images -->
+    <style name="ArrowImageTheme">
+        <item name="android:layout_width">@dimen/arrowIcon</item>
+        <item name="android:layout_height">@dimen/arrowIcon</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <!-- Theme for Arrow left images -->
+    <style name="ArrowImageThemeLeft">
+        <item name="android:layout_width">@dimen/arrowIcon</item>
+        <item name="android:layout_height">@dimen/arrowIcon</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <!-- Theme for navigation images -->
+    <style name="ImageThemeHH">
+        <item name="android:layout_width">@dimen/navHeaderWt</item>
+        <item name="android:layout_height">@dimen/navHeaderHt</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!-- Theme for navigation images -->
+    <style name="ImageThemeOff">
+        <item name="android:layout_width">@dimen/offWt</item>
+        <item name="android:layout_height">@dimen/offHt</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!-- Theme for deals linear layout -->
+    <style name="LayoutThemeDeals">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/highXMargin</item>
+        <item name="android:layout_marginBottom">@dimen/highXMargin</item>
+    </style>
+
+    <!--Theme for Login Header-->
+    <style name="LoginTextTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/textSizeMediumXLarge</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+    <!--Theme for Register Btn-->
+    <style name="RegisterBtnTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/textSizeMediumXLarge</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textStyle">italic|bold</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <!--Theme for FirstNameEditText Btn-->
+    <style name="FirstNameLogin">
+        <item name="android:layout_width">@dimen/loginWt</item>
+        <item name="android:layout_height">@dimen/loginHt</item>
+        <item name="android:id">@string/name1</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <!--<style name="StarRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/star_rating_bar_full</item>
+        <item name="android:minHeight">53dip</item>
+        <item name="android:maxHeight">53dip</item>
+    </style>-->
+    <!--Theme for CommonEditText for Register-->
+    <style name="RegisterETtheme" >
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/loginHt</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:background">@null</item>
+    </style>
+
+
+    <style name="RegisterbackgroundTheme" >
+        <item name="android:layout_width">@dimen/loginWt</item>
+        <item name="android:layout_height">@dimen/loginHt</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@drawable/loginbuttonbg</item>
+    </style>
+
+    <!-- Thanks theme -->
+    <style name="ThankyouTheme" >
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="NextArrowTheme">
+        <item name="android:layout_width">@dimen/nextArrow</item>
+        <item name="android:layout_height">@dimen/nextArrow</item>
+        <item name="android:background">@drawable/rightgrayarrow</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:paddingRight">@dimen/smallSpace</item>
+    </style>
+
+    <style name="NextArrowThemeLinearLay">
+        <item name="android:layout_width">@dimen/nextArrow</item>
+        <item name="android:layout_height">@dimen/nextArrow</item>
+        <item name="android:background">@drawable/rightgrayarrow</item>
+        <item name="android:layout_gravity">right|center_vertical</item>
+        <item name="android:layout_marginRight">@dimen/smallSpace</item>
+    </style>
+
+    <style name="editstyle">
+        <item name="android:layout_width">@dimen/editTxtWt</item>
+        <item name="android:layout_height">@dimen/editTxtHt</item>
+        <item name="android:textSize">@dimen/textSizeSmall</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/smallSpace</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="TextviewTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+    <item name="android:progressDrawable">@drawable/star_rating_bar_full</item>
+    <item name="android:minHeight">@dimen/ratingBar</item>
+    <item name="android:maxHeight">@dimen/ratingBar</item>
+    </style>
+
+    <style name="locationtextviewTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#222</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!--Theme for Terms & Faq Header-->
+    <style name="HeaderTextTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/normalXMargin</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="HeaderDescTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="AboutHeaderTextTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">@dimen/textSizeLarge</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/normalXMargin</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AboutHeaderTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/textSizeLarge</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/normalXMargin</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/entire_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollview_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:dividerHeight="0dp"
+                android:divider="@null"
+                />
+
+            <!--<LinearLayout
+                android:id="@+id/layForRecViews"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">-->
+
+            <!--<android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />-->
+
+            <!--<farmersfridge.farmersfridge.support.FlingRecyclerView
+                android:id="@+id/rec_salads"
+                style="@style/MenuRecyclerView" />
+
+            <View style="@style/CustomViewGray" />
+
+            <farmersfridge.farmersfridge.support.FlingRecyclerView
+                android:id="@+id/rec_snacks"
+                style="@style/MenuRecyclerView" />
+
+            <View style="@style/CustomViewGray" />
+
+            <farmersfridge.farmersfridge.support.FlingRecyclerView
+                android:id="@+id/rec_juice"
+                style="@style/MenuRecyclerView" />-->
+
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/random_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rec_overlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

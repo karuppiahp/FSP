@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layForMenuSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layForMenus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layForHeader"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/menu_item_header_bar">
+
+                <TextView
+                    android:id="@+id/txtForHeader"
+                    style="@style/TextviewTheme"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/smallSpace"
+                    android:text="@string/myfridgefav"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layForMenuImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/imgForDish"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgForFav"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="@dimen/highMargin"
+                    android:padding="15dp"
+                    android:src="@drawable/favorite_selected" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layForItemName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txtForItemName"
+                    style="@style/TextMediumTheme"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/smallSpace"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

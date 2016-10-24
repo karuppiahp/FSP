@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/layForMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/locations_header" >
+            <TextView
+                android:text="@string/itemlocation"
+                android:id="@+id/itemlocation"
+                style="@style/TextviewTheme"
+                android:textSize="@dimen/headerTxt"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/myfridgewhitebg" >
+            <TextView
+                android:text="@string/findyournapaheader"
+                android:id="@+id/findyournapa"
+                style="@style/TextviewTheme"
+                android:layout_marginTop="@dimen/normalMargin"
+                android:textSize="@dimen/headerTxt"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/layForMain">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/layForDirectionsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_walk"
+                style="@style/MenuDetailButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="walking" />
+
+            <Button
+                android:id="@+id/btn_drive"
+                style="@style/MenuDetailButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="driving" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layForListView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey"
+            android:layout_marginBottom="@dimen/normalXMargin"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextMediumThemeWhite"
+                android:text="LIST VIEW"
+                android:layout_margin="@dimen/normalMargin"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

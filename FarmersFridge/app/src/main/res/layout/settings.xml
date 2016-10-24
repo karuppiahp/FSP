@@ -1,0 +1,183 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_texture">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="450dp"
+            android:background="@drawable/woodtexturebg"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/yourFBack"
+                android:textStyle="bold"
+                android:id="@+id/yourfeedbackheader"
+                android:layout_marginTop="10dp" >
+
+            </TextView>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/thankyouDesc"
+                android:textStyle="bold"
+                android:id="@+id/thankyouDesc"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/yourfeedbackheader" >
+
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/feedback_textboxbg"
+                    android:id="@+id/imageView3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_above="@+id/imageforemail"/>
+
+                <EditText
+                    android:id="@+id/editxttitle"
+                    android:hint="NAME"
+                    style="@style/editstyle"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:layout_above="@+id/imageforemail" />
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/feedback_textboxbg"
+                    android:id="@+id/imageforemail"
+                    android:layout_centerHorizontal="true"
+                    android:layout_above="@+id/imageView2" />
+
+
+                <EditText
+                    android:id="@+id/emaileditText"
+                    android:hint="EMAIL"
+                    style="@style/editstyle"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:layout_alignBottom="@+id/imageforemail"/>
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/feedbackbg"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="63dp"
+                    android:layout_alignParentBottom="true" />
+
+                <EditText
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/yourmessageText"
+                    android:hint="YOUR MESSAGE..."
+                    android:background="@null"
+                    android:singleLine="false"
+                    android:lines="10"
+                    android:gravity="top"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignTop="@+id/imageView2"
+                    android:layout_alignBottom="@+id/imageView2"
+                    />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btnForSubmit"
+                android:background="@drawable/submitbutton"
+                android:onClick="onSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/deals_green_bar"
+            android:paddingTop="@dimen/normalMargin"
+            android:paddingBottom="@dimen/normalMargin">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/FaqHeader"
+                android:textStyle="bold"
+                android:paddingTop="15dp"
+                android:id="@+id/FaqHeader"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/FaqText"
+                android:textStyle="bold"
+                android:id="@+id/FaqDesc"
+                android:layout_below="@+id/FaqHeader"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <ImageView
+                android:onClick="FAQ"
+                android:id="@+id/faqBtn"
+                android:layout_centerVertical="true"
+                style="@style/NextArrowTheme"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/layForNxtBtn"
+            android:layout_height="fill_parent"
+            android:background="@drawable/termstexturebg"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/TermsHeader"
+                android:textStyle="bold"
+                android:paddingTop="15dp"
+                android:id="@+id/TermsHeader"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/TermsDesc"
+                android:textStyle="bold"
+                android:id="@+id/TermsDesc"
+                android:paddingTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+            </TextView>
+            <ImageView
+
+                android:id="@+id/termsBtn"
+                android:onClick="TermsAndConditions"
+                android:layout_centerVertical="true"
+                style="@style/NextArrowTheme"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_texture"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:id="@+id/registerBtn"
+                    style="@style/RegisterBtnTheme"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/RegisterText" />
+
+                <TextView
+                    android:id="@+id/signuptext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48dp"
+                    android:gravity="center"
+                    android:text="@string/SignupText"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/highMargin">
+
+                <ImageView style="@style/RegisterbackgroundTheme" />
+
+                <EditText
+                    android:id="@+id/edittxtForfName"
+                    style="@style/RegisterETtheme"
+                    android:hint="First Name"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/highMargin">
+
+                <ImageView style="@style/RegisterbackgroundTheme" />
+
+                <EditText
+                    android:id="@+id/edittxtForLName"
+                    style="@style/RegisterETtheme"
+                    android:hint="Last Name"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/highMargin">
+
+                <ImageView style="@style/RegisterbackgroundTheme"
+                    android:id="@+id/imageView4"/>
+
+                <EditText
+                    android:id="@+id/edittxtForEmail"
+                    style="@style/RegisterETtheme"
+                    android:hint="Email"
+                    android:imeOptions="actionNext"
+                    android:maxLines="2"
+                    android:layout_alignRight="@+id/imageView4"
+                    android:layout_alignEnd="@+id/imageView4"
+                    android:layout_alignLeft="@+id/imageView4"
+                    android:layout_alignStart="@+id/imageView4"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/highMargin">
+
+                <ImageView style="@style/RegisterbackgroundTheme" />
+
+                <EditText
+                    android:id="@+id/edittxtForPhone"
+                    style="@style/RegisterETtheme"
+                    android:hint="Phone"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/joinNowBtn"
+                    style="@style/RegisterBtnTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:onClick="WelcomePage"
+                    android:text="@string/JoinNowText" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

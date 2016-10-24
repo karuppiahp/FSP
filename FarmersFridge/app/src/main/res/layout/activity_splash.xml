@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_texture">
+
+    <!--<LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/login"
+        android:orientation="horizontal"></LinearLayout>-->
+
+    <ImageView
+        android:id="@+id/centerTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/marginBottomLarge"
+        android:src="@drawable/logo_large" />
+
+
+    <LinearLayout
+        android:id="@+id/home_gray_ground"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/homeGrayGrndHt"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/home_gray_ground"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/homeGrayGrndHt"
+            android:layout_height="@dimen/homeGrayGrndHt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/highMargin"
+            android:padding="@dimen/normalMargin"
+            android:visibility="gone"
+            android:src="@drawable/arrow_down_white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/marginBottomLarge"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/tractorSize"
+            android:layout_height="@dimen/tractorSize"
+            android:layout_toLeftOf="@+id/imageView"
+            android:layout_toStartOf="@+id/imageView"
+            android:src="@drawable/tractor" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/meterWt"
+            android:layout_height="@dimen/meterHt"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/marginTopHigh"
+            android:src="@drawable/meter" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/centerTxt"
+        android:layout_marginBottom="@dimen/normalMargin"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/layForDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:id="@+id/layForHeader"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/menu_item_header_bar">
+
+            <TextView
+                android:id="@+id/txtForHeader"
+                style="@style/TextMediumNormalTheme"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/smallSpace"
+                />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/layForHeader"
+            android:id="@+id/rec_menu_detail"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layForInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+        <include
+            layout="@layout/menu_info"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

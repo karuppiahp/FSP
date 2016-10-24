@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_texture"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layForLoginTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            >
+
+            <RelativeLayout
+                android:id="@+id/layForLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normalMargin"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/imageforName"
+                    android:layout_width="@dimen/loginBtnWt"
+                    android:layout_height="@dimen/loginBtnHt"
+                    android:background="@drawable/loginbuttonbg"
+                    android:layout_centerHorizontal="true"/>
+
+                <EditText
+                    android:id="@+id/firstNameLogin"
+                    style="@style/FirstNameLogin"
+                    android:hint="@string/name1"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/loginText"
+                    style="@style/LoginTextTheme"
+                    android:text="@string/LoginText"
+                    android:layout_below="@+id/firstNameLogin"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="Login"/>
+            </RelativeLayout>
+
+            <!--<RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/loginBtnHt"
+                android:layout_below="@+id/loginText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/normalMargin"
+                android:layout_toRightOf="@+id/layForLogin">
+
+                <ImageView
+                    android:id="@+id/loginNext"
+                    android:layout_width="@dimen/nextArrow"
+                    android:layout_height="@dimen/nextArrow"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/rightgrayarrow"
+                    android:onClick="Login" />
+            </RelativeLayout>-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/layForLoginTxt"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="@dimen/normalMargin">
+
+            <TextView
+                android:id="@+id/registerBtn"
+                style="@style/RegisterBtnTheme"
+                android:layout_alignParentTop="true"
+                android:onClick="Register"
+                android:text="@string/RegisterText" />
+
+            <TextView
+                android:id="@+id/signuptext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:gravity="center"
+                android:text="@string/SignupText" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

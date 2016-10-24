@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_bg">
+
+    <!--<include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativemainlayout">
+
+
+        <TextView
+            style="@style/HeaderTextTheme"
+            android:id="@+id/faqtitle"
+            android:text="@string/FaqHeader"
+            />
+        <TextView
+            style="@style/HeaderDescTheme"
+            android:text="@string/FaqText"
+            android:id="@+id/faqdesctext"
+            android:layout_below="@id/faqtitle"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativemainlayout"
+        android:id="@+id/relativesublayout">
+        <ImageView
+            android:id="@+id/backbtn"
+            android:background="@drawable/arrow_left_gray"
+            style="@style/ArrowImageThemeLeft"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="backButton"/>
+
+            <ListView
+                android:id="@+id/listViewFaq"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/backbtn"
+                android:layout_margin="@dimen/normalMargin"
+                android:divider="@color/divider"
+                android:dividerHeight="1dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>

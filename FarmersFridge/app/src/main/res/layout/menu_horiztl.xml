@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:id="@+id/hrztlView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <ImageView
+            android:id="@+id/imgForArrowOff"
+            style="@style/ArrowImageTheme"
+            android:layout_margin="@dimen/normalMargin"
+            android:src="@drawable/arrow_right_gray" />
+        <ImageView
+            android:id="@+id/imgForArrowOffLeft"
+            style="@style/ArrowImageThemeLeft"
+            android:layout_margin="@dimen/normalMargin"
+            android:src="@drawable/arrow_left_gray" />
+    </RelativeLayout>
+
+</FrameLayout>

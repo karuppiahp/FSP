@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_texture">
+
+    <RelativeLayout
+        android:id="@+id/layForClose"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/smallSpace"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgForClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/close_icon"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerVertical="true"
+            android:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/txtForLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/green"
+            android:textSize="@dimen/textSizeMedium"
+            android:text="LOG IN"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtForLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/green"
+            android:textSize="@dimen/textSizeMedium"
+            android:text="LOGOUT"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/layForClose"
+        >
+        <RelativeLayout
+            android:id="@+id/layForDeals"
+            style="@style/NavigationImageTheme"
+            android:background="@drawable/nav_bar_deals"
+            />
+        <RelativeLayout
+            android:id="@+id/layForMenus"
+            style="@style/NavigationImageTheme"
+            android:background="@drawable/nav_bar_menus"
+            />
+        <RelativeLayout
+            android:id="@+id/layForLocations"
+            style="@style/NavigationImageTheme"
+            android:background="@drawable/nav_bar_locations"
+            />
+        <RelativeLayout
+            android:id="@+id/layForAbout"
+            style="@style/NavigationImageTheme"
+            android:background="@drawable/nav_bar_about"
+            />
+        <RelativeLayout
+            android:id="@+id/layForMyFridge"
+            style="@style/NavigationImageTheme"
+            android:background="@drawable/nav_my_fridge"
+            />
+        <RelativeLayout
+            android:id="@+id/layForSettings"
+            style="@style/NavigationImageTheme"
+            android:background="@drawable/nav_bar_settings"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

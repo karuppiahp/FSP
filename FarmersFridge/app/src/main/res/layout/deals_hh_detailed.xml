@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layForImage">
+        <ImageView
+            android:id="@+id/imgForDealsHH"
+            style="@style/ImageThemeHH"
+            android:src="@drawable/photo_deals"
+            android:scaleType="fitXY"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtForHHHeader"
+        style="@style/TextSmallThemeMediumBlack"
+        android:layout_centerHorizontal="true"
+        android:text="@string/hhHeaderTxt"
+        android:layout_below="@+id/layForImage"
+        android:layout_marginTop="@dimen/smallSpace"
+        />
+
+    <TextView
+        android:id="@+id/txtForHHHeaderSub"
+        style="@style/TextSmallMediumThemeBlack"
+        android:layout_centerHorizontal="true"
+        android:text="@string/hhHeaderSubTxt"
+        android:layout_below="@+id/txtForHHHeader"
+        />
+
+    <TextView
+        android:id="@+id/txtForHHDesc"
+        style="@style/TextSmallTheme"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/hhDesc"
+        android:layout_marginTop="@dimen/normalMargin"
+        android:layout_below="@+id/txtForHHHeaderSub"
+        />
+
+</RelativeLayout>

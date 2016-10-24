@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/menu_detail_item_title"
+            android:layout_marginLeft="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSizeLarge"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="best salads in world" />
+
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/menu_detail_favourite_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_favorite_black_48dp"/>
+    </LinearLayout>
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/menu_detail_item_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/menu_detail_item_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Bla jfdsidonsodnsio dwjdoisndosdnsion nuin uinunu   ni nun u hiu h ui u n u nu h i hui hui   b z "/>
+
+    <View
+        style="@style/CustomViewGray"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/menu_detail_item_description1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:text="Bla jfdsidonsodnsio dwjdoisndosdnsion nuin uinunu   ni nun u hisdnsjsjsjsjs ssjsjsjsjs sjsjjsjsjsjs jsjsjsjsjsjsjsjjjssu h ui u n u nu h i hui hui   b z "
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menu_detail_item_info"
+            android:text="Info"
+            style="@style/MenuDetailButton" />
+
+        <Button
+            android:id="@+id/menu_detail_item_find"
+            android:text="Find"
+            style="@style/MenuDetailButton" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

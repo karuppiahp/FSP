@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/normalMargin"
+        android:layout_below="@+id/tool_bar"
+        >
+        <EditText
+            android:id="@+id/editTxtForCode"
+            style="@style/editTxtStyle"
+            android:hint="@string/code"
+            android:textColorHint="@color/grey"
+            />
+        <LinearLayout
+            android:id="@+id/layForNxtBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/highMargin"
+            android:layout_below="@+id/editTxtForCode"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Button
+                android:id="@+id/btnForSave"
+                style="@style/SaveBtnThemeshape"
+                android:background="@drawable/shape_rectangle"
+                android:text="Save"
+                android:layout_marginLeft="@dimen/normalMargin"
+                android:onClick="onSave"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

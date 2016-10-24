@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtForOffSub"
+        style="@style/TextXLargeTheme"
+        android:layout_gravity="center"
+        android:text="@string/offDetTxt"
+        />
+    <TextView
+        android:id="@+id/txtForOffSubTxt"
+        style="@style/TextSmallThemeWhite"
+        android:gravity="center"
+        android:text="@string/offDetSubTxt"
+        />
+
+    <ImageView
+        android:id="@+id/imgForDealsHH"
+        style="@style/ImageThemeOff"
+        android:src="@drawable/barcode_style"
+        />
+
+    <TextView
+        android:id="@+id/txtForOffQr"
+        style="@style/TextSmallThemeWhite"
+        android:layout_gravity="center"
+        android:text="@string/offDetQr"
+        />
+
+    <TextView
+        android:id="@+id/txtForOffQrCode"
+        style="@style/TextSmallThemeWhite"
+        android:layout_gravity="center"
+        android:text="@string/offDetQrCode"
+        />
+
+</LinearLayout>

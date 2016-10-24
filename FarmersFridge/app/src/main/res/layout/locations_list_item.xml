@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layForLocationsItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/normalXMargin"
+        android:paddingBottom="@dimen/normalXMargin"
+        android:background="@drawable/deals_white_bar" >
+
+        <TextView
+            android:id="@+id/textForLocTitle"
+            style="@style/locationtextviewTheme"
+            android:padding="@dimen/normalMargin"
+            android:text="dafdafda"
+            android:textSize="@dimen/textSizeLarge"
+            android:background="@drawable/locations_green_bg"/>
+        <TextView
+            android:id="@+id/textForLocDesc"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/textForLocTitle"
+            android:layout_marginTop="@dimen/normalMargin"
+            android:text="dafdafda"
+            style="@style/locationtextviewTheme"
+            android:textSize="@dimen/textSizeMediumSmall" />
+
+    </RelativeLayout>
+</LinearLayout>

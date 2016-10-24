@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--<include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>-->
+    <ImageView
+        android:id="@+id/imgForEdit"
+        style="@style/EditImage"
+        android:layout_below="@+id/tool_bar"
+        />
+    <TableLayout
+        android:id="@+id/linear_layout_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgForEdit"
+        android:layout_marginTop="@dimen/highMargin"
+        android:layout_marginRight="@dimen/normalMargin"
+        android:layout_marginLeft="@dimen/normalMargin">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/normalMargin"
+            >
+            <TextView
+                android:id="@+id/firstNameTxt"
+                style="@style/TableRowTxtTheme"
+                android:text="@string/firstName"
+                />
+
+            <TextView
+                android:id="@+id/firstName"
+                style="@style/TableRowTxtTheme"
+                android:text="@string/name1"
+                android:gravity="right"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/normalMargin"
+            >
+            <TextView
+                android:id="@+id/lastNameTxt"
+                style="@style/TableRowTxtTheme"
+                android:text="@string/lastName"
+                />
+
+            <TextView
+                android:id="@+id/lastName"
+                style="@style/TableRowTxtTheme"
+                android:text="@string/lastname1"
+                android:gravity="right"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/normalMargin"
+            >
+            <TextView
+                android:id="@+id/phoneTxt"
+                style="@style/TableRowTxtTheme"
+                android:text="@string/phone"/>
+
+            <TextView
+                android:id="@+id/phoneNo"
+                style="@style/TableRowTxtTheme"
+                android:text="@string/phone1"
+                android:gravity="right"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/normalMargin"
+            >
+            <TextView
+                android:id="@+id/email"
+                style="@style/TableRowTxtTheme"
+                android:text="@string/email"/>
+
+            <TextView
+                android:id="@+id/emailId"
+                style="@style/TableRowTxtTheme"
+                android:text="@string/email1"
+                android:gravity="right"
+                />
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>

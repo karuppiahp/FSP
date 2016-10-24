@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/firstlayout"
+        android:layout_height="wrap_content"
+        android:id="@+id/percentlayout"
+        android:background="@drawable/deals_green_bar"
+        android:paddingBottom="20dp"
+        android:paddingTop="15dp">
+        <TextView
+            android:id="@+id/youroffers"
+            android:text="@string/myfridgeheader"
+            style="@style/TextviewTheme"
+            android:paddingTop="20dp"/>
+
+        <TextView
+            android:id="@+id/txtForOffMainSub"
+            style="@style/TextSmallThemeWhite"
+            android:layout_gravity="center"
+            android:text="@string/offSubTxt"
+            android:layout_below="@+id/txtForOffMain"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/termsBtn"
+            android:layout_centerVertical="true"
+            style="@style/NextArrowTheme"/>
+
+        <TextView
+            android:layout_below="@+id/youroffers"
+            android:id="@+id/txtForOffMain"
+            style="@style/TextXLargeTheme"
+            android:layout_gravity="center"
+            android:text="@string/offTxt"
+            android:textSize="@dimen/textSizeXLarge"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

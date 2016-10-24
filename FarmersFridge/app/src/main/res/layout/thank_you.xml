@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_texture">
+    <TextView
+        android:id="@+id/ThankyouText"
+        android:text="@string/ThankyouText"
+        style="@style/LoginTextTheme"
+        android:layout_gravity="center_vertical"
+        android:layout_above="@+id/WelcomeText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="35dp" />
+    <TextView
+        android:id="@+id/WelcomeText"
+        android:text="@string/WelcomeText"
+        style="@style/ThankyouTheme"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="85dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/ConfirmationText"
+        android:text="@string/ConfirmationText"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

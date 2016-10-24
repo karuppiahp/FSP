@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<include
+        android:id="@+id/layForHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header"
+        android:layout_marginTop="@dimen/smallSpace"
+        />-->
+
+    <TextView
+        android:id="@+id/txtForInstantMoney"
+        style="@style/TextLargeTheme"
+        android:text="@string/instantMoney"
+        android:layout_marginTop="@dimen/highMargin"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layForHeader"
+        />
+
+    <TextView
+        android:id="@+id/txtForMoneyValue"
+        style="@style/TextXXLargeTheme"
+        android:text="@string/instantMoneyValue"
+        android:layout_marginTop="@dimen/normalMargin"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtForInstantMoney"
+        />
+
+    <TextView
+        android:id="@+id/txtForScanCode"
+        style="@style/TextMediumTheme"
+        android:text="@string/scanBarcode"
+        android:layout_marginTop="@dimen/highMargin"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtForMoneyValue"
+        />
+
+    <ImageView
+        android:id="@+id/imgForBarCode"
+        style="@style/BarCodeImageTheme"
+        android:src="@drawable/barcode_img"
+        android:layout_below="@+id/txtForScanCode"
+        android:layout_marginTop="@dimen/normalMargin"
+        />
+
+    <TextView
+        android:id="@+id/txtForQrCode"
+        style="@style/TextMediumTheme"
+        android:text="@string/qrEnterCode"
+        android:layout_marginTop="@dimen/highMargin"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imgForBarCode"
+        />
+
+    <TextView
+        android:id="@+id/txtForQrEnterCode"
+        style="@style/TextLargeTheme"
+        android:text="@string/qrCode"
+        android:layout_marginTop="@dimen/normalMargin"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtForQrCode"
+        />
+
+</RelativeLayout>

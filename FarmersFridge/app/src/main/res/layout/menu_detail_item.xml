@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layForMenuImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/imgForDish"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/menuDetailImgHt"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgForFav"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="@dimen/highMargin"
+                    android:padding="15dp"
+                    android:src="@drawable/favorite_unselected" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layForItemName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txtForItemName"
+                    style="@style/TextLargeTheme"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/smallSpace"
+                    android:text="Salads" />
+            </RelativeLayout>
+
+</LinearLayout>

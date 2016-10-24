@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<include
+        android:id="@+id/layForHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header"
+        android:layout_marginTop="@dimen/smallSpace"
+        />-->
+
+    <LinearLayout
+        android:id="@+id/layForInstant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/layForHeader"
+        android:layout_marginRight="@dimen/normalMargin"
+        android:orientation="vertical"
+        android:onClick="instantMoney"
+        >
+        <TextView
+            android:id="@+id/txtForInstant"
+            style="@style/TextSmallThemeBold"
+            android:text="@string/instantTxt"
+            />
+        <TextView
+            android:id="@+id/txtForInstantMoney"
+            style="@style/TextMediumThemeBold"
+            android:text="@string/instantMoneyTxt"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_below="@+id/layForInstant"
+        />
+
+    <RelativeLayout
+        android:id="@+id/viewPagerIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/viewPagerCountDots"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txtForHeader"
+        style="@style/TextMediumGreyTheme"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/normalMargin"
+        />
+
+</RelativeLayout>

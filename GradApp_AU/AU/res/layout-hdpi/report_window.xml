@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+    <TextView
+        android:id="@+id/textForInappContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="@string/inapp_content"
+        android:layout_margin="10dp"
+        />
+    
+    <View
+        android:id="@+id/viewForInappContent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        />
+    
+    <TextView
+        android:id="@+id/textForCopyrightInfgmnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="@string/copyright_infrgmnt"
+        android:layout_margin="10dp"
+        />
+    
+    <View
+        android:id="@+id/viewForCopyrightInfrmnt"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        />
+    
+    <TextView
+        android:id="@+id/textForOther"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="@string/other"
+        android:layout_margin="10dp"
+        />
+    
+    <View
+        android:id="@+id/viewForOther"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+
+</LinearLayout>

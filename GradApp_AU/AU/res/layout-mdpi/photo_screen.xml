@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    >
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        layout="@layout/header" />
+
+    <RelativeLayout
+        android:id="@+id/cameraPhotoBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp" >
+        
+        <ImageView
+            android:id="@+id/imageForCaptured"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/contentdesc"
+            android:scaleType="fitXY"
+            />
+        
+        <ImageView
+            android:id="@+id/imageForCameraBtn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/camera_screen_img"
+            android:contentDescription="@string/contentdesc" />
+    </RelativeLayout>
+
+    <!-- <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/cameraPhotoBtn"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/image_01"
+            android:contentDescription="@string/contentdesc" />
+    </RelativeLayout> -->
+    
+    <!-- <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/cameraPhotoBtn"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="20dp" /> -->
+        <FrameLayout
+            android:id="@+id/camera_preview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/cameraPhotoBtn"
+            android:layout_below="@+id/header"
+            android:layout_marginTop="10dp" >
+        
+        <SurfaceView
+			android:id="@+id/surfaceview"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_above="@+id/cameraPhotoBtn"
+        	android:layout_below="@+id/header"
+        	android:layout_marginTop="20dp" />
+        
+        <ImageButton
+            android:id="@+id/zoomOut"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="left|bottom"
+            android:layout_margin="15dp"
+            android:background="@drawable/camera_add_icon"
+            android:contentDescription="@string/contentdesc"
+            />
+        <ImageButton
+            android:id="@+id/cameraSwitch"
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/camera_switch"
+            android:layout_gravity="center|bottom"
+            android:contentDescription="@string/contentdesc"
+            />
+        <ImageButton
+            android:id="@+id/zoomIn"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="15dp"
+            android:background="@drawable/remove_btn"
+            android:contentDescription="@string/contentdesc"
+            />
+        </FrameLayout>
+        
+        <View
+			android:id="@+id/view"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_above="@+id/cameraPhotoBtn"
+        	android:layout_below="@+id/header"
+        	android:layout_marginTop="20dp" />
+
+</RelativeLayout>

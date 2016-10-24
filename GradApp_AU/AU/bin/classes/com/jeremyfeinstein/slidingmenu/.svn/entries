@@ -1,0 +1,35 @@
+10
+
+dir
+4905
+svn://192.168.1.247/Gradapp_Android/trunk/UA/AU/bin/classes/com/jeremyfeinstein/slidingmenu
+svn://192.168.1.247
+delete
+
+
+2015-07-06T14:48:50.490842Z
+4905
+karupaiya
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3ada5e74-767e-4219-96c6-5df16ed82ec1
+
+lib
+dir
+
+
+
+delete
+

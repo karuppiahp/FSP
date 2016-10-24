@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hamberger_bg"
+    >
+    
+    <RelativeLayout
+        android:id="@+id/layoutForunivIconMenus"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="100dp"
+        android:visibility="gone"
+        >
+        <include
+            android:id="@+id/sideMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            layout="@layout/univ_side_menu"
+            />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/layoutForSurveyFull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/commencement_bg"
+        >
+        <RelativeLayout
+	        android:id="@+id/layoutForSwipe"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        />
+        <include
+            android:id="@+id/header"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			layout="@layout/header"
+			/>
+        <TextView
+            android:id="@+id/textForSurveyHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/survey"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+        <ListView
+            android:id="@+id/listForSurvey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textForSurveyHeader"
+            android:layout_margin="15dp"
+            />
+        <!--     <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textForSurveyHeader"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+	            <LinearLayout
+	                android:id="@+id/layoutForSurvey"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_margin="10dp"
+	                android:orientation="vertical"
+	                />
+            </ScrollView>  -->
+            <RelativeLayout
+		        android:id="@+id/layoutForMaximizeClick"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:visibility="gone"
+		        />
+    </RelativeLayout>
+
+</RelativeLayout>

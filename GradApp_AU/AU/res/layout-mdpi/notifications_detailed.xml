@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/commencement_bg" >
+    
+    <include
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        layout="@layout/header" />
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/layoutForNotifyDetailedName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" >
+
+                <TextView
+                    android:id="@+id/textforNotifyDetailedName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/imgForClockNotify"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_below="@+id/textforNotifyDetailedName"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/contentdesc"
+                    android:src="@drawable/search_clock" />
+
+                <TextView
+                    android:id="@+id/textForNotifyDetailedTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textforNotifyDetailedName"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:layout_toRightOf="@+id/imgForClockNotify"
+                    android:textColor="@color/eventStartTime" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewForDetailedNotify"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/layoutForNotifyDetailedName"
+                android:layout_marginTop="20dp"
+                android:background="@color/myScheduleView" />
+
+            <TextView
+                android:id="@+id/textForDetailedNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewForDetailedNotify"
+                android:layout_margin="15dp"
+                android:autoLink="all"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

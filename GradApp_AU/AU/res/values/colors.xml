@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#111111</color>
+    <color name="spinnerTxtBg">#ab0520</color>
+    <color name="tandcBlue">#b8cdff</color>
+    <color name="faqAnswer">#0c234b</color>
+    <color name="surveyView">#4c4c41</color>
+    <color name="settingsView">#4c4c41</color>
+    <color name="settingsSpinnerTxt">#868886</color>
+    <color name="myScheduleTimeTxt">#b3b7c3</color>
+    <color name="myScheduleView">#C9C6C6</color>
+    <color name="eventHall">#d3d5df</color>
+    <color name="alertView">#7d8080</color>
+    <color name="alertBlue">#2181f7</color>
+    <color name="twitEditTxt">#868886</color>
+    <color name="txtForTweets">#d3d5df</color>
+    <color name="buttonbackground"> #747897</color>
+    <color name="editTextColors">#d5cfd3</color>
+    <color name="grey">#D0D0D0</color>
+    <color name="mapbg">#4c4f50</color>
+    <color name="settingsSubHeader">#58574d</color>
+    <color name="settingsViewBg">#444646</color>
+    <color name="eventStartTime">#b6263d</color>
+    <color name="redBg">#ab0520</color>
+</resources>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    tools:context=".MainActivity" >
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/header" />
+    
+    <RelativeLayout
+        android:id="@+id/imagedetailspicturename"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header" >
+
+        <TextView
+            android:id="@+id/textForPhotoName"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/photoName"
+            android:textColor="@color/white" />
+        <EditText
+            android:id="@+id/editTextForPhotoName"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/photoName"
+            android:visibility="gone"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/cameraphoto"
+        android:layout_width="fill_parent"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+     
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/layForPhotoBack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".99"
+            android:background="@color/redBg" >
+            
+            <ImageView
+                android:id="@+id/photoBgTransparent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/photo_options_transparent"
+                android:contentDescription="@string/contentdesc" />
+
+            <ImageView
+                android:id="@+id/picturebackimg"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/back_arrow"
+                android:contentDescription="@string/contentdesc" />
+
+            <TextView
+                android:id="@+id/textForPhotoBack"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/picturebackimg"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/pictureOptionBack"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".01"
+            />
+
+        <RelativeLayout
+            android:id="@+id/layForPhotoDelete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".99"
+            android:background="@color/redBg" >
+            
+            <ImageView
+                android:id="@+id/photoBgTransparentDelete"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/photo_options_transparent"
+                android:contentDescription="@string/contentdesc" />
+
+            <ImageView
+                android:id="@+id/pictureDelete"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/delet"
+                android:contentDescription="@string/contentdesc" />
+
+            <TextView
+                android:id="@+id/textForPhotoDelete"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pictureDelete"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/pictureOptionDelete"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".01"
+            />
+
+        <RelativeLayout
+            android:id="@+id/layForPhotoShare"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".99"
+            android:background="@color/redBg" >
+            
+            <ImageView
+                android:id="@+id/photoBgTransparentShare"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/photo_options_transparent"
+                android:contentDescription="@string/contentdesc" />
+
+            <ImageView
+                android:id="@+id/pictureshare"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/share"
+                android:contentDescription="@string/contentdesc" />
+
+            <TextView
+                android:id="@+id/textForPhotoShare"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pictureshare"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/pictureOptionShare"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".01"
+            />
+        
+        <RelativeLayout
+            android:id="@+id/layForPhotoSave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".99"
+            android:background="@color/redBg" >
+            
+            <ImageView
+                android:id="@+id/photoBgTransparentSave"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/photo_options_transparent"
+                android:contentDescription="@string/contentdesc" />
+
+            <ImageView
+                android:id="@+id/picturesave"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/saveing"
+                android:contentDescription="@string/contentdesc" />
+
+            <TextView
+                android:id="@+id/textForPhotoSave"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/picturesave"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/pictureOptionSave"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/cameraphoto"
+        android:layout_below="@+id/imagedetailspicturename" >
+
+        <FrameLayout
+            android:id="@+id/frameForCapturedImages"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            >
+	        <com.gradapp.au.support.SquareImageView
+	            android:id="@+id/imageFromCapturing"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_gravity="center"	
+	            android:adjustViewBounds="true"
+	            android:scaleType="fitCenter"
+	            android:src="@drawable/image_01"
+	            android:contentDescription="@string/contentdesc" />
+
+	        <ProgressBar
+	            android:id="@+id/progressBarForImage"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:visibility="gone" />
+
+    </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

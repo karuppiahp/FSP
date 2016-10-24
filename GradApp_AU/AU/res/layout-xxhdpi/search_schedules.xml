@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/commencement_bg" >
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/header" />
+
+    <RelativeLayout
+        android:id="@+id/layoutForSearchField"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/search_edittext_bg" >
+        
+        <RelativeLayout
+            android:id="@+id/layoutForSearchCenter"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            >
+             <RelativeLayout
+                android:layout_width="wrap_content"
+            	android:layout_height="fill_parent"
+            	android:layout_centerInParent="true"
+                >
+	            <ImageView
+		            android:id="@+id/imageForSearchIconCenter"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="10dp"
+		            android:contentDescription="@string/contentdesc"
+		            android:src="@drawable/search_icon" />
+	            <TextView
+	                android:id="@+id/textForSearchIcon"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_toRightOf="@+id/imageForSearchIconCenter"
+	                android:layout_marginLeft="5dp"
+	                android:layout_centerVertical="true"
+	                android:text="@string/searchTxt"
+	                android:textColor="@color/black"
+	                android:textSize="18sp"
+	                />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutForSearch"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:visibility="gone"
+            >
+		        <ImageView
+		            android:id="@+id/imageForSearchIcon"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="10dp"
+		            android:contentDescription="@string/contentdesc"
+		            android:src="@drawable/search_icon" />
+		
+		        <EditText
+		            android:id="@+id/editTxtForSearchSchedules"
+		            android:layout_width="match_parent"
+		            android:layout_height="40dp"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="5dp"
+		            android:layout_toRightOf="@+id/imageForSearchIcon"
+		            android:background="@null"
+		            android:hint="@string/searchTxt"
+		            android:imeOptions="actionNext"
+		            android:paddingLeft="5dp"
+		            android:singleLine="true"
+		            android:visibility="visible"
+		            android:textColor="@color/black" >
+	            </EditText>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutForSearchField"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp" >
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+	        <LinearLayout
+	            android:id="@+id/layoutForMySchedule"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:orientation="vertical" />
+
+	        <LinearLayout
+	            android:id="@+id/layoutForMyScheduleSearch"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:orientation="vertical"
+	            android:visibility="gone" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

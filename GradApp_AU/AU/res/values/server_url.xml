@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="base_url">http://162.242.213.37/administration/%s</string> <!-- dev url -->
+    <!-- <string name="base_url">http://grad-app.com/administration/%s</string> --> <!-- prod url -->
+    <string name="user_role">mobile_users/schoollist</string>
+    <string name="register_user">mobile_users/registration</string>
+    <string name="survey_url">mobile_users/survey</string>
+    <string name="survey_answer_url">mobile_users/surveyanswer</string>
+    <string name="settings_school_update">mobile_users/settingupdate</string>    
+    <string name="user_schools">mobile_users/userschool</string>
+    <string name="photo_upload_url">mobile_users/uploadFile</string>
+    <string name="settings_schoollist_url">mobile_users/settingschool</string>
+    <string name="schedule_school_update">mobile_users/settingschoolupdate</string>
+    <string name="user_school_delete">mobile_users/schooldelete</string>
+    <string name="faq_url">mobile_users/faqresult</string>
+    <string name="event_url">mobile_users/event</string>
+    <string name="event_detail_url">mobile_users/eventdetails</string>
+    <string name="hashtag_url">mobile_users/hashresult</string>
+    <string name="stream_id_url">mobile_users/photostream_android</string>
+    <string name="rsvp_details">mobile_users/rsvpdetails</string>
+    <string name="camera_stream_retrieve">mobile_users/retriveupload_android</string>
+    <string name="notifications_url">mobile_users/multiplenotify</string>
+    <string name="report_api">mobile_users/report</string>
+    <string name="commencement_url">mobile_users/commencement</string>
+    <string name="hamburger_name">mobile_users/hamburgername</string>
+    <string name="hamburger_static_page">mobile_users/staticpage</string>
+    <string name="settings_view">mobile_users/settings_view</string>
+	<string name="settings_edit">mobile_users/settings_edit</string>
+	<string name="notify_status">mobile_users/pushdetails</string>
+	<string name="handicap_access">mobile_users/handicap_access</string>
+	<string name="settings_college_edit">mobile_users/schoolupdate</string>
+	<string name="notification_read">mobile_users/notification_read</string>
+	<string name="searchSchedule">mobile_users/search_school</string>
+	<string name="addOtherSchedule">mobile_users/add_other_schedule</string>
+	<string name="galleryUpload">mobile_users/galleryUpload</string>
+	<string name="galleryRetrieve">mobile_users/gallery_retrive_android</string>
+	<string name="galleryRemove">mobile_users/gallery_remove</string>
+	<string name="uploadToStream">mobile_users/stream_photo_upload</string>
+	<string name="streamToGallery">mobile_users/stream_image_gallery</string>
+	<string name="streamPhotoRemove">mobile_users/stream_photo_remove</string>
+	<string name="userEventDelete">mobile_users/user_event_delete</string>
+	<string name="hashTweetCount">mobile_users/hash_tweet</string>
+</resources>

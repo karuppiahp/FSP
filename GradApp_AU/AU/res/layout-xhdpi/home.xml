@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/layoutForunivIconMenus"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="100dp"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/sideMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            layout="@layout/univ_side_menu" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutFormainScreenFull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/commencement_bg" >
+        
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+        <RelativeLayout
+            android:id="@+id/layoutForSwipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="195dp" >
+
+            <ImageView
+                android:id="@+id/imgForCollege"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:contentDescription="@string/contentdesc"
+                android:scaleType="fitXY"
+                android:src="@drawable/college_photo" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" >
+
+                <include
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    layout="@layout/header" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutForOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="210dp" >
+
+            <ImageButton
+                android:id="@+id/imageForMySchedule"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@drawable/my_shedule"
+                android:contentDescription="@string/contentdesc" />
+
+            <ImageButton
+                android:id="@+id/imageForCommencementPrg"
+                android:layout_width="150dp"
+                android:layout_height="110dp"
+                android:layout_below="@+id/imageForMySchedule"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/commencement_program"
+                android:contentDescription="@string/contentdesc" />
+
+            <ImageButton
+                android:id="@+id/imageForNotifications"
+                android:layout_width="150dp"
+                android:layout_height="110dp"
+                android:layout_below="@+id/imageForMySchedule"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="17dp"
+                android:layout_toRightOf="@+id/imageForCommencementPrg"
+                android:background="@drawable/notifications"
+                android:contentDescription="@string/contentdesc" />
+
+            <View
+                android:id="@+id/invisible_for_badge_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="45dp"
+                android:layout_alignBottom="@+id/imageForNotifications"
+                android:layout_alignLeft="@+id/imageForNotifications"
+                android:layout_alignRight="@+id/imageForNotifications"
+                android:layout_alignTop="@+id/imageForNotifications" />
+
+            <ImageButton
+                android:id="@+id/imageForSocialMedia"
+                android:layout_width="150dp"
+                android:layout_height="110dp"
+                android:layout_below="@+id/imageForCommencementPrg"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/social_media"
+                android:contentDescription="@string/contentdesc" />
+
+            <ImageButton
+                android:id="@+id/imageForCamera"
+                android:layout_width="150dp"
+                android:layout_height="110dp"
+                android:layout_below="@+id/imageForCommencementPrg"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="17dp"
+                android:layout_toRightOf="@+id/imageForSocialMedia"
+                android:background="@drawable/camera"
+                android:contentDescription="@string/contentdesc" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layForBottomTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/imgForRightArrow"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@string/contentdesc"
+                android:src="@drawable/right_arrow" />
+
+            <TextView
+                android:id="@+id/textForBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/home_btm_txt"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/layoutForOptions"
+            android:layout_marginTop="20dp"
+            />
+        </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

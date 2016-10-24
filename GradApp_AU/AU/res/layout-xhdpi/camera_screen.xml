@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hamberger_bg" >
+    
+    <RelativeLayout
+        android:id="@+id/layoutForunivIconMenus"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="100dp"
+        android:visibility="gone"
+        >
+        <include
+            android:id="@+id/sideMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            layout="@layout/univ_side_menu"
+            />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/layoutForCameraScreenFull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_bg" >
+        
+        <RelativeLayout
+	        android:id="@+id/layoutForSwipe"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        />
+
+        <include
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            layout="@layout/header" />
+        
+        <ListView
+            android:id="@+id/listOfCameraItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_above="@+id/layForCameraBottom"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/layForCameraBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:baselineAligned="false" >
+
+            <RelativeLayout
+                android:id="@+id/layForCamera"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:contentDescription="@string/contentdesc"
+                    android:src="@drawable/camera_screen_img" />
+
+                <TextView
+                    android:id="@+id/textForCameraCamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/cameraTxt"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layForMyGallery"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:contentDescription="@string/contentdesc"
+                    android:src="@drawable/my_gallery_img" />
+
+                <TextView
+                    android:id="@+id/textForCameraGallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/myGalleryTxt"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout
+	        android:id="@+id/layoutForMaximizeClick"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:visibility="gone"
+	        />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gradapp.au.activities"
+    android:versionCode="7"
+    android:versionName="1.6" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+
+    <permission android:name="com.gradapp.au.activities.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+
+	<uses-permission android:name="com.gradapp.au.activities.permission.MAPS_RECEIVE"/>
+	
+	<uses-permission android:name="android.permission.INTERNET" />
+	
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	
+	<uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+    
+    <!-- REQUIRED PERMISSIONS (for Urban Airship GCM) -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    	
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- This app has permission to register with GCM and receive message -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- MODIFICATION REQUIRED - Replace "com.urbanairship.push.sample" with your package name -->
+   <permission
+        android:name="com.gradapp.au.activities.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+	<uses-permission android:name="com.gradapp.au.activities.permission.C2D_MESSAGE" />
+   
+    <!-- The two elements above ensure that only this application can receive the messages and registration result -->
+    <!-- END Urban Airship Required Permissions -->
+	 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	 <!-- END OPTIONAL Urban Airship Settings -->
+	 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	 
+	 <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
+	
+	<uses-feature
+	    android:glEsVersion="0x00020000"
+	    android:required="true"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application
+        android:name="com.gradapp.au.application.GradAppApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:largeHeap="true"
+        android:hardwareAccelerated="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gradapp.au.register.RegisterTypeActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.gradapp.au.register.RegisterThroughActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.gradapp.au.register.RegisterActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.gradapp.au.homescreen.HomeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.gradapp.au.homescreen.CommencementActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.gradapp.au.homescreen.MyScheduleActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.gradapp.au.homescreen.MyScheduleEventScreen"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.gradapp.au.homescreen.SearchScheduleActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.gradapp.au.homescreen.NotificationsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.gradapp.au.homescreen.NotificationDetailedActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.gradapp.au.homescreen.SocialMediaActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.gradapp.au.hamburger.menus.FAQActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.gradapp.au.hamburger.menus.SurveyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.gradapp.au.hamburger.menus.SettingsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.gradapp.au.hamburger.menus.StaticPages"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.gradapp.au.homescreen.CameraActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.gradapp.au.activities.StreamScreenGridActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.gradapp.au.activities.GalleryScreenCustomActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.gradapp.au.activities.PhotoScreenActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.gradapp.au.activities.PhotoScreenOptions"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.gradapp.au.activities.EditSchedulesActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.gradapp.au.twitter.TwitterLoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog"
+            />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCvl6rwUvTOtqIDmjQ9fCJ1hGjn_PJI8A0" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"
+            />
+        <uses-library android:name="com.google.android.maps" />
+        
+        <activity 
+            android:name="com.facebook.LoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"    
+            android:label="@string/app_name" />       
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id" />
+        
+        <intent-filter>
+            <action android:name="android.intent.action.SEND" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+
+            <data android:mimeType="image/*" />
+        </intent-filter>
+        
+        <!-- REQUIRED for Urban Airship GCM -->
+        <receiver android:name="com.urbanairship.CoreReceiver" />
+        <receiver
+            android:name="com.urbanairship.push.GCMPushReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!-- MODIFICATION REQUIRED - Use your package name as the category -->
+                <category android:name="com.gradapp.au.activities"/>
+            </intent-filter>
+
+        </receiver>
+
+        <service
+            android:name="com.urbanairship.push.PushService"
+            android:label="Push Notification Service" />
+       
+        <service
+            android:name="com.urbanairship.analytics.EventService"
+            android:label="Event Service" />
+
+        <!-- This is required for persisting preferences related to push and location -->
+        <!-- MODIFICATION REQUIRED - Use your package name + ".urbanairship.provider" in the android:authorities -->
+        <provider
+            android:name="com.urbanairship.UrbanAirshipProvider"
+            android:authorities="com.gradapp.au.activities.urbanairship.provider"
+            android:exported="false"
+            android:multiprocess="true" />
+        <!-- END OF REQUIRED ITEMS -->
+
+        <!-- OPTIONAL (for segments support) -->
+        <service
+            android:name="com.urbanairship.location.LocationService"
+            android:label="Segments Service" />
+
+        <!-- OPTIONAL, if you want to receive push, push opened and registration completed intents -->
+        <!-- Replace the receiver below with your package and class name -->
+        <receiver android:name="com.gradapp.au.support.IntentReceiver" />
+        <!-- <meta-data android:name="com.crashlytics.ApiKey" android:value="AIzaSyCH_KrnX-BaW5xqh7qxts4haOnN9ww0zRc"/> --> <!-- dev key -->
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="AIzaSyA087AidCCOVr6wezAvkuqyBjS_mfoCaxM"/> <!-- production key -->
+    </application>
+
+</manifest>

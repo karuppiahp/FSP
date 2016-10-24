@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:id="@+id/headerLay"
+    >
+    <RelativeLayout
+        android:id="@+id/headerBg"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        >
+        <RelativeLayout
+            android:id="@+id/layoutForSliderMenu"
+            android:layout_width="70dp"
+            android:layout_height="fill_parent"
+            >
+		     <ImageButton
+		        android:id="@+id/btnSliderMenu"
+		        android:layout_width="35dp"
+		        android:layout_height="28dp"
+		        android:layout_marginLeft="15dp"
+		        android:layout_centerVertical="true"
+		        android:visibility="gone"
+		        android:background="@drawable/univ_menu_icon"
+		        android:contentDescription="@string/contentdesc" />
+	     </RelativeLayout>
+	
+        <RelativeLayout
+            android:id="@+id/layoutForBackBtn"
+            android:layout_width="70dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            >
+		    <ImageButton
+		        android:id="@+id/backBtn"
+		        android:layout_width="22dp"
+		        android:layout_height="22dp"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="15dp"
+		        android:background="@drawable/back_arrow"
+		        android:contentDescription="@string/contentdesc"
+		        />
+	    </RelativeLayout>
+	
+	    <TextView
+	        android:id="@+id/textForHeader"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:textColor="@color/black"
+	        android:text="@string/headertxt"
+	        android:textSize="17sp" />
+	
+	    <RelativeLayout
+            android:id="@+id/layoutForHamburger"
+            android:layout_width="70dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            >
+		    <ImageButton
+		        android:id="@+id/btnHamberger"
+		        android:layout_width="25dp"
+		        android:layout_height="20dp"
+		        android:layout_centerVertical="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="15dp"
+		        android:background="@drawable/hamberger_icon"
+		        android:contentDescription="@string/contentdesc" />
+	    </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UA Grad</string>
+    <string name="action_settings">Settings</string>
+    <string name="contentdesc">grad</string>
+    <string name="headertxt">GRAD APP</string>
+    <string name="app_id">973933442632758</string> <!-- dev fb app key --> 
+    
+    <!-- <string name="app_id">612379285555302</string> --> <!-- prod fb app key -->
+    
+    <!-- <string name="collegeName">Post your all text here&#8230;</string> -->
+    <string name="collegeName"></string>
+    <string name="collegeUniv">U N I V E R S I T Y</string>
+    
+    <!-- RegisterType Screen -->
+    <string name="guestGraduate">Guest/Graduate</string>
+    <string name="pickSchool">Pick a School</string>
+    
+    <!-- Register Screen -->
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="studentName">Student Name</string>
+    <string name="email">E-mail</string>
+    <string name="termsTxt">By registering you agree to</string>
+    <string name="tandc"><u>Terms of Service</u></string>
+    <string name="and">and</string>
+    <string name="behaviourPolicy"><u>Behavior Policy</u></string>
+    <string name="privacyPolicy"><u>Privacy Policy</u></string>
+    <string name="dob">Date of Birth</string>
+    <string name="studentNo">Student Number</string>
+    <string name="noOfGuset">No. of Guest</string>
+    <string name="userRoleLabel">User Role</string>
+    <string name="schoolNameLabel">School Name</string>
+    <string name="registerText">In order for us to provide you the exact data and updates about your commencement experience please fil in all the registeration fields.You can always change those in your settings</string>
+    
+    <!-- Home screen -->
+    <string name="home_btm_txt">New technologies are transforming the way..</string>
+    
+    <!-- Hamburger Text -->
+    <string name="faq">FAQ</string>
+    <string name="handicapAccess">Settings</string>
+    <string name="survey">SURVEY</string>
+    <string name="viewOthers">View other Schedules</string>
+    
+    <!-- Right Side Menu -->
+    <string name="mySchedule">My Schedule</string>
+    <string name="userSchedule">User Added Schedules</string>
+    <string name="commencementPrg">Commencement Program</string>
+    <string name="notifications">Notifications</string>
+    <string name="socialmedia">Social Media</string>
+    <string name="camera">Camera</string>
+    
+    <!-- Survey screen -->
+    <string name="radiobtnYes">Yes</string>
+    <string name="radiobtnNo">No</string>
+    
+    <!-- Settings Screen -->
+    <string name="settings_header">SETTINGS</string>
+    <string name="settingsEditTxtHint">First and Last Name</string>
+    <string name="pushNotification">Push Notifications</string>
+    <string name="handicapAccessSettings">Do you need Handicap Access?</string>
+    <string name="userProfile">User Profile</string>
+    <string name="changeCollege">College Settings</string>
+    <string name="connectFb">Connect with Facebook</string>
+    <string name="connectTwitter">Connect with Twitter</string>
+    <string name="userProfileSettings">User Profile</string>
+    <string name="settingsEditTxt">Edit</string>
+    <string name="settingsStudentType">Student Type</string>
+    
+    <!-- Commencement Screen -->
+    <string name="commencementTxt">The program will be available on commencement day.Please check back soon!</string>
+    
+    <!-- Event Screen -->
+    <string name="anyQueries">If you have any questions or concerns,</string>
+    
+    <!-- Alert Screen -->
+    <string name="alertCancel">Cancel</string>
+    <string name="alertOk">OK</string>
+    <string name="alertTxt">\"Grad App\" Would Like to Use Your Current Location</string>
+    
+    <!-- Notifications Screen -->
+    <string name="notificationsHeader">NOTIFICATIONS</string>
+    
+    <!-- Camera Screen -->
+    <string name="streamTxt">Stream</string>
+    <string name="cameraTxt">Camera</string>
+    <string name="myGalleryTxt">My Gallery</string>
+    
+    <!-- Photo screen options -->
+    <string name="pictureOptionBack">Back</string>
+    <string name="pictureOptionSave">Save</string>
+    <string name="pictureOptionDelete">Discard</string>
+    <string name="pictureOptionShare">Share</string>
+    <string name="photoName">PHOTO NAME</string>
+    
+    <!-- Report dialog text -->
+    <string name="inapp_content">Inappropriate content</string>
+    <string name="copyright_infrgmnt">Copyright infringement</string>
+    <string name="other">Other</string>
+    
+    <!-- MY Schedule screen -->
+    <string name="addOtherSchedules">Add Events</string>
+    <string name="editSchedules">Edit</string>
+    <string name="emptySchedules">No user events found right now</string>
+    
+    <!-- Search Schedule Screen -->
+    <string name="searchTxt">Search</string>
+</resources>

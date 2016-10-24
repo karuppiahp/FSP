@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg" >
+
+    <RelativeLayout
+        android:id="@+id/layoutForunivIconMenus"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="100dp"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/sideMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            layout="@layout/univ_side_menu" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutForSettingsFull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_bg" >
+
+        <RelativeLayout
+            android:id="@+id/layoutForSwipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            layout="@layout/header" />
+        
+        <RelativeLayout
+            android:id="@+id/layoutForSettingsFields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp" >
+        
+	        <TextView
+	            android:id="@+id/textForUserProfile"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/userProfile"
+	            android:textColor="@color/white"
+	            android:textSize="16sp"
+	            android:layout_marginTop="5dp"
+	            />
+	        
+	        <TextView
+	            android:id="@+id/textForChangeCollege"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/changeCollege"
+	            android:textColor="@color/white"
+	            android:textSize="16sp"
+	            android:layout_below="@+id/textForUserProfile"
+	            android:layout_marginTop="15dp"
+	            />
+	        
+	        <RelativeLayout
+	            android:id="@+id/layoutForNotification"
+	            android:layout_width="match_parent"
+	            android:layout_height="40dp"
+	            android:layout_below="@+id/textForChangeCollege"
+	            android:layout_marginTop="15dp"
+	            >
+	                <TextView
+	                    android:id="@+id/textForPushNotification"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerVertical="true"
+	                    android:text="@string/pushNotification"
+	                    android:textColor="@color/white"
+	                    android:textSize="16sp"
+	                    />
+	                <ImageView
+	                    android:id="@+id/imageForPushOn"
+	                    android:layout_width="50dp"
+	                    android:layout_height="fill_parent"
+	                    android:layout_centerVertical="true"
+	                    android:layout_alignParentRight="true"
+	                    android:src="@drawable/settings_on_btn"
+	                    android:scaleType="fitXY"
+	                    android:layout_marginTop="3dp"
+	                    android:layout_marginBottom="3dp"
+	                    />
+	                <ImageView
+	                    android:id="@+id/imageForPushOff"
+	                    android:layout_width="50dp"
+	                    android:layout_height="fill_parent"
+	                    android:layout_centerVertical="true"
+	                    android:layout_alignParentRight="true"
+	                    android:src="@drawable/settings_off_btn"
+	                    android:scaleType="fitXY"
+	                    android:layout_marginTop="3dp"
+	                    android:layout_marginBottom="3dp"
+	                    android:visibility="gone"
+	                    />
+	            </RelativeLayout>
+	            
+	            <RelativeLayout
+	                android:id="@+id/layoutForHandicapAccess"
+	                android:layout_width="match_parent"
+	                android:layout_height="40dp"
+	                android:layout_below="@+id/layoutForNotification"
+	                android:layout_marginTop="5dp"
+	                >
+	                <TextView
+	                    android:id="@+id/textForHandicapAccess"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerVertical="true"
+	                    android:text="@string/handicapAccess"
+	                    android:textColor="@color/white"
+	                    android:textSize="16sp"
+	                    />
+	                <ImageView
+	                    android:id="@+id/imageForHandicapOn"
+	                    android:layout_width="50dp"
+	                    android:layout_height="fill_parent"
+	                    android:layout_centerVertical="true"
+	                    android:layout_alignParentRight="true"
+	                    android:src="@drawable/settings_on_btn"
+	                    android:scaleType="fitXY"
+	                    android:layout_marginTop="3dp"
+	                    android:layout_marginBottom="3dp"
+	                    />
+	                <ImageView
+	                    android:id="@+id/imageForHandicapOff"
+	                    android:layout_width="50dp"
+	                    android:layout_height="fill_parent"
+	                    android:layout_centerVertical="true"
+	                    android:layout_alignParentRight="true"
+	                    android:src="@drawable/settings_off_btn"
+	                    android:scaleType="fitXY"
+	                    android:layout_marginTop="3dp"
+	                    android:layout_marginBottom="3dp"
+	                    android:visibility="gone"
+	                    />
+	            </RelativeLayout>
+	            
+	            <TextView
+		            android:id="@+id/textForConnectFb"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/connectFb"
+		            android:textColor="@color/white"
+		            android:textSize="16sp"
+		            android:layout_below="@+id/layoutForHandicapAccess"
+		            android:layout_marginTop="15dp"
+		            />
+	            
+	            <TextView
+		            android:id="@+id/textForConnectTwitter"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/connectTwitter"
+		            android:textColor="@color/white"
+		            android:textSize="16sp"
+		            android:layout_below="@+id/textForConnectFb"
+		            android:layout_marginTop="15dp"
+		            />
+            </RelativeLayout>
+    	<RelativeLayout
+            android:id="@+id/layoutForMaximizeClick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

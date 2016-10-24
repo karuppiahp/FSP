@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" 
+    android:background="@color/white">
+
+   <!--  <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+       android:layout_margin="5dp"
+        
+        android:background="@drawable/list_square11" >
+
+
+        <ImageView
+            android:id="@+id/eve_img_detail1"
+            android:layout_width="65dp"
+            android:layout_height="70dp"
+         android:layout_marginTop="5dp"  
+       android:layout_marginLeft="5dp"
+         android:layout_marginBottom="5dp"
+android:layout_marginRight="5dp"
+            
+           />
+    </LinearLayout> -->
+
+    <RelativeLayout        
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"           
+        
+         >
+
+        <TextView
+            android:id="@+id/text1_detail1"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:textColor="@color/drinksbartextcolor"
+            android:layout_marginTop="3dp"            
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/text3_detail1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1_detail1"
+            android:textColor="@color/drinksbartextsecondcolor"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="14sp"            
+            android:gravity="center_vertical"      
+            android:layout_marginLeft="10dp"   
+            android:ellipsize="end"/>
+
+      <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/text3_detail1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/dividerbarlist"
+          />
+      
+    </RelativeLayout>
+
+</LinearLayout>

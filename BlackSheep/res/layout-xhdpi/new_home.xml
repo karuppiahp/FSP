@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/splashbg"
+     >
+
+    <!--
+         <RelativeLayout
+        android:id="@+id/lay_home1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btn_head"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header"
+            android:text="HOME"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        </RelativeLayout>
+    -->
+
+   <!--  <ScrollView
+        android:id="@+id/scroll_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"> -->
+       
+
+            <ImageView
+                android:id="@+id/img_heythere"
+                android:layout_width="190dp"
+                android:layout_height="180dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/logo" />
+
+            <!-- <ImageView -->
+            <!-- android:id="@+id/img_what" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+
+
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:layout_marginTop="10dp" -->
+            <!-- android:layout_below="@+id/img_heythere" -->
+            <!-- android:src="@drawable/what_u_like" /> -->
+            
+             <RelativeLayout 
+                android:id="@+id/subrelative"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"            
+                android:layout_above="@+id/img_drink_games"
+                android:layout_marginBottom="20dp">
+            
+            <TextView
+                android:id="@+id/img_dinks_spl"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"               
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"                
+                 android:background="@color/white"
+                android:textColor="@color/black"  
+                android:textScaleX="1.2"      
+                android:gravity="center"
+                android:text="@string/drinks" />
+
+            <TextView
+                android:id="@+id/img_read_Articles"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/img_dinks_spl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:textColor="@color/black"     
+                android:textScaleX="1.2"   
+                android:gravity="center"
+                android:text="@string/articles" />
+            
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/img_drink_games"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"               
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="75dp"
+                android:background="@color/white"
+                android:textScaleX="1.2"
+                android:gravity="center"
+                android:textColor="@color/black"        
+                android:text="@string/games" />
+
+            
+           <!--   <TextView
+            android:id="@+id/text"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_below="@+id/img_drink_games"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/> -->
+             
+            <!-- <Button
+                android:id="@+id/sharelove"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/img_drink_games"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectanglebg"
+                android:text="@string/love" /> -->
+
+            <!--
+       <ImageView
+            android:id="@+id/img_party_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_drink_games"
+             android:layout_centerHorizontal="true"
+           
+            android:src="@drawable/party_pic" />
+        <ImageView
+        android:id="@+id/img_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/showus"
+        android:layout_below="@+id/img_party_pic"
+        android:layout_centerHorizontal="true"
+       />
+
+        <ImageView
+            android:id="@+id/img_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/img_share"
+            android:layout_marginBottom="35dp"
+           android:layout_marginLeft="20dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/how_else" />
+
+        <ImageView
+            android:id="@+id/img_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+           android:layout_alignParentBottom="true"
+            
+            android:layout_toRightOf="@+id/img_help"
+           android:layout_below="@+id/img_share"
+            android:src="@drawable/settings" />
+
+        <ImageView
+            android:id="@+id/img_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/info_home" 
+            android:layout_marginBottom="35dp"
+            android:layout_below="@+id/img_share"/>
+            -->
+
+       
+   <!--  </ScrollView> -->
+
+   <!--  <LinearLayout
+        android:id="@+id/bottomlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/homebtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_b" />
+
+        <Button
+            android:id="@+id/drinksbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/drinks_b" />
+
+        <Button
+            android:id="@+id/articlebtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/article_b" />
+
+        <Button
+            android:id="@+id/gamesbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/games_b" />
+
+        <Button
+            android:id="@+id/settingsbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/setting_b" />
+    </LinearLayout> -->
+
+    <!--
+<RelativeLayout android:id="@+id/lay_home3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+     >
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list1"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_foll_twt"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/plain_button"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/plain_button" >
+
+        
+        <WebView
+            android:id="@+id/btn_foll_fb"
+            android:layout_width="fill_parent"
+            android:layout_height="29dp"            
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:scrollbars="none"/>
+     
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_foll_fb_logout"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/plain_button"
+        android:text="Logout from Facebook"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_foll_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/plain_button"
+        android:text="Cancel"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+</RelativeLayout>
+    -->
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, BS_Main!</string>
+    <string name="app_name">The Black Sheep</string>
+<string name="bars">Bars</string>
+<string name="shoutout">ShoutOut</string>
+<string name="photos">Pictures</string>
+<string name="info">Info</string>
+<string name="send_label">Send</string>
+<string name="save_label">Save</string>
+<string name="discard_label">Discard</string>
+<string name="l1">The Black Sheep Mobile</string>
+<string name="l2">was created by</string>
+<string name="l3">Black Card Media, LLC &amp;</string>
+<string name="l4">Mobile Pastures, LLC</string>
+<string name="l5">For more Information please visit:</string>
+<string name="l6">www.theblacksheeponline.com</string>
+<string name="l7">Supports/Comments</string>
+<string name="l8"> mHelp@theblacksheeponline.com</string>
+<string name="barname">BarName</string>
+<string name="baradd">Contact Information</string>
+<string name="barphone">Bar Phone</string>
+<string name="barsite">Bar Website</string>
+<string name="bardrink">Specials</string>
+<string name="bardesc">Description</string>
+<string name="temp">Temp</string>
+<string name="mail">info@blacksheep.com</string>
+<string name="alert_network_problem">Network Problem. Please Try Again . . .
+    </string>
+    <string name="alert_dialog_ok">Ok</string>
+<string name="description">Description</string>
+<string name="published">Published</string>
+<string name="watch_name_value">Watch Vedio</string>
+<string name="nextpage"><u>Click here to view more...</u></string>
+<string name="twt_username">Username</string>
+<string name="twt_password">Password</string>
+<string name="twt_logout">Logout</string>
+<string name="confirm_school_prompt">School*</string>
+
+<string name="emailhint">ENTER YOUR EMAIL</string>
+<string name="dobhint">AND TELL US YOUR BIRTHDAY</string>
+<string name="letsgo">LET \'S GO!</string>
+<string name="icd">image content description</string>
+ <string name="drinks">BAR SPECIALS</string>
+ <string name="articles">ARTICLES</string>
+ <string name="games">DRINKING GAMES</string>
+ <string name="love">SHARE SOME LOVE!</string>
+ 
+ <string name="settingsemail">YOUR EMAIL</string>
+ <string name="settingsdob">HOW ABOUT YOUR BIRTHDAY TOO?</string>
+ <string name="settingstext">WHICH SCHOOL ARE YOU LOOKING FOR?</string>
+ 
+ 
+ 
+ <string name="drinks14">1 - 4</string>
+ <string name="drinks5">5+</string>
+ <string name="drinksview">VIEW ALL</string>
+ 
+    <!-- Strings used in app ui-->
+  
+    <string name="action_settings">Settings</string>
+
+    <string name="login_instructions">Login to twiter</string>
+    <string name="share_instructions">Enter share message</string>
+    <string name="btn_login">Login to Twitter</string>
+    <string name="btn_share">Share</string>
+
+    <!-- Twitter Configurations -->
+<!--     Test -->
+<!--     <string name="twitter_callback">http://javatechig.android.app</string> -->
+<!--     <string name="twitter_consumer_key">vM5RNi5CCodJnL7e5BOA</string> -->
+<!--     <string name="twitter_consumer_secret">FQNS0eBbM8J5DDjDglLCwOvAUUesYhN5uFxdxjKLgk</string> -->
+<!--     <string name="twitter_oauth_verifier">oauth_verifier</string> -->
+    
+<!--     Black Sheep Production -->
+
+    <string name="twitter_callback">http://theblacksheeponline.com</string>
+    <string name="twitter_consumer_key">ZaTjPfKGHD6CTZrScJdckK8HX</string>
+    <string name="twitter_consumer_secret">zKpiAxf7R4mHnGviExJQuyiq2MSTj9a0pxLWd4L8XVLOuAX33k</string>
+    <string name="twitter_oauth_verifier">oauth_verifier</string>
+    
+    <string name="sunday">SUNDAY</string>
+    <string name="monday">MONDAY</string>
+    <string name="tuesday">TUESDAY</string>
+    <string name="wednesday">WEDNESDAY</string>
+    <string name="thursday">THURSDAY</string>
+    <string name="friday">FRIDAY</string>
+    <string name="saturday">SATURDAY</string>
+
+</resources>

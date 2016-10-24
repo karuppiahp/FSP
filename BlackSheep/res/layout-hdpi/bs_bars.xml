@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical" >
+
+    <ImageView
+        android:id="@+id/img_tab_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/which_day" />
+
+    <TextView
+        android:id="@+id/txt_tab_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/txt_color"
+        android:textSize="20sp"
+         android:visibility="gone"
+       />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_first_list"
+        android:layout_width="fill_parent"
+        android:layout_height="260dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/list_square"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+
+        <ListView
+            android:id="@+id/bars"
+            android:layout_width="fill_parent"
+            android:layout_height="240dp"
+            android:layout_marginTop="10dp"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadeScrollbars="false"
+            android:fadingEdge="none"
+            android:scrollbarStyle="outsideInset"
+            android:scrollingCache="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_sec_list"
+        android:layout_width="fill_parent"
+        android:layout_height="260dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/list_square"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+
+        <ListView
+            android:id="@+id/bars_school_details"
+            android:layout_width="fill_parent"
+            android:layout_height="240dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:scrollingCache="false" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/bars_list"
+        android:layout_width="fill_parent"
+        android:layout_height="390dp"
+        android:layout_marginLeft="20dp"
+        
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="80dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:fadeScrollbars="false"
+        android:fadingEdge="none"
+        android:scrollbarStyle="outsideInset"
+        android:scrollingCache="false" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rl_br_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical" 
+        android:visibility="gone"
+      >
+
+        <RelativeLayout
+            android:id="@+id/rel_bar_det"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/list_square" >
+
+            <RelativeLayout
+                android:id="@+id/lay_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/list_square11" >
+
+                <ImageView
+                    android:id="@+id/img_bar"
+                    android:layout_width="65dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/img_divtop"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/lay_img"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/divider" />
+
+            <TextView
+                android:id="@+id/txt_bar_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="110dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/img_divtop"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="#CAE6E6"
+                android:gravity="center"
+                android:maxLines="500"
+                android:scrollbars="vertical"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/img_divbot"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/txt_bar_desc"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/divider" />
+
+            <TextView
+                android:id="@+id/txt_bar_addr"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/img_divbot"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_bar_phno"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_bar_addr"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_bar_addr1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_bar_phno"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_bar_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_bar"
+                android:layout_marginBottom="26dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/lay_img"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_share_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_bar_det"
+            android:layout_marginLeft="70dp"
+              android:layout_centerHorizontal="true"
+            android:background="@drawable/click_toshare"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bars_wv02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <WebView
+            android:id="@+id/bars_content_webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </RelativeLayout>
+
+</RelativeLayout>

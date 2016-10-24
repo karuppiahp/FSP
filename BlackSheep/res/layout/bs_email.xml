@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+  <EditText android:id="@+id/mail_to"
+      android:hint ="To"
+      android:inputType="textEmailAddress"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      >
+   </EditText>
+   <EditText android:id="@+id/mail_subject"
+      android:hint ="Subject"
+      android:inputType="textEmailSubject"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      >
+   </EditText>
+   <EditText android:id="@+id/mail_compose"
+      android:hint ="Compose Mail"
+      android:gravity="top"
+      android:inputType="textMultiLine"
+      android:width="200dp"
+      android:layout_width="fill_parent"
+      android:layout_height="180dp"
+      >
+   </EditText>
+<!--   <RELAYIVELAYOUT-->
+<!--  XMLNS:ANDROID="HTTP://SCHEMAS.ANDROID.COM/APK/RES/ANDROID"-->
+<!--  ANDROID:BACKGROUND="@COLOR/GRAY"-->
+<!--  ANDROID:GRAVITY ="TOP"-->
+<!--  ANDROID:ORIENTATION="HORIZONTAL"-->
+<!--  ANDROID:LAYOUT_WIDTH="FILL_PARENT"-->
+<!--  ANDROID:LAYOUT_HEIGHT="WRAP_CONTENT"-->
+<!--  ANDROID:PADDINGBOTTOM="600dp">  -->
+<!--     <Button android:id="@+id/send_mail_button"-->
+<!--      android:text="@string/send_label"-->
+<!--      android:inputType="textEmailAddress"-->
+<!--      android:layout_width="100dp"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      >-->
+<!--   </Button>-->
+<!--  </RelayiveLayout>-->
+
+   </LinearLayout>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="@color/gray"
+  android:gravity ="top"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:paddingBottom="0dp">  
+  <Button android:id="@+id/send_mail_button"
+      android:text="@string/send_label"
+      android:inputType="textEmailAddress"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:gravity="center">
+   </Button>
+   <Button android:id="@+id/save_button"
+   android:text="@string/save_label"
+     android:layout_toRightOf="@+id/send_mail_button"
+      android:inputType="textEmailSubject"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+       android:gravity="center"
+      >
+   </Button>
+   <Button android:id="@+id/discard_button"
+   android:text="@string/discard_label"
+        android:layout_toRightOf="@+id/save_button"    
+      android:inputType="textLongMessage"
+       android:gravity="center"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      >
+   </Button>
+</LinearLayout>
+</LinearLayout>

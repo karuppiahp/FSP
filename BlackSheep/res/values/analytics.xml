@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="https://schemas.android.com/tools" tools:ignore="TypographyDashes">
+
+    <!-- DEVELOPMENT -->
+    <!-- <string name="ga_trackingId"></string> -->
+  
+    <!-- PRODUCTION -->
+    <string name="ga_trackingId">UA-36318648-1</string>
+
+
+    <!-- Enable automatic activity tracking -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <!-- Enable automatic exception tracking -->
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+    <bool name="ga_debug">true</bool>
+
+    <integer name="ga_dispatchPeriod">20</integer>
+
+</resources>

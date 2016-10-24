@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/splashbg" >
+    
+    <!--  <ScrollView
+        android:id="@+id/scroll_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"> -->
+
+    <RelativeLayout
+        android:id="@+id/rel_gametypes"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         >
+
+        <ImageView
+            android:id="@+id/img_are_you_ready"
+            android:layout_width="250dp"
+            android:layout_height="210dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/drinklogo" />
+
+        <!-- <ImageView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:id="@+id/img_howmany"
+            android:layout_centerHorizontal="true"
+          android:layout_marginTop="20dp"
+            android:layout_below="@+id/img_are_you_ready"
+            android:src="@drawable/how_many" /> -->
+            
+       <RelativeLayout 
+                android:id="@+id/drinksubrelative"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"            
+                android:layout_above="@+id/img_view_all"
+                android:layout_marginBottom="20dp">
+                
+        <TextView
+            android:id="@+id/img_games_4"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"            
+            android:layout_centerHorizontal="true"           
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"            
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="@string/drinks14" />
+
+        <TextView
+            android:id="@+id/img_games_5"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/img_games_4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="@string/drinks5"
+             />
+        
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/img_view_all"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="75dp"
+            android:layout_centerHorizontal="true"            
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="@string/drinksview" 
+            android:textScaleX="1.2"/>
+        
+        <!--  <TextView
+            android:id="@+id/text"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_below="@+id/img_view_all"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/> -->
+    </RelativeLayout>
+  <!-- </ScrollView>   -->
+
+    <RelativeLayout
+        android:id="@+id/rel_game_title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:visibility="gone" >
+
+       <!--  <ImageView
+            android:id="@+id/img_allright"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/alright" /> -->
+
+       <!--  <RelativeLayout
+            android:id="@+id/lay_frame_school"
+            android:layout_width="fill_parent"
+            android:layout_height="280dp"
+            android:layout_below="@+id/img_allright"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            > -->
+
+<RelativeLayout
+      android:id="@+id/listRelative"
+      android:layout_width="fill_parent"
+    android:layout_height="60dp"   
+    android:background="@drawable/bluebg" >
+
+    <TextView
+        android:id="@+id/header_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="75dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="18sp"       
+        android:textScaleX="1.2" 
+        android:text="DRINKING GAMES" />   
+        
+    
+    
+    <Button 
+            android:id="@+id/backbtn"
+            android:layout_width="28dp"
+            android:layout_height="22dp"          
+            android:background="@drawable/back_games"
+             android:layout_alignParentLeft="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginLeft="10dp"
+      android:layout_centerVertical="true"           
+        />
+    
+   
+
+         </RelativeLayout>
+            
+            <ListView
+                android:id="@+id/list_game4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"                
+                android:divider="@color/white"
+                android:dividerHeight="0dp"
+                android:fadeScrollbars="false"
+                android:fadingEdge="none"
+            android:layout_below="@+id/listRelative"
+            android:scrollbarStyle="outsideInset"
+           android:layout_marginBottom="60dp"     
+            android:scrollingCache="false">
+            </ListView>
+       <!--  </RelativeLayout> -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_game_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:visibility="gone" >
+
+       <!--  <TextView
+            android:id="@+id/txt_game_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+          
+            android:textColor="@color/txt_color"
+            android:textSize="30dp"
+            android:textStyle="bold" /> -->
+
+        <!-- <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="320dp"
+            android:layout_below="@+id/txt_game_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/list_square" > -->
+
+ <RelativeLayout
+      android:id="@+id/webRelative"
+      android:layout_width="fill_parent"
+    android:layout_height="60dp"   
+    android:background="@drawable/bluebg" >
+
+    <TextView
+        android:id="@+id/webtitle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="75dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="18sp"       
+        android:textScaleX="1.2" 
+        android:text="DRINKING GAMES" />  
+  
+    
+    
+    <Button 
+            android:id="@+id/webbackbtn"
+            android:layout_width="28dp"
+            android:layout_height="22dp"           
+            android:background="@drawable/back_games"
+              android:layout_alignParentLeft="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginLeft="10dp"
+      android:layout_centerVertical="true"
+            
+        />
+    
+   
+
+         </RelativeLayout>
+           <!--  <WebView
+                android:id="@+id/web_drink_games"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"               
+                android:fadeScrollbars="false"
+                android:fadingEdge="none"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_below="@+id/webRelative"
+            android:scrollbarStyle="outsideInset"
+           /> -->
+      <!--   </RelativeLayout> -->
+      
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/drinksshare"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/webRelative"
+            android:background="@color/white" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                
+                <RelativeLayout
+                    android:id="@+id/layForImageAvailHeader"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" >
+	                
+                    <RelativeLayout
+	                    android:id="@+id/layForImageAvail"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/drinksimage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    />
+
+                <ImageView
+                    android:id="@+id/drinkstriangle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/triangle" />
+
+                <TextView
+                    android:id="@+id/drinktitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/drinkstriangle"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="75dp"
+                    android:layout_marginLeft="80dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+                
+                </RelativeLayout>
+                
+                <TextView
+                    android:id="@+id/drinktitleNoImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18sp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    />
+                </RelativeLayout>
+
+               <!--  <TextView
+                    android:id="@+id/articletitle1"
+                    android:layout_width="190dp"
+                    android:layout_height="35dp"
+                    android:layout_alignRight="@+id/drinktitle"
+                    android:layout_below="@+id/drinktitle"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/articletitle2"  /> -->
+
+                <View
+                    android:id="@+id/view11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/layForImageAvailHeader"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/dividerbarlist" />
+
+                <TextView
+                    android:id="@+id/drinksdesc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/view11"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Anybody that knows anything about our prestigious university knows that we can honestly and openly boast about our academics, diversity, and party scene. On the 
+other hand, even though we're in the Big Ten conference, we uh... we do not have anything close to athletic bragging rights."
+					android:textColor="#2c2d2f"
+                    android:textSize="18sp" />
+                
+                 <TextView
+                    android:id="@+id/drinksdesctwo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/drinksdesc"
+                    android:background="@drawable/drinksdescrip"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"/>
+                    
+            </RelativeLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/drinksshare"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dp"
+            >
+
+            <Button
+                android:id="@+id/sharedrinks"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/sharebtn" />
+           
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/socialsharingRelative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CC000000" 
+        android:visibility="gone">
+		
+         <RelativeLayout       
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        >
+        
+        <Button
+                android:id="@+id/shareText"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/sharetext" />
+     
+        <Button
+                android:id="@+id/emailBtn"   
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/shareText"
+                android:background="@drawable/emailbtn" />
+        
+         <Button
+                android:id="@+id/facebookBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                 android:layout_below="@+id/emailBtn"
+                android:background="@drawable/facebookbtn" />
+         
+          <Button
+                android:id="@+id/twitterBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/facebookBtn"
+                android:background="@drawable/twitterbtn" />
+          
+           <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/twitterBtn"
+                android:background="@drawable/cancelbtn" />
+     
+     </RelativeLayout>
+       
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <TextView
+        android:id="@+id/txtForDetailHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:singleLine="true"
+        android:text=""
+        android:textAllCaps="true"
+        android:textColor="@color/barnamecolor"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/txtForDetailAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtForDetailHeader"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text=""
+        android:textColor="@color/barnamecolor"
+        android:textSize="14sp" />
+    
+    <TextView
+        android:id="@+id/txtForDetailAddressBlue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtForDetailAddress"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text=""
+        android:textColor="@color/drinksTxtBlue"
+        android:textSize="14sp" />
+    
+    <RelativeLayout
+        android:id="@+id/layoutForSun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtForDetailAddressBlue"
+        android:layout_marginTop="10dp"
+        >
+        <RelativeLayout
+            android:id="@+id/layoutForSunHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/drinksDaysHeaderBg"
+            >
+            <TextView
+                android:id="@+id/txtForSundayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/drinksDayHeader"
+                android:text="@string/sunday"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtForSunDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutForSunHeader"
+            android:layout_margin="10dp"
+            android:textColor="@color/drinksDayTxt"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layoutForMon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutForSun"
+        android:layout_marginTop="10dp"
+        >
+        <RelativeLayout
+            android:id="@+id/layoutForMonHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/drinksDaysHeaderBg"
+            >
+            <TextView
+                android:id="@+id/txtForMonHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/drinksDayHeader"
+                android:text="@string/monday"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtForMonDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutForMonHeader"
+            android:layout_margin="10dp"
+            android:textColor="@color/drinksDayTxt"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layoutForTue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutForMon"
+        android:layout_marginTop="10dp"
+        >
+        <RelativeLayout
+            android:id="@+id/layoutForTueHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/drinksDaysHeaderBg"
+            >
+            <TextView
+                android:id="@+id/txtForTueHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/drinksDayHeader"
+                android:text="@string/tuesday"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtForTueDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutForTueHeader"
+            android:layout_margin="10dp"
+            android:textColor="@color/drinksDayTxt"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layoutForWed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutForTue"
+        android:layout_marginTop="10dp"
+        >
+        <RelativeLayout
+            android:id="@+id/layoutForWedHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/drinksDaysHeaderBg"
+            >
+            <TextView
+                android:id="@+id/txtForWedHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/drinksDayHeader"
+                android:text="@string/wednesday"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtForWedDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutForWedHeader"
+            android:layout_margin="10dp"
+            android:textColor="@color/drinksDayTxt"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layoutForThu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutForWed"
+        android:layout_marginTop="10dp"
+        >
+        <RelativeLayout
+            android:id="@+id/layoutForThuHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/drinksDaysHeaderBg"
+            >
+            <TextView
+                android:id="@+id/txtForThuHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/drinksDayHeader"
+                android:text="@string/thursday"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtForThuDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutForThuHeader"
+            android:layout_margin="10dp"
+            android:textColor="@color/drinksDayTxt"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layoutForFri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutForThu"
+        android:layout_marginTop="10dp"
+        >
+        <RelativeLayout
+            android:id="@+id/layoutForFriHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/drinksDaysHeaderBg"
+            >
+            <TextView
+                android:id="@+id/txtForFriHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/drinksDayHeader"
+                android:text="@string/friday"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtForFriDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutForFriHeader"
+            android:layout_margin="10dp"
+            android:textColor="@color/drinksDayTxt"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layoutForSat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutForFri"
+        android:layout_marginTop="10dp"
+        >
+        <RelativeLayout
+            android:id="@+id/layoutForSatHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/drinksDaysHeaderBg"
+            >
+            <TextView
+                android:id="@+id/txtForSatHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/drinksDayHeader"
+                android:text="@string/saturday"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtForSatDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutForSatHeader"
+            android:layout_margin="10dp"
+            android:textColor="@color/drinksDayTxt"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

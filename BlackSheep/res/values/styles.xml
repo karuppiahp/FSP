@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <style name="WindowTitleBackground" >    
+        <item name="android:background">@android:color/transparent</item>        
+    </style> 
+    
+    
+    <style name="PopupMenu" parent="android:style/Theme.Dialog">    
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">250dip</item>
+        <item name="android:layout_height">250dip</item>        
+    </style> 
+        <style name="FirstText">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@drawable/text_selector</item>
+    </style>
+ <style name="ApplicationText">
+        <item name="android:textSize">15sp</item>
+        
+    </style>
+<!--    <shape xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--<solid android:color="#FF0000FF"/>-->
+<!--</shape>-->
+</resources>

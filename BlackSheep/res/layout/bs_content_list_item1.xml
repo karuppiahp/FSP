@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+       android:layout_margin="5dp"
+        
+        android:background="@drawable/list_square11" >
+
+
+        <ImageView
+            android:id="@+id/eve_img_detail1"
+            android:layout_width="65dp"
+            android:layout_height="70dp"
+         android:layout_marginTop="5dp"  
+       android:layout_marginLeft="5dp"
+         android:layout_marginBottom="5dp"
+android:layout_marginRight="5dp"
+            
+           />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+         >
+
+        <TextView
+            android:id="@+id/text1_detail1"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:textColor="@color/black"
+              android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+           android:singleLine="true"
+            />
+
+        <TextView
+            android:id="@+id/text3_detail1"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/text1_detail1"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+              android:gravity="center" 
+              android:layout_marginTop="5dp"
+               android:singleLine="true"
+             />
+
+      
+    </RelativeLayout>
+
+</LinearLayout>

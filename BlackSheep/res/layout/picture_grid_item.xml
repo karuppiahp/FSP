@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="100dp"
+    android:layout_height="80dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/jr_lb_list_icon"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/border"
+        android:scaleType="centerCrop" />
+
+</RelativeLayout>

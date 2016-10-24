@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="orange">#ff5500</color>
+<color name="white">#ffffff</color>
+<color name="transparent">#00000000</color>
+<color name="date_color">#999999</color>
+<color name="black">#000000</color>
+<color name="gray">#999999</color>
+<color name="blue">#0066cc</color>
+<color name="gold">#e6b121</color>
+<color name="blueback">#99FFFF</color>
+ <color name="articlecolor">#3399FF</color> 
+ <color name="article_title">#3399FF</color> 
+<color name="cachecolor">#8ad0e8</color>
+<color name="red">#FF0000</color>
+<color name="pink">#FF00FF</color>
+<color name="green">#00FF00</color>
+<color name="mycolor">#FF9900</color>
+<color name="txt_color">#1C4978</color>
+<color name="bar_desc">#F0F8FF</color>
+<color name="lightGrey">#D3D3D3</color>
+
+<color name="edit_textnew">#29bef2</color>
+<color name="background">#00baf2</color>        <!-- for drinks special selected text color -->
+<color name="headerbg">#00bef3</color>
+<color name="settingstextcolor">#244c55</color>
+
+<color name="selectedbgcolor">#e5f8fe</color>   <!-- for drinks special selected background color -->
+<color name="drinkstxtcolor">#797979</color>    <!-- for drinks special response text color -->
+<color name="drinksbartextcolor">#545556</color>
+<color name="drinksbartextsecondcolor">#9c9c9d</color>
+<color name="lightbluecolor">#e5f8fe</color>
+<color name="textdatecolor">#212222</color>
+
+<color name="barnamecolor">#323233</color>
+<color name="barwebsitecolor">#20c3f4</color>
+
+<color name="drinksDaysBg">#8bb4bc</color>
+<color name="drinksTxtBlue">#30c7f4</color>
+<color name="drinksDayHeader">#4f5356</color>
+<color name="drinksDayTxt">#9c9c9d</color>
+<color name="drinksDaysHeaderBg">#b9e8f7</color>
+
+
+</resources>

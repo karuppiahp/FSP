@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/listRelative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <RelativeLayout
+            android:id="@+id/rel1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bluebg" >
+
+            <TextView
+                android:id="@+id/textheader"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="DRINKS SPECIALS"
+                android:textColor="@color/white"
+                android:textScaleX="1.2"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/rel1"
+            android:background="@color/white" >
+
+            <RelativeLayout
+                android:id="@+id/dateListRelative"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@color/lightbluecolor" >
+
+                <TextView
+                    android:id="@+id/dateheader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="DRINKS SPECIAL"
+                    android:textColor="@color/textdatecolor"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/downarrow"
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"                    
+                    android:layout_toRightOf="@+id/dateheader"
+                    android:background="@drawable/drinksdown" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewrel"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/dateListRelative"
+                android:background="@drawable/dividerbarlist" />
+
+            <ListView
+                android:id="@+id/bars_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/viewrel"
+                android:layout_marginBottom="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:divider="@null"
+                android:dividerHeight="10dp"
+                android:fadeScrollbars="false"
+                android:fadingEdge="none"
+                android:scrollbarStyle="outsideInset"
+                android:scrollingCache="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainRelative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CC000000" 
+        >
+
+        <TextView
+            android:id="@+id/alertcancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp"
+            android:text="CANCEL"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_sec_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/alertview"
+            android:orientation="vertical"
+            android:scrollbars="vertical" >
+
+            <ListView
+                android:id="@+id/bars_school_details"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"                
+                android:layout_marginTop="10dp"
+                android:divider="@null"                
+                android:dividerHeight="0dp"
+                android:fadingEdge="none"
+                android:scrollbars="none"
+                android:listSelector="@color/selectedbgcolor"
+                android:scrollingCache="false" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_br_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:scrollbars="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/bardetailsrelative"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bluebg" >
+
+            <TextView
+                android:id="@+id/drinktextheader"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="DRINKS SPECIALS"
+                android:textColor="@color/white"
+                android:textScaleX="1.2"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/drinksbackbtn"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/back_games" />
+        </RelativeLayout>
+        
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bardetailsrelative"
+            android:layout_above="@+id/btn_share_bar"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/drinks_special_detail"
+                    />
+            </RelativeLayout>
+        </ScrollView>
+
+        <!-- <RelativeLayout
+            android:id="@+id/rel_bar_det"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bardetailsrelative"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" >
+
+            
+            <RelativeLayout
+                android:id="@+id/lay_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/list_square11" >
+
+                <ImageView
+                    android:id="@+id/img_bar"
+                    android:layout_width="90dp"
+                    android:layout_height="95dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+           
+
+
+            
+                 <ImageView
+                android:id="@+id/img_divtop"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/lay_img"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/divider" />
+           
+
+
+            
+            <TextView
+                android:id="@+id/txt_bar_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="110dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/img_divtop"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="#CAE6E6"
+                android:gravity="center"
+                android:maxLines="500"
+                android:scrollbars="vertical"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" >
+            </TextView>
+           
+
+
+            
+                 <ImageView
+                android:id="@+id/img_divbot"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/txt_bar_desc"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/divider" />
+           
+
+            <TextView
+                android:id="@+id/txt_bar_phno"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_bar_addr"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/barnamecolor"
+                android:textSize="15dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_bar_addr1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_bar_phno"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/barwebsitecolor"
+                android:textSize="15dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_bar_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="26dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text=""
+                android:textAllCaps="true"
+                android:textColor="@color/barnamecolor"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_bar_addr"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_alignLeft="@+id/txt_bar_name"
+                android:layout_alignTop="@+id/txt_bar_name"
+                android:layout_marginTop="35dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/barnamecolor"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bardetailslist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_bar_det"
+            android:layout_above="@+id/btn_share_bar"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"                
+                android:background="@color/white" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/img_bar1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:background="@drawable/bardetailslist" />
+
+                    <ImageView
+                        android:id="@+id/img_bar2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="100dp"
+                        android:layout_below="@+id/img_bar1"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bardetailslist1" />
+
+                    <ImageView
+                        android:id="@+id/img_bar3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="100dp"
+                        android:layout_below="@+id/img_bar2"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bardetailslist2" />
+                </RelativeLayout>
+            </ScrollView>
+
+           
+        </RelativeLayout> -->
+        
+         <Button
+                android:id="@+id/btn_share_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"  
+                android:layout_marginTop="20dp"              
+                android:layout_marginBottom="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/sharebtn"
+                android:gravity="center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bars_wv02"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <WebView
+            android:id="@+id/bars_content_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/socialdrinksspecial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CC000000" 
+        android:visibility="gone">
+		
+         <RelativeLayout       
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        >
+        
+        <Button
+                android:id="@+id/barshareText"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/sharetext" />
+     
+        <Button
+                android:id="@+id/baremailBtn"   
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/barshareText"
+                android:background="@drawable/emailbtn" />
+        
+         <Button
+                android:id="@+id/barfacebookBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                 android:layout_below="@+id/baremailBtn"
+                android:background="@drawable/facebookbtn" />
+         
+          <Button
+                android:id="@+id/bartwitterBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/barfacebookBtn"
+                android:background="@drawable/twitterbtn" />
+          
+           <Button
+                android:id="@+id/barcancelBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/bartwitterBtn"
+                android:background="@drawable/cancelbtn" />
+     
+     </RelativeLayout>
+       
+    </RelativeLayout>
+
+</RelativeLayout>

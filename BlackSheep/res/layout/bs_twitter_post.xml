@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back2" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_x="40px"
+            android:layout_y="35px" >
+
+            <EditText
+                android:id="@+id/twt_post_content"
+                android:layout_width="320dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:gravity="left"
+                android:imeOptions="actionDone"
+                android:maxLength="140"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:id="@+id/twt_content_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:paddingLeft="270dp"
+                android:paddingTop="100dp"
+                android:text="123"
+                android:textColor="@color/red" />
+        </FrameLayout>
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="5dp" >
+
+            <ImageView
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dip"
+                android:src="@drawable/logout_btn2"
+                android:text="@string/twt_logout" />
+
+            <TextView
+                android:id="@+id/twitter_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="55dip"
+                android:text="user"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/bac_twitter_post_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/postmain" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

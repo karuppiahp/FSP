@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/daterelative"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+
+    <TextView
+        android:id="@+id/bars_arr_text1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"        
+        android:gravity="center"
+        android:textColor="#9c9c9d"
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        />
+
+<View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGrey"
+        android:layout_below="@+id/bars_arr_text1"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/listRelative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rel1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bluebg" >
+
+            <TextView
+                android:id="@+id/dateheader"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="DRINKS SPECIAL"
+                android:textColor="@color/white"
+                android:textScaleX="1.2"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/downarrow"
+                android:layout_width="20dp"
+                android:layout_height="10dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/dateheader"
+                android:background="@drawable/drinksdown" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/rel1"
+            android:background="@color/white" >
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/drinksimg1" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:layout_below="@+id/image1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/drinksimg2" />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:layout_below="@+id/image2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/drinksimg3" />
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:layout_below="@+id/image3"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/drinksimg4" />
+
+            <ImageView
+                android:id="@+id/image5"
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:layout_below="@+id/image4"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/drinksimg5" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainRelative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CC000000" >
+
+        <TextView
+            android:id="@+id/alertcancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="CANCEL"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_sec_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/alertview"
+            android:orientation="vertical"
+            android:scrollbars="vertical" >
+
+            <ListView
+                android:id="@+id/bars_school_details"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:fadingEdge="none"
+                android:scrollbars="none"
+                android:scrollingCache="false" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

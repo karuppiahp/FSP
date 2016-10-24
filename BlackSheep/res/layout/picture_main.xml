@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="500dp" >
+
+    <!-- <RelativeLayout android:id="@+id/LinearLayout01"  android:layout_width="wrap_content" android:layout_height="320dp" > -->
+
+    <RelativeLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_party_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="PARTY PICS"
+            android:textColor="@color/txt_color"
+            android:textSize="30sp" />
+
+        <RelativeLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/txt_party_pic"
+            android:layout_marginBottom="110dp"
+            android:layout_marginTop="10dp"
+             android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+            android:background="@drawable/list_square" >
+
+            <GridView
+                android:id="@+id/jr_lookbook_grid"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:columnWidth="90dp"
+                android:fadingEdge="none"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="4"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="20dp" >
+            </GridView>
+
+            <Button
+                android:id="@+id/click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/jr_lookbook_grid"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/loadmorebtn"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LinearLayout01" >
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:src="@drawable/we_know"
+            android:layout_marginTop="340dp"
+            android:visibility="visible"
+             android:layout_centerHorizontal="true" />
+        <Button
+            android:id="@+id/submitgrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/submit" />
+    </RelativeLayout>
+
+<!--     <LinearLayout -->
+<!--         android:id="@+id/LinearLayout222_img" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" > -->
+
+<!--         <ImageView -->
+<!--             android:id="@+id/gridbanner" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_marginTop="275dp" -->
+<!--             /> -->
+<!--     </LinearLayout> -->
+
+<!--     <LinearLayout -->
+<!--         android:id="@+id/LinearLayout223_img" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" > -->
+
+<!--         <ImageView -->
+<!--             android:id="@+id/bannerclose" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_marginTop="280dp" -->
+<!--             android:paddingLeft="300dp" -->
+<!--             android:src="@drawable/close2" -->
+<!--             android:visibility="invisible" /> -->
+<!--     </LinearLayout> -->
+
+<!--     <LinearLayout -->
+<!--         xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!--         android:id="@+id/LinearLayout02_img" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignParentLeft="true" -->
+<!--         android:layout_gravity="center" -->
+<!--         android:background="@color/black" -->
+<!--         android:orientation="vertical" > -->
+
+<!--         <WebView -->
+<!--             android:id="@+id/webview" -->
+<!--             android:layout_width="fill_parent" -->
+<!--             android:layout_height="fill_parent" -->
+<!--             android:scrollbars="none" /> -->
+
+<!--         <ImageView -->
+<!--             android:id="@+id/ImageView01" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="fill_parent" -->
+<!--             android:layout_gravity="center_horizontal" -->
+<!--             android:adjustViewBounds="true" -->
+<!--             android:scaleType="centerInside" > -->
+<!--         </ImageView> -->
+<!--     </LinearLayout> -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.BS.zoom.ImageZoomView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/zoomview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+<!--     <RelativeLayout -->
+<!--         xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!--         android:id="@+id/LinearLayout025_img" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:orientation="vertical" > -->
+
+<!--         <ImageView -->
+<!--             android:id="@+id/banner" -->
+<!--             android:layout_width="1000dp" -->
+<!--             android:layout_height="75dp" -->
+<!--             android:layout_below="@+id/ImageView01" -->
+<!--             android:layout_marginTop="360dp" -->
+<!--             android:visibility="visible" /> -->
+<!--     </RelativeLayout> -->
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="460dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back1"
+            android:paddingBottom="15dp" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="150dp"
+            android:background="@drawable/forward5"
+            android:gravity="center"
+            android:paddingBottom="15dp" />
+
+        <Button
+            android:id="@+id/photoshare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/menushare"
+            android:gravity="center" />
+    </LinearLayout>
+
+</merge>

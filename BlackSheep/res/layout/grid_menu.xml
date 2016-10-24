@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"  android:background="@drawable/home_bg" android:paddingTop="50dp"
+    android:layout_width="wrap_content" android:layout_height="fill_parent">
+    
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/grid" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:padding="10dp" android:columnWidth="10dp"
+        android:verticalSpacing="10dp" android:horizontalSpacing="30dp"
+        android:numColumns="3"  android:stretchMode="columnWidth" android:gravity="center" 
+        android:listSelector="@drawable/corner_orange" android:layout_weight="1.0" />  
+         
+</LinearLayout>
+ 

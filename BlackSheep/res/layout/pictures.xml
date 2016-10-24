@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+        <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android" 
+                       android:layout_width="fill_parent" 
+                       android:layout_height="fill_parent" android:orientation="vertical">
+                      
+             <GridView 
+                    android:id="@+id/jr_lookbook_grid" android:layout_width="fill_parent"
+                    android:layout_height="320dp" android:numColumns="4"
+                    android:verticalSpacing="10dp" android:horizontalSpacing="10dp"
+                    android:columnWidth="90dp" android:stretchMode="columnWidth"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape"            
+                    android:gravity="center"  android:layout_weight="1"/> 
+               
+                    <TextView android:text="NEXT" android:id="@+id/next_pg" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+       
+</LinearLayout>

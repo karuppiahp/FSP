@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- <style name="MyTheme" parent="android:Theme">
+	    <item name="android:windowNoTitle">true</item>
+	    <item name="android:windowContentOverlay">@null</item>
+		<item name="android:windowTitleSize">40px</item>
+		<item name="android:windowBackground">@style/WindowTitleBackground</item>  		
+		
+	</style> -->
+	
+	<!-- Base application theme is the default theme. -->
+<style name="Theme" parent="android:Theme.Light.NoTitleBar" />
+
+<style name="MyTheme" parent="Theme">
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowBackground">@drawable/background</item>
+    <!-- This disables the black preview screen -->
+    <item name="android:windowDisablePreview">true</item>
+
+</style>
+</resources>

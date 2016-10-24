@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/lay_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <Button
+            android:id="@+id/btn_head"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/head"
+            android:text="SETTINGS"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_head"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:text="WHICH SCHOOL ARE YOU LOOKIN&apos; FOR?"
+            android:textColor="@color/txt_color"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/lay_frame_school"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/txt_school"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+             android:background="@drawable/list_square"
+             >
+
+            <ListView
+                android:id="@+id/list_school"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+               
+                android:divider="@color/white"
+                android:dividerHeight="0dp"
+                android:fadingEdge="none"
+               
+                android:scrollingCache="false" >
+            </ListView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay_frame_school"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="ENTER YOUR EMAIL HERE"
+            android:textColor="@color/txt_color"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/lay_frame_email"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt_email"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/list_square22"
+            >
+
+            <EditText
+                android:id="@+id/email_value"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/list_square22"
+                android:gravity="center"
+                android:textSize="20dp"
+                
+                android:textStyle="bold" >
+            </EditText>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_bday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay_frame_email"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="HOW ABOUT YOUR BIRTHDAY, TOO?"
+            android:textColor="@color/txt_color"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/lay_frame_bday"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt_bday"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/list_square22"
+             >
+
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+               android:background="@drawable/list_square22"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+       
+        <Button
+            android:id="@+id/regsubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay_frame_bday"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/have_fun" />
+    </RelativeLayout>
+
+</LinearLayout>

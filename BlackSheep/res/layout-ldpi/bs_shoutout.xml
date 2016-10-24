@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"   android:layout_height="fill_parent" android:layout_gravity="center" android:background="@color/red">
+  
+<RelativeLayout   android:paddingLeft="25dp" android:paddingTop="10dp" android:layout_gravity="center" android:background="@color/cachecolor" android:id="@+id/RelativeLayout01" android:layout_width="60dp"  android:layout_height="60dp" >
+
+  <ImageView   android:id="@+id/Imagesan" android:layout_width="wrap_content" 
+         android:gravity="center" android:layout_height="wrap_content"  android:background="@drawable/shoutoutlogo"/>
+         
+         <TextView android:id="@+id/TextView02"  android:layout_width="wrap_content" android:layout_above="@+id/TextView01" android:layout_below="@+id/Imagesan" android:layout_height="wrap_content"></TextView>
+<TextView android:paddingLeft="65dp" android:textStyle="bold" android:textSize="25dp" android:textColor="@color/white" android:typeface="monospace" android:layout_below="@+id/Imagesan"   android:gravity="center"  android:text="ShoutOuts" 
+        android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+</TextView>
+
+</RelativeLayout>
+
+</LinearLayout>

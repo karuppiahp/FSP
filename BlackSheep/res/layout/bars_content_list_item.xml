@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/bars_univ_icon1"
+        android:layout_width="66dp"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:id="@+id/bars_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/bars_univ_icon1"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    <!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+    <!-- android:orientation="vertical" android:paddingLeft="0dp" android:layout_gravity="right" -->
+    <!-- android:gravity="right" -->
+    <!-- android:layout_width="wrap_content" android:layout_height="wrap_content"> -->
+
+<!--     <ImageView -->
+<!--         android:id="@+id/san_arrow" -->
+<!--         android:layout_width="30dp" -->
+<!--         android:layout_height="35dp" -->
+<!--         android:layout_alignParentRight="true" -->
+<!--         android:layout_marginTop="10dp" -->
+<!--         android:adjustViewBounds="true" -->
+<!--         android:paddingRight="4dp" -->
+<!--         android:src="@drawable/newforward" /> -->
+    <!-- </RelativeLayout> -->
+    <!-- <ImageView android:src="@drawable/fwd" -->
+    <!-- android:adjustViewBounds="true"  android:paddingTop="10dp" -->
+    <!-- android:layout_width="40dp" android:layout_height="50dp" android:layout_gravity="right"/> -->
+
+</RelativeLayout>

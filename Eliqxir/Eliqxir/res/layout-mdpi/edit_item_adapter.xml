@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp" >
+    
+ <RelativeLayout
+    android:id="@+id/editmainRelative"
+    android:layout_width="match_parent"
+    android:layout_height="40dp" 
+    android:background="@color/backgrounditem">
+     
+     <View 
+            android:id="@+id/editviewone"
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@+id/editsizetext"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/viewvertical"
+         />
+     
+      <TextView
+            android:id="@+id/editpricetext"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/editviewone"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="Text View1"
+            android:textColor="@color/additemtext"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+      
+       <ImageButton
+            android:id="@+id/minusBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@+id/editpricetext"
+            android:layout_centerInParent="true"            
+            android:background="@drawable/minussign" />
+      
+      <View
+        android:id="@+id/editviewlast"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/edit_menu_txt"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/editpricetext"
+        />
+
+      <TextView
+          android:id="@+id/editsizetext"
+          android:layout_width="120dp"
+          android:layout_height="30dp"
+          android:layout_alignBottom="@+id/minusBtn"
+          android:layout_alignParentLeft="true"
+          android:gravity="center_vertical"
+          android:text="Text View1"
+          android:textColor="@color/additemtext"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="5dp"
+          android:textSize="16sp"
+          android:textStyle="normal" />
+      
+</RelativeLayout>
+</RelativeLayout>

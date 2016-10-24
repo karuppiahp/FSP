@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_bg_color" >
+    
+    <include
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        layout="@layout/header" />
+    <View
+        android:id="@+id/viewFirst"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/edit_menu_txt"
+        android:layout_marginTop="15dp"
+        />
+    
+    <ListView 
+	    android:id="@+id/listViewForDrivers" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:divider="@color/edit_menu_txt"
+	    android:dividerHeight="1dip"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    />
+    
+    <View
+        android:id="@+id/viewSecond"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/edit_menu_txt"
+        />
+    
+</LinearLayout>

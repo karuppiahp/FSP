@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <ImageView
+        android:id="@+id/imageForRightArrow"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/list_arrow"
+        />
+    
+    <RelativeLayout
+        android:id="@+id/layoutForItems"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/imageForRightArrow"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_centerVertical="true"
+        >
+	    <TextView
+	        android:id="@+id/textForHistoryName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Capital City"
+	        android:textColor="@color/orange"
+	        android:textSize="17dp"
+	        />
+	    
+	    <TextView
+	        android:id="@+id/textForHistoryOrder"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Order No."
+	        android:textColor="@color/txt_grey"
+	        android:layout_below="@+id/textForHistoryName"
+	        android:layout_marginTop="5dp"
+	        />
+	    
+	    <TextView
+	        android:id="@+id/textForHistoryOrderField"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	    
+	        android:layout_below="@+id/textForHistoryName"
+	        android:layout_toRightOf="@+id/textForHistoryOrder"
+	        android:textColor="@color/app_green"
+	        android:textSize="16dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="6dp"
+	        />
+	    
+	    <TextView
+	        android:id="@+id/textForHistoryTotal"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Total:"
+	        android:textColor="@color/txt_grey"
+	        android:layout_below="@+id/textForHistoryOrder"
+	        android:layout_marginTop="5dp"
+	         android:layout_marginBottom="20dp"
+	        />
+	    
+	    <TextView
+	        android:id="@+id/textForHistoryTotalField"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	     
+	        android:layout_below="@+id/textForHistoryOrder"
+	        android:layout_toRightOf="@+id/textForHistoryTotal"
+	        android:textColor="@color/app_green"
+	        android:textSize="16dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="30dp"
+	        android:layout_marginBottom="20dp"
+	        />
+    
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    >
+    
+    <include
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        layout="@layout/header" />
+    <LinearLayout
+        android:id="@+id/layoutForOrderDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+        
+        <com.eliqxir.utils.CustomTextOpensansSemiBold
+            android:id="@+id/textForDriverOrderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RJ Kollar"
+            android:textColor="@color/app_orange"
+            android:textSize="16dp" />
+   		<com.eliqxir.utils.CustomTextOpensansSemiBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:text="Delivery"
+            android:textColor="@color/app_green"
+            android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal" >
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+           android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Order No."
+            android:textColor="@color/txt_color_gray"
+            android:textSize="12dp" />
+
+        <com.eliqxir.utils.CustomTextOpensansSemiBold
+            android:id="@+id/textForDriverOrderOrderNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Stella Artis"
+            android:textColor="@color/app_green"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       	android:layout_marginTop="3dp"
+        android:orientation="horizontal" >
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+           android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Time in:"
+            android:textColor="@color/txt_color_gray"
+            android:textSize="12dp" />
+
+        <com.eliqxir.utils.CustomTextOpensansSemiBold
+            android:id="@+id/textForDriverOrderTimeIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Stella Artis"
+            android:textColor="@color/app_green"
+            android:textSize="16dp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/layoutForDriverClosed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       	android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+           android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Closed:"
+            android:textColor="@color/txt_color_gray"
+            android:textSize="12dp" />
+
+        <com.eliqxir.utils.CustomTextOpensansSemiBold
+            android:id="@+id/textForDriverOrderDriverClosedTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="6:10 pm"
+            android:textColor="@color/app_green"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      	android:layout_marginTop="3dp"
+        android:orientation="horizontal" >
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+           android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Address:"
+            android:textColor="@color/txt_color_gray"
+            android:textSize="12dp" />
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:id="@+id/textForDriverOrderAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="28 Collier Rd. NW \nUnit 11 \nAtlanta, GA 30309"
+            android:textColor="@color/txt_color_gray"
+            android:textSize="12dp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      	android:layout_marginTop="3dp"
+        android:orientation="horizontal" >
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+           android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Phone:"
+            android:textColor="@color/txt_color_gray"
+            android:textSize="12dp" />
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:id="@+id/textForDriverOrderPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="630.280.9289"
+            android:textColor="@color/txt_color_gray"
+            android:textSize="12dp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      	android:layout_marginTop="3dp"
+        android:orientation="horizontal" >
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+           android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/txt_color_gray"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/imageForDriverOrderCallCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/call_customer_btn"
+            />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      	android:layout_marginTop="3dp"
+        android:orientation="horizontal" >
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+           android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Notes:"
+            android:textColor="@color/txt_color_gray"
+            android:textSize="12dp" />
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:id="@+id/textForDriverOrderNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="Please come around back.The front of my building is allmessed up...like, really bad."
+            android:textColor="@color/txt_color_gray"
+            android:textSize="12dp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/layoutForDriverStore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      	android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+           android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Store:"
+            android:textColor="@color/txt_color_gray"
+            android:textSize="12dp" />
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:id="@+id/textForDriverOrderDriverStore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Capital City Package"
+            android:textColor="@color/app_green"
+            android:textSize="12dp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      	android:layout_marginTop="3dp"
+        android:orientation="horizontal" >
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+           android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/txt_color_gray"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/imageForDriverOrderCallStore"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/call_store_btn"
+            />
+    </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/edit_menu_txt"
+        android:layout_below="@+id/layoutForOrderDetails"
+        android:layout_marginTop="5dp"
+        />
+    <ListView
+        android:id="@+id/listForOrderAssign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_above="@+id/layoutForOrderBottom"
+        />
+    <LinearLayout
+        android:id="@+id/layoutForOrderBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+        <View
+            android:id="@+id/view2"
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="@color/edit_menu_txt"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            >
+            <com.eliqxir.utils.CustomTextOpensansSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+            	android:text="@string/subtotal_caps"
+            	android:textColor="@color/txt_color_gray"
+            	android:textSize="17sp"
+                />
+            <com.eliqxir.utils.CustomTextOpensansSemiBold
+	            android:id="@+id/subtotal_value"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:text="$35.97"
+	            android:textColor="@color/app_green"
+	            android:textSize="22sp"
+	            />
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/btnForAssignDriver"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/mark_as_deleivered_btn"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

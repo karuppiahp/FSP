@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        layout="@layout/header" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_margin="20dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/txt_color_gray" >
+
+                <EditText
+                    android:id="@+id/editTxtForEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/app_bg_color"
+                    android:hint="Email"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/txt_color_gray"
+                    android:textColorHint="@color/txt_color_gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/txt_color_gray" >
+
+                <EditText
+                    android:id="@+id/editTxtForFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="1dp"
+                    android:background="@color/app_bg_color"
+                    android:hint="First Name"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/txt_color_gray"
+                    android:textColorHint="@color/txt_color_gray" />
+
+                <EditText
+                    android:id="@+id/editTxtForLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/editTxtForFirstName"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:background="@color/app_bg_color"
+                    android:hint="Last Name"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/txt_color_gray"
+                    android:textColorHint="@color/txt_color_gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/txt_color_gray" >
+
+                <EditText
+                    android:id="@+id/editTxtForPwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="1dp"
+                    android:background="@color/app_bg_color"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/txt_color_gray"
+                    android:textColorHint="@color/txt_color_gray" />
+
+                <EditText
+                    android:id="@+id/editTxtForConfirmPwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/editTxtForPwd"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:background="@color/app_bg_color"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/txt_color_gray"
+                    android:textColorHint="@color/txt_color_gray" />
+            </RelativeLayout>
+
+            <com.eliqxir.utils.CustomTextOpensansRegular
+                android:id="@+id/textForDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="DATE OF BIRTH"
+                android:textColor="@color/txt_color_gray" />
+
+            <LinearLayout
+                android:id="@+id/layoutForDOB"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/textForDOB"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <Button
+                            android:id="@+id/spinnerForDobMonth"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="1dp"
+                            android:background="@drawable/dob_back"
+                            android:hint="@string/month_hint"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="12dp"
+                            android:textColor="@color/app_orange"
+                            android:textColorHint="@color/app_orange" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <Button
+                            android:id="@+id/spinnerForDobDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="1dp"
+                            android:background="@drawable/dob_back"
+                            android:hint="@string/date_hint"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="12dp"
+                            android:textColor="@color/app_orange"
+                            android:textColorHint="@color/app_orange" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <Button
+                            android:id="@+id/spinnerForDobYear"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="1dp"
+                            android:background="@drawable/dob_back"
+                            android:hint="@string/year_hint"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="12dp"
+                            android:textColor="@color/app_orange"
+                            android:textColorHint="@color/app_orange" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp" >
+
+                <Button
+                    android:id="@+id/btnForRegister"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/register_btn" />
+
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="1dp" />
+
+                <Button
+                    android:id="@+id/btnForCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cancel_btn" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="visible" >
+
+                <CheckBox
+                    android:id="@+id/chkBoxForTerms"
+                    android:layout_width="15dp"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/chkbox_selector"
+                    android:button="@null" />
+
+                <com.eliqxir.utils.CustomTextOpensansRegular
+                    android:id="@+id/textForTermsChkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/chkBoxForTerms"
+                    android:text="@string/signup_terms"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

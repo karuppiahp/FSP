@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="180dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="100dp" >
+
+    <TextView
+        android:id="@+id/tv_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/notice"
+        android:textColor="@color/app_orange"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_close"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/login_close" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_mes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_close"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/not_all"
+        android:textColor="@color/txt_grey"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tv_mes"
+        android:layout_marginTop="40dp"
+        android:background="#B1BCBE" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0.5dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:background="#B1BCBE" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view"
+        android:layout_toLeftOf="@+id/view1"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/app_orange"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_yes"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view"
+        android:layout_toRightOf="@+id/view1"
+        android:gravity="center"
+        android:text="@string/yes"
+        android:textColor="@color/app_orange"
+        android:textSize="14sp" />
+
+</RelativeLayout>

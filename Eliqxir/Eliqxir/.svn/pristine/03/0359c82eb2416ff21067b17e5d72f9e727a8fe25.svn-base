@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        layout="@layout/header" />
+
+    <ImageButton
+        android:id="@+id/btnForScanBarCode"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/header"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/scan_barcode" />
+
+    <View
+        android:id="@+id/viewFirst"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/btnForScanBarCode"
+        android:background="@color/edit_menu_txt" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layoutForAddButtons"
+        android:layout_below="@+id/viewFirst" >
+
+        <LinearLayout
+            android:id="@+id/layoutForAddContents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" >
+
+                <com.eliqxir.utils.CustomTextOpensansRegular
+                    android:id="@+id/textForAddItemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/edit_item_name"
+                    android:textColor="@color/edit_menu_txt"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/editTextForAddItemName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/textForAddItemName"
+                    android:background="@color/app_bg_color"
+                    android:gravity="right"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/edit_menu_txt" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" >
+
+                <com.eliqxir.utils.CustomTextOpensansRegular
+                    android:id="@+id/textForAddItemQty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/edit_qty"
+                    android:textColor="@color/edit_menu_txt"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/editTextForAddItemQty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                     android:inputType="number"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/textForAddItemQty"
+                    android:background="@color/app_bg_color"
+                    android:gravity="right"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/edit_menu_txt" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" >
+
+                <com.eliqxir.utils.CustomTextOpensansRegular
+                    android:id="@+id/textForAddItemFiOz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/edit_f1oz"
+                    android:textColor="@color/edit_menu_txt"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/editTextForAddItemFiOz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:inputType="number"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/textForAddItemFiOz"
+                    android:background="@color/app_bg_color"
+                    android:gravity="right"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/edit_menu_txt" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" >
+
+                <com.eliqxir.utils.CustomTextOpensansRegular
+                    android:id="@+id/textForAddItemSku"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/product_sku"
+                    android:textColor="@color/edit_menu_txt"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/editTextForAddItemSku"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/textForAddItemSku"
+                    android:background="@color/app_bg_color"
+                    android:gravity="right"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/edit_menu_txt" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" >
+
+                <com.eliqxir.utils.CustomTextOpensansRegular
+                    android:id="@+id/textForAddItemWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/weight"
+                    android:textColor="@color/edit_menu_txt"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/editTextForAddItemWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:inputType="numberDecimal"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/textForAddItemWeight"
+                    android:background="@color/app_bg_color"
+                    android:gravity="right"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/edit_menu_txt" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" >
+
+                <com.eliqxir.utils.CustomTextOpensansRegular
+                    android:id="@+id/textForAddItemPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/edit_Price"
+                    android:textColor="@color/edit_menu_txt"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/editTextForAddItemPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                 android:inputType="numberDecimal"
+                  android:digits="0123456789.,$"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/textForAddItemPrice"
+                    android:background="@color/app_bg_color"
+                    android:gravity="right"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/edit_menu_txt" />
+
+            <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="45dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        >
+	        <com.eliqxir.utils.CustomTextOpensansRegular
+	            android:id="@+id/textForAddItemCategory"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:text="@string/edit_category"
+	            android:textColor="@color/edit_menu_txt"
+	            android:textSize="15dp"
+	            android:layout_gravity="center_vertical"
+	            android:layout_centerVertical="true"
+	            android:layout_marginTop="5dp"
+	            android:layout_marginBottom="5dp"
+	            />
+	        <Spinner
+	            android:id="@+id/editTextForAddItemCategory"
+	            android:layout_width="0dp"
+	            android:layout_weight="2"
+	            android:layout_height="30dp"
+	             android:layout_marginTop="7dp"
+	            android:background="@drawable/spinner_back"
+	            android:gravity="top|right"
+	            android:paddingRight="12dp"
+	            android:textSize="17dp"
+	            android:layout_centerVertical="true"
+	          
+	         
+	            android:textColor="@color/txt_color_gray"
+	            
+	            />
+	         
+	    </LinearLayout>
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="@color/edit_menu_txt"
+	        />
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="45dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        >
+	        <com.eliqxir.utils.CustomTextOpensansRegular
+	            android:id="@+id/textForAddItemSubCategory"
+	            android:layout_width="0dp"
+	            android:layout_weight="1.4"
+	            android:layout_height="wrap_content"
+	            android:text="@string/edit_sub_category"
+	            android:textColor="@color/edit_menu_txt"
+	            android:textSize="15dp"
+	              android:layout_gravity="center_vertical"
+	            android:layout_centerVertical="true"
+	            android:layout_marginTop="7dp"
+	            android:layout_marginBottom="5dp"
+	            />
+	        <Spinner
+	            android:id="@+id/editTextForAddItemSubCategory"
+	             android:layout_width="0dp"
+	            android:layout_weight="2"
+	            android:layout_height="30dp"
+	          android:layout_marginTop="5dp"
+	            android:background="@drawable/spinner_back"
+	            android:gravity="top|right"
+	            android:textSize="17dp"
+	            android:layout_centerVertical="true"
+	           android:paddingRight="12dp"
+	          
+	            android:textColor="@color/txt_color_gray"
+	            
+	            />
+	       
+	    </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/edit_menu_txt" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" >
+
+                <com.eliqxir.utils.CustomTextOpensansRegular
+                    android:id="@+id/textForAddItemDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginTop="17dp"
+                    android:text="@string/desc"
+                    android:textColor="@color/edit_menu_txt"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/editTextForAddItemDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/textForAddItemDesc"
+                    android:background="@color/app_bg_color"
+                    android:gravity="right"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/edit_menu_txt" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" >
+
+                <com.eliqxir.utils.CustomTextOpensansRegular
+                    android:id="@+id/textForAddItemShortDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginTop="17dp"
+                    android:text="@string/sdesc"
+                    android:textColor="@color/edit_menu_txt"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/editTextForAddItemShortDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/textForAddItemShortDesc"
+                    android:background="@color/app_bg_color"
+                    android:gravity="right"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/edit_menu_txt" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" >
+
+                <com.eliqxir.utils.CustomTextOpensansRegular
+                    android:id="@+id/textForAddItemMetaDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginTop="17dp"
+                    android:text="@string/mdesc"
+                    android:textColor="@color/edit_menu_txt"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/editTextForAddItemMetaDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/textForAddItemMetaDesc"
+                    android:background="@color/app_bg_color"
+                    android:gravity="right"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/edit_menu_txt" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" >
+
+                <com.eliqxir.utils.CustomTextOpensansRegular
+                    android:id="@+id/textForAddItemAvailable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/edit_available"
+                    android:textColor="@color/edit_menu_txt"
+                    android:textSize="15dp" />
+
+                <CheckBox
+                    android:id="@+id/imageForAddAvailable"
+                   android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/status_checkbox_selector"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/edit_menu_txt" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" >
+
+                <com.eliqxir.utils.CustomTextOpensansRegular
+                    android:id="@+id/textForAddItemFeatured"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/edit_featured"
+                    android:textColor="@color/edit_menu_txt"
+                    android:textSize="15dp" />
+
+                <CheckBox
+                    android:id="@+id/imageForAddFeatured"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/status_checkbox_selector"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/layoutForAddContents"
+        android:background="@color/edit_menu_txt" />
+
+    <LinearLayout
+        android:id="@+id/layoutForAddButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@color/app_bg_color"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/btnForAddItem"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/add_item_btn" />
+    </LinearLayout>
+
+</RelativeLayout>

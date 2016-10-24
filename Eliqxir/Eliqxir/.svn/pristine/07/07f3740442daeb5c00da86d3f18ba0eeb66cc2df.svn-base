@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color" >
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        layout="@layout/header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical" >
+
+            <com.eliqxir.utils.CustomTextOpensansRegular
+                android:id="@+id/textForAddCartItemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stella Artois"
+                android:textColor="#fbb03b"
+                android:textSize="20dp" />
+
+            <com.eliqxir.utils.CustomTextOpensansRegular
+                android:id="@+id/textForAddCartItemNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textForAddCartItemName"
+                android:layout_marginTop="15dp"
+                android:text="@string/notes"
+                android:textColor="#939597"
+                android:textSize="14dp" />
+
+            <com.eliqxir.utils.CustomTextOpensansRegular
+                android:id="@+id/textForAddCartSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textForAddCartItemNote"
+                android:layout_marginTop="15dp"
+                android:text="Size"
+                android:textColor="#6d6d72"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#939597" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent" >
+
+                    <Spinner
+                        android:id="@+id/spinnerForSize"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/app_bg_color"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="22dp" />
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/drop_down_arrow" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <com.eliqxir.utils.CustomTextOpensansRegular
+                        android:id="@+id/textForAddCartQuantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textForAddCartItemNote"
+                        android:layout_marginTop="10dp"
+                        android:text="Quantity"
+                        android:textColor="#6d6d72"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="#939597" >
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent" >
+
+                            <Spinner
+                                android:id="@+id/spinnerForQuantity"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_margin="1dp"
+                                android:background="@color/app_bg_color"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="22dp" />
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/drop_down_arrow" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical" >
+
+                    <com.eliqxir.utils.CustomTextOpensansRegular
+                        android:id="@+id/textForAddCartPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textForAddCartItemNote"
+                        android:layout_marginTop="10dp"
+                        android:text="Price"
+                        android:textColor="#6d6d72"
+                        android:textSize="15dp" />
+
+                    <com.eliqxir.utils.CustomTextOpensansRegular
+                        android:id="@+id/textForAddCartPriceValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textForAddCartItemNote"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="-"
+                        android:textColor="#53bc9d"
+                        android:textSize="26dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical" >
+
+                    <com.eliqxir.utils.CustomTextOpensansRegular
+                        android:id="@+id/textForAddCartsku"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textForAddCartItemNote"
+                        android:layout_marginTop="10dp"
+                        android:text="SKU"
+                        android:textColor="#6d6d72"
+                        android:textSize="15dp" />
+
+                    <com.eliqxir.utils.CustomTextOpensansRegular
+                        android:id="@+id/textForAddCartskuValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textForAddCartItemNote"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="-"
+                        android:textColor="#53bc9d"
+                        android:textSize="26dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/addToCartBtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/add_to_cart_btn"
+                android:contentDescription="@string/sample" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="40dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

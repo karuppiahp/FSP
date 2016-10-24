@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp" >  
+     
+    <RelativeLayout
+    android:id="@+id/mainRelative"
+    android:layout_width="match_parent"
+    android:layout_height="40dp" 
+    android:background="@color/backgrounditem">
+    
+     <TextView
+            android:id="@+id/sizetext"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:text="Text View1"
+            android:textColor="@color/additemtext"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+     
+     <View 
+            android:id="@+id/viewone"
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@+id/sizetext"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/viewvertical"
+         />
+     
+      <TextView
+            android:id="@+id/pricetext"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/viewone"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="Text View1"
+            android:textColor="@color/additemtext"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+      
+      <View
+        android:id="@+id/viewlast"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/edit_menu_txt"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/pricetext"
+        />
+      
+</RelativeLayout>
+    
+</RelativeLayout>

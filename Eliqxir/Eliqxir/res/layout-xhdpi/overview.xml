@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_bg_color" >
+    
+    <include
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        layout="@layout/header" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:id="@+id/textForSales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overview_sales"
+            android:textSize="15dp"
+            android:textColor="@color/orange"
+            />
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:id="@+id/textForSalesSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overview_sales_sub"
+            android:textSize="12dp"
+            android:textColor="@color/txt_grey"
+            />
+        <com.eliqxir.utils.CustomTextOpensansSemiBold
+            android:id="@+id/textForSalesAmnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:text=""
+            android:textSize="25dp"
+            android:textColor="@color/app_green"
+            />
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:background="@color/vendor_overview_view"
+        />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:id="@+id/textForAvg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overview_average"
+            android:textSize="15dp"
+            android:textColor="@color/orange"
+            />
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:id="@+id/textForAvgSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overview_avg_sub"
+            android:textSize="12dp"
+            android:textColor="@color/txt_grey"
+            />
+        <com.eliqxir.utils.CustomTextOpensansSemiBold
+            android:id="@+id/textForAvgTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:text=""
+            android:textSize="25dp"
+            android:textColor="@color/app_green"
+            />
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:background="@color/vendor_overview_view"
+        />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:id="@+id/textForTopSell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overview_top_sellings"
+            android:textSize="15dp"
+            android:textColor="@color/orange"
+            />
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:id="@+id/textForTopSellSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overview_top_sellings_sub"
+            android:textSize="12dp"
+            android:textColor="@color/txt_grey"
+            />
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/listForOverviewItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>

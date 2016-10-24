@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="160dp"
+        android:background="@color/backgrounditem"
+         >
+        
+        <EditText
+            android:id="@+id/editsize"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/backgrounditem"
+            android:gravity="center_vertical"
+            android:hint="@string/text_size"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:textColorHint="@color/additemtext"
+            android:textSize="16sp" />
+        
+           <View
+               android:id="@+id/alertview1"
+	     android:layout_width="match_parent"
+	     android:layout_height="1dp"
+	     android:layout_below="@+id/editsize"
+	     android:background="@color/edit_menu_txt"
+	        />
+
+        <EditText
+            android:id="@+id/editprice"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/backgrounditem"
+            android:gravity="center_vertical"
+            android:hint="@string/text_price"
+            android:imeOptions="actionDone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/alertview1"
+            android:inputType="numberDecimal"           
+            android:singleLine="true"
+            android:textColorHint="@color/additemtext"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/alertview2"
+	     android:layout_width="match_parent"
+	     android:layout_height="1dp"
+	     android:layout_below="@+id/editprice"
+	     android:background="@color/edit_menu_txt"
+	        />
+        
+        
+        <Button 
+               android:id="@+id/btn_add"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"                
+                android:layout_below="@+id/alertview2"
+                android:background="@color/addbackground"
+                android:text="@string/text_add"
+                android:textStyle="bold"
+                android:textColor="@color/pop_up_white"
+                android:visibility="gone"
+            />
+        
+        <Button 
+               android:id="@+id/btn_edit"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"                
+                android:layout_below="@+id/alertview2"
+                android:background="@color/addbackground"
+                android:text="@string/text_edit"
+                android:textStyle="bold"
+                android:textColor="@color/pop_up_white"
+                android:visibility="gone"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

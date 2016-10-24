@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:padding="10dp" >
+
+    <ProgressBar
+        android:id="@+id/progBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fitsSystemWindows="true" />
+
+    <TextView
+        android:id="@+id/txtProgMessage"
+        style="@style/WhiteBoldShadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/progBar" />
+
+</RelativeLayout>

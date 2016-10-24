@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color" >
+
+    <!-- Replace this with header -->
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        layout="@layout/header" />
+
+    <!-- Main Layout below the header -->
+
+    <com.eliqxir.utils.CustomTextOpensansRegular
+        android:id="@+id/percentage_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/percentage"
+        android:textColor="@color/txt_color_gray"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/percentage_label"
+        android:layout_marginTop="5dp"
+        android:background="@color/line_color" />
+
+    <Spinner
+        android:id="@+id/percentage_value"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/line1"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/app_bg_color"
+        android:gravity="top|right"
+        android:textColor="@color/txt_color_gray"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_percentage"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/line1"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/next1" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/percentage_value"
+        android:layout_marginTop="5dp"
+        android:background="@color/line_color" />
+
+    <com.eliqxir.utils.CustomTextOpensansRegular
+        android:id="@+id/enter_manual_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/enter_manually"
+        android:textColor="@color/txt_color_gray"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/enter_manual_label"
+        android:layout_marginTop="5dp"
+        android:background="@color/line_color" />
+
+    <EditText
+        android:id="@+id/enter_manual_value"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/line3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/app_bg_color"
+        android:digits="0123456789.,$"
+        android:enabled="false"
+        android:layout_marginRight="30dp"
+        android:focusable="false"
+        android:inputType="numberDecimal"
+        android:text="$0.00"
+        android:textColor="@color/txt_color_gray"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_enter_manually"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/line3"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/next1" />
+
+    <View
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/btn_enter_manually"
+        android:layout_marginTop="5dp"
+        android:background="@color/line_color" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:button="@drawable/chkbox_selector"
+        android:text="@string/use_cash"
+        android:textColor="@color/txt_color_gray" />
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_marginTop="7dp"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/checkBox1"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Done" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <com.eliqxir.utils.CustomTextOpensansSemiBold
+            android:id="@+id/total_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right|bottom"
+            android:text="$2.42"
+            android:textColor="@color/app_green"
+            android:textSize="32sp" />
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:id="@+id/total_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/total_value"
+            android:text="@string/tip_total"
+            android:textColor="@color/txt_color_gray"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

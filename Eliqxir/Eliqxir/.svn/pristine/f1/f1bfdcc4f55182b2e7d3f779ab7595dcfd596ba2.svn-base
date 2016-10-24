@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:background="@drawable/promo_layout_bg" >
+
+    <com.eliqxir.utils.CustomTextOpensansSemiBold
+        android:id="@+id/changePwd_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/change_pwd"
+        android:textColor="@color/app_orange"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/setttings_close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/login_close" />
+
+    <EditText
+        android:id="@+id/newPwd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/setttings_close"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_layout_bg"
+        android:textColor="@color/txt_color_gray"
+        android:ems="10"
+         android:inputType="textPassword"
+        android:hint="@string/newpwd"
+        android:paddingLeft="25dp"
+        android:textColorHint="@color/txt_color_gray"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/confirmPwd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/newPwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+           android:textColor="@color/txt_color_gray"
+        android:background="@drawable/edittext_layout_bg"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/confirmpwd"
+        android:paddingLeft="25dp"
+        android:textColorHint="@color/txt_color_gray"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:visibility="gone"
+        android:id="@+id/checkbox_email_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmPwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:button="@drawable/chkbox_selector"
+        android:text="@string/pwdvia_email"
+        android:textColor="@color/txt_color_gray"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/btn_changePwdInDialog"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/checkbox_email_pwd"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+       
+       android:background="@drawable/change_password"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color" >
+    
+    <include
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        layout="@layout/header" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:orientation="vertical"
+        android:layout_above="@+id/imageBtnForAcceptOrders"
+        >
+    <View
+        android:id="@+id/viewFirst"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/edit_menu_txt"
+        android:layout_marginTop="15dp"
+        />
+    
+    <ListView 
+	    android:id="@+id/listViewForAssignDrivers" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:divider="@color/edit_menu_txt"
+	    android:dividerHeight="1dip"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    />
+    
+    <View
+        android:id="@+id/viewSecond"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/edit_menu_txt"
+        />
+    </LinearLayout>
+    
+    <ImageButton
+        android:id="@+id/imageBtnForAcceptOrders"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/accept_order_btn"
+        />
+</RelativeLayout>

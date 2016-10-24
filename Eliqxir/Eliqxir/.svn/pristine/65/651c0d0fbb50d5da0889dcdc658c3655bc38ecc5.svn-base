@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:background="@color/orange" >
+
+    <RelativeLayout
+        android:id="@+id/layHeaderslider"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true" >
+
+        <ImageButton
+            android:id="@+id/btnSliderMenu"
+            android:layout_width="20dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/hamburger"
+            android:contentDescription="@string/sample"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layHeaderBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true" >
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="15dp"
+            android:layout_height="17dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/header_back_arrow"
+            android:contentDescription="@string/sample" />
+    </RelativeLayout>
+
+    <com.eliqxir.utils.CustomTextOpensansSemiBold
+        android:id="@+id/textForHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:singleLine="true"
+        android:layout_marginRight="50dp"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <RelativeLayout
+        android:id="@+id/layHeaderCart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true" >
+
+        <ImageButton
+            android:id="@+id/cartBtn"
+            android:layout_width="20dp"
+            android:layout_height="17dp"
+             android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/cart_icon" />
+
+        <RelativeLayout
+            android:id="@+id/layCartCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone" >
+
+            <ImageButton
+                android:id="@+id/cartCountBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_red1" />
+
+            <TextView
+                android:id="@+id/cartCountTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/settingsBtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/settings"
+            android:visibility="gone" />
+    </RelativeLayout>
+<RelativeLayout
+        android:id="@+id/layHeaderaddItem"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_alignParentRight="true" >
+
+        <ImageButton
+            android:id="@+id/addItemBtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+             android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/plus_img" />
+       
+</RelativeLayout>
+</RelativeLayout>

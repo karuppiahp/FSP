@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    >
+    
+    <include
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        layout="@layout/header" />
+    
+    <LinearLayout
+        android:id="@+id/layoutForDriverBtns"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+        android:background="#fbb03b"
+        android:layout_below="@+id/header"
+        >
+        
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:id="@+id/textForDriverPending"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_margin="1dp"
+            android:text="PENDING"
+            android:gravity="center"
+            android:background="#fbb03b"
+            android:textColor="#FFFFFF"
+            />
+        
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:id="@+id/textForDriverProcessing"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:text="PROCESSING"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:textColor="#fbb03b"
+            />
+        
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:id="@+id/textForDriverHistory"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_margin="1dp"
+            android:text="HISTORY"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:textColor="#fbb03b"
+            />
+        
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/listForDriverHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutForDriverBtns"
+        android:layout_marginTop="15dp"
+        />
+
+</RelativeLayout>

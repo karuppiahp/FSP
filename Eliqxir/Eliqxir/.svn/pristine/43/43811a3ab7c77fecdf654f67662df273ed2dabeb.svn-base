@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/menu_back"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent" 
+    	android:orientation="vertical"
+        >
+    <com.eliqxir.utils.CustomTextOpensansSemiBold
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="ELIQXIR"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layOverview"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/menu_black_back" >
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/overview"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layOrders"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp" >
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/orders"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/menu_black_back" >
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/menu"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layStoreInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp" >
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/store_info"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layDrivers"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/menu_black_back" >
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/drivers"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </RelativeLayout>
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/layVendorLogout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/menu_black_back" >
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/vendor_logout"
+            android:textColor="@color/vendor_log_color"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

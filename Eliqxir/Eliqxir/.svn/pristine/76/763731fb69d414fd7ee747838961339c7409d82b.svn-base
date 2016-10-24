@@ -1,0 +1,218 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/menu_back"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent" 
+    	android:orientation="vertical"
+        >
+    <com.eliqxir.utils.CustomTextOpensansSemiBold
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="ELIQXIR"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/laySearch"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+       android:paddingLeft="15dp"
+        android:background="@drawable/menu_black_back" >
+
+        <RelativeLayout
+            android:id="@+id/layBtnSearch"
+            android:layout_width="30dp"
+            android:layout_height="60dp" >
+
+            <Button
+                android:id="@+id/btnMenuSearch"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/menu_search_icon" />
+        </RelativeLayout>
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/layBtnSearch"
+            android:gravity="center_vertical"
+            android:text="@string/search"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layBrowse"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+      android:paddingLeft="15dp">
+
+        <RelativeLayout
+            android:id="@+id/layBtnBrowse"
+            android:layout_width="30dp"
+            android:layout_height="60dp" >
+
+            <Button
+                android:id="@+id/btnBrowse"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/menu_browse_icon" />
+        </RelativeLayout>
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/layBtnBrowse"
+            android:gravity="center_vertical"
+            android:text="@string/browse"
+            android:textColor="@color/white"
+           android:textSize="13sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layAccount"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/menu_black_back" >
+
+        <RelativeLayout
+            android:id="@+id/layBtnAccount"
+            android:layout_width="30dp"
+            android:layout_height="60dp" >
+
+            <Button
+                android:id="@+id/btnAccount"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/menu_account_icon" />
+        </RelativeLayout>
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/layBtnAccount"
+            android:gravity="center_vertical"
+            android:text="@string/my_account"
+            android:textColor="@color/white"
+           android:textSize="13sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layCart"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="15dp" >
+
+        <RelativeLayout
+            android:id="@+id/layBtnCart"
+            android:layout_width="30dp"
+            android:layout_height="60dp" >
+
+            <Button
+                android:id="@+id/btnCart"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/menu_cart_icon" />
+        </RelativeLayout>
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/layBtnCart"
+            android:gravity="center_vertical"
+            android:text="@string/cart"
+            android:textColor="@color/white"
+           android:textSize="13sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layLocation"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+       android:paddingLeft="15dp"
+        android:background="@drawable/menu_black_back" >
+
+        <RelativeLayout
+            android:id="@+id/layBtnLocation"
+            android:layout_width="30dp"
+            android:layout_height="60dp" >
+
+            <Button
+                android:id="@+id/btnLocation"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/menu_location_icon" />
+        </RelativeLayout>
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/layBtnLocation"
+            android:gravity="center_vertical"
+            android:text="@string/location"
+            android:textColor="@color/white"
+           android:textSize="13sp"/>
+    </RelativeLayout>
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+    <RelativeLayout
+        android:id="@+id/layDriverLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/menu_black_back" >
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/driver_login"
+            android:textColor="@color/vendor_log_color"
+           android:textSize="13sp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layVendorLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/layDriverLogin"
+        android:background="@drawable/menu_black_back" >
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/vendor_login"
+            android:textColor="@color/vendor_log_color"
+           android:textSize="13sp"/>
+    </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

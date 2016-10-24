@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#f1f1ec</color>
+    <color name="blue">#00aaeb</color>
+    <color name="grey">#8e8e8e</color>
+    <color name="black">#000000</color>
+    <color name="menu_back">#333333</color>
+    <color name="orange">#fbb03b</color>
+    <color name="app_green">#53bc9d</color>
+    <color name="app_bg_color">#f1f1ec</color>
+    <color name="line_color">#e3e3da</color>
+    <color name="app_orange">#fbb03b</color>
+    <color name="app_red">#e8624c</color>
+    <color name="txt_color_gray">#aaaaa0</color>
+	<color name="txt_grey">#acaba1</color>
+	<color name="vendor_log_color">#808080</color>
+	<color name="cart_text">#4c4c4e</color>
+	<color name="vendor_overview_view">#e7e8e8</color>
+	<color name="vendor_overview_desc">#bebeb5</color>
+	<color name="edit_menu_txt">#cccccc</color>
+	<color name="view_bg">#d6d6d5</color>
+	<color name="cart_black">#4c4c4e</color>
+	<color name="pop_up_bg">#9960605e</color>
+	<color name="pop_up_white">#ffffff</color>	
+	<color name="additemtext">#cccccc</color>
+	<color name="backgrounditem">#f1f1ec</color>
+	<color name="addbackground">#fbb03b</color>
+	
+	
+</resources>

@@ -1,0 +1,553 @@
+package com.eliqxir.vendor;
+
+import java.text.NumberFormat;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.ProgressDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.util.Log;
+import android.view.KeyEvent;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.Window;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.TextView;
+
+import com.eliqxir.R;
+import com.eliqxir.support.ServerResponse;
+import com.eliqxir.support.ServerResponse.RequestType;
+import com.eliqxir.tabhostfragments.TabsFragmentActivity;
+import com.eliqxir.utils.Constant;
+import com.eliqxir.utils.UrlGenerator;
+import com.eliqxir.utils.Utils;
+
+public class EditingMenuActivity extends Activity implements OnClickListener {
+	public void onStop()
+	{
+		if(Constant.isVendorAvailable.equals("notAvailable"))
+		{
+			finish();
+		}
+		super.onStop();
+		
+	}
+	ImageButton backImg, cartBtn, btnSlideMenu;
+	TextView textForHeader;
+	EditText editTxtForName, editTxtForQty, editTxtForFiOz, editTxtForPrice,
+			editTxtForCategory, editTxtForSubCategory, editTxtForSku,
+			editTextForItemDesc;
+	CheckBox availableBtn, FeaturedBtn;
+	ImageButton btnForDelete, btnForSave;
+	boolean featured = true;
+	String categoryId, price, name, desc, sku, parent, category, productId,
+			itemStatus,current;
+
+	 @Override
+	 public boolean onKeyDown(int keyCode, KeyEvent event) {
+	 if (keyCode == KeyEvent.KEYCODE_BACK) {
+	
+//	 Intent returnIntent = new Intent();
+//	 returnIntent.putExtra("position", parent);
+//	
+//	 setResult(RESULT_OK, returnIntent);
+	 finish();
+	 }
+	
+	 return false;
+	 }
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		Utils.trackError(getApplicationContext());
+
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		setContentView(R.layout.editing_menu);
+
+		categoryId = getIntent().getExtras().getString("id");
+		price = getIntent().getExtras().getString("price");
+
+		name = getIntent().getExtras().getString("name");
+		desc = getIntent().getExtras().getString("desc");
+		sku = getIntent().getExtras().getString("sku");
+		itemStatus = getIntent().getExtras().getString("status");
+		category = getIntent().getExtras().getString("category");
+		productId = getIntent().getExtras().getString("product_id");
+		Log.e("productId", productId);
+		parent = getIntent().getExtras().getString("parent");
+		Log.e("parent", parent);
+		btnSlideMenu = (ImageButton) findViewById(R.id.btnSliderMenu);
+		backImg = (ImageButton) findViewById(R.id.backBtn);
+		cartBtn = (ImageButton) findViewById(R.id.cartBtn);
+		textForHeader = (TextView) findViewById(R.id.textForHeader);
+		editTxtForSku = (EditText) findViewById(R.id.editTextForItemSku);
+		editTextForItemDesc = (EditText) findViewById(R.id.editTextForItemDesc);
+		editTxtForName = (EditText) findViewById(R.id.editTextForItemName);
+		editTxtForQty = (EditText) findViewById(R.id.editTextForItemQty);
+		editTxtForFiOz = (EditText) findViewById(R.id.editTextForItemFiOz);
+		editTxtForPrice = (EditText) findViewById(R.id.editTextForItemPrice);
+		editTxtForCategory = (EditText) findViewById(R.id.editTextForItemCategory);
+		editTxtForSubCategory = (EditText) findViewById(R.id.editTextForItemSubCategory);
+		availableBtn = (CheckBox) findViewById(R.id.imageForAvailable);
+		FeaturedBtn = (CheckBox) findViewById(R.id.imageForFeatured);
+		btnForDelete = (ImageButton) findViewById(R.id.btnForDelete);
+		btnForSave = (ImageButton) findViewById(R.id.btnForSaveChanges);
+		backImg.setOnClickListener(this);
+
+		// availableBtn.setOnClickListener(this);
+		// FeaturedBtn.setOnClickListener(this);
+		btnForDelete.setOnClickListener(this);
+		btnForSave.setOnClickListener(this);
+		btnSlideMenu.setVisibility(View.GONE);
+		cartBtn.setVisibility(View.GONE);
+		backImg.setVisibility(View.VISIBLE);
+		textForHeader.setText(name.toUpperCase());
+		editTxtForName.setText(name);
+		editTextForItemDesc.setText(desc);
+		editTxtForFiOz.setText("12");
+		editTxtForPrice.setText("$" + price);
+		editTxtForPrice.addTextChangedListener(new TextWatcher() {
+			
+
+			@Override
+			public void onTextChanged(CharSequence s, int start, int before,
+					int count) {
+				// TODO Auto-generated method stub
+				editTxtForPrice.addTextChangedListener(new TextWatcher() {
+
+					@Override
+					public void onTextChanged(CharSequence s, int start, int before,
+							int count) {
+						// TODO Auto-generated method stub
+						if (!s.toString().equals(current)) {
+
+							editTxtForPrice.removeTextChangedListener(this);
+
+							String cleanString = s.toString().replaceAll("[$,.]", "");
+
+							double parsed = Double.parseDouble(cleanString);
+							String formatted = NumberFormat.getCurrencyInstance()
+									.format((parsed / 100));
+
+							current = formatted;
+							editTxtForPrice.setText(formatted);
+							editTxtForPrice.setSelection(formatted.length());
+
+							editTxtForPrice.addTextChangedListener(this);
+						}
+
+					}
+
+					@Override
+					public void beforeTextChanged(CharSequence s, int start, int count,
+							int after) {
+						// TODO Auto-generated method stub
+
+					}
+
+					@Override
+					public void afterTextChanged(Editable s) {
+					}
+
+				});
+			}
+
+			@Override
+			public void beforeTextChanged(CharSequence s, int start, int count,
+					int after) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void afterTextChanged(Editable s) {
+				
+			}
+		});
+		editTxtForCategory.setText(parent);
+		editTxtForSubCategory.setText(category);
+		editTxtForSku.setText(sku);
+		boolean isOnline = Utils.isOnline();
+		Log.e("isOnline", isOnline + "");
+		if (isOnline) {
+			new GetItemQuantity().execute();
+			
+		}
+		else
+		{
+			Utils.ShowAlert(EditingMenuActivity.this, Constant.networkDisconected);
+		}
+	
+		if (itemStatus.equals("1")) {
+			availableBtn.setChecked(true);
+		} else {
+			availableBtn.setChecked(false);
+
+		}
+		availableBtn.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+
+			@Override
+			public void onCheckedChanged(CompoundButton buttonView,
+					boolean isChecked) {
+				// TODO Auto-generated method stub
+				if (availableBtn.isChecked()) {
+					itemStatus = "1";
+				} else {
+					itemStatus = "0";
+				}
+			}
+		});
+		Log.e("status", itemStatus);
+	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		if (v.getId() == R.id.backBtn) {
+			finish();
+		}
+
+		// if (v.getId() == R.id.imageForAvailable) {
+		// if (status.equals(1)) {
+		// // available = false;
+		// availableBtn.setImageResource(R.drawable.available_on);
+		// } else {
+		// // available = true;
+		// availableBtn.setImageResource(R.drawable.available_off);
+		// }
+		// }
+
+		// if (v.getId() == R.id.imageForFeatured) {
+		// if (featured == true) {
+		// featured = false;
+		// FeaturedBtn.setImageResource(R.drawable.available_on);
+		// } else {
+		// featured = true;
+		// FeaturedBtn.setImageResource(R.drawable.available_off);
+		// }
+		// }
+
+		if (v.getId() == R.id.btnForDelete) {
+			ShowDeleteAlert("Are you sure, you want to delete this item.");
+
+		}
+
+		if (v.getId() == R.id.btnForSaveChanges) {
+			if (editTxtForCategory.getText().toString().length() > 0
+					&& editTxtForFiOz.getText().toString().length() > 0
+					&& editTxtForName.getText().toString().length() > 0
+					&& editTxtForPrice.getText().toString().length() > 0
+					&& editTxtForQty.getText().toString().length() > 0
+					&& editTxtForSku.getText().toString().length() > 0
+					&& editTxtForSubCategory.getText().toString().length() > 0
+					&& editTextForItemDesc.getText().toString().length() > 0) {
+				boolean isOnline = Utils.isOnline();
+				Log.e("isOnline", isOnline + "");
+				if (isOnline) {
+					new UpdateItem().execute();
+					
+				}
+				else
+				{
+					Utils.ShowAlert(EditingMenuActivity.this, Constant.networkDisconected);
+				}
+				
+			} else {
+				Utils.ShowAlert(EditingMenuActivity.this,
+						"Please enter data for all fields.");
+			}
+		}
+
+	}
+
+	public class DeleteItem extends AsyncTask<Void, Void, Void> {
+		ProgressDialog dialog;
+		String status = "", error;
+
+		@Override
+		protected void onPostExecute(Void result) {
+
+			if (dialog.isShowing()) {
+				dialog.dismiss();
+			}
+
+			try {
+
+				if (status.equals("1")) {
+
+					if (parent.equals("Beer")) {
+						Constant.selectedTabPosition = 2;
+
+					} else if (parent.equals("Featured")) {
+						Constant.selectedTabPosition = 0;
+					} else if (parent.equals("Wine")) {
+						Constant.selectedTabPosition = 1;
+					} else {
+						Constant.selectedTabPosition = 3;
+					}
+					// finish();
+					startActivity(new Intent(EditingMenuActivity.this,
+							TabsFragmentActivity.class));
+
+				} else {
+					Utils.ShowAlert(EditingMenuActivity.this, error);
+				}
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		}
+
+		@Override
+		protected void onPreExecute() {
+			super.onPreExecute();
+			this.dialog = new ProgressDialog(EditingMenuActivity.this);
+			this.dialog.setMessage("Loading..");
+			this.dialog.show();
+			this.dialog.setCancelable(false);
+
+		}
+
+		@Override
+		protected Void doInBackground(Void... params) {
+			List<NameValuePair> nameValuePair = new ArrayList<NameValuePair>(1);
+			nameValuePair.add(new BasicNameValuePair("product_id", productId));
+			JSONObject jsonObj = new ServerResponse(
+					UrlGenerator.vendorDeleteItem()).getJSONObjectfromURL(
+					RequestType.POST, nameValuePair);
+			Log.e("vendor delete item", jsonObj + "");
+			try {
+				if (jsonObj != null) {
+					status = jsonObj.getString("status");
+					if (status.equals("0")) {
+						error = jsonObj.getString("Error");
+					} else if (status.equals("1")) {
+
+					}
+				}
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}
+			return null;
+		}
+
+	}
+
+	public class GetItemQuantity extends AsyncTask<Void, Void, Void> {
+		ProgressDialog dialog;
+		String status = "", error, itemQuantity = "";
+
+		@Override
+		protected void onPostExecute(Void result) {
+
+			if (dialog.isShowing()) {
+				dialog.dismiss();
+			}
+
+			try {
+
+				if (status.equals("1")) {
+					editTxtForQty.setText(itemQuantity);
+				} else {
+					Utils.ShowAlert(EditingMenuActivity.this, error);
+				}
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		}
+
+		@Override
+		protected void onPreExecute() {
+			super.onPreExecute();
+			this.dialog = new ProgressDialog(EditingMenuActivity.this);
+			this.dialog.setMessage("Loading..");
+			this.dialog.show();
+			this.dialog.setCancelable(false);
+
+		}
+
+		@Override
+		protected Void doInBackground(Void... params) {
+			List<NameValuePair> nameValuePair = new ArrayList<NameValuePair>(1);
+			nameValuePair.add(new BasicNameValuePair("product_sku", sku));
+			JSONObject jsonObj = new ServerResponse(
+					UrlGenerator.vendorGetQuantity()).getJSONObjectfromURL(
+					RequestType.POST, nameValuePair);
+
+			try {
+				if (jsonObj != null) {
+					status = jsonObj.getString("status");
+					if (status.equals("0")) {
+						error = jsonObj.getString("Error");
+					} else if (status.equals("1")) {
+						String quantity = jsonObj.getString("quantity");
+						JSONArray jarr = new JSONArray(quantity);
+						itemQuantity = jarr.getJSONObject(0).getString("qty");
+					}
+				}
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}
+			return null;
+		}
+
+	}
+
+	public class UpdateItem extends AsyncTask<Void, Void, Void> {
+		ProgressDialog dialog;
+		String status = "", error;
+
+		@Override
+		protected void onPostExecute(Void result) {
+
+			if (dialog.isShowing()) {
+				dialog.dismiss();
+			}
+
+			try {
+
+				if (status.equals("1")) {
+					if (parent.equals("Beer")) {
+						Constant.selectedTabPosition = 2;
+
+					} else if (parent.equals("Featured")) {
+						Constant.selectedTabPosition = 0;
+					} else if (parent.equals("Wine")) {
+						Constant.selectedTabPosition = 1;
+					} else {
+						Constant.selectedTabPosition = 3;
+					}
+					finish();
+					startActivity(new Intent(EditingMenuActivity.this,
+							TabsFragmentActivity.class));
+				} else {
+					Utils.ShowAlert(EditingMenuActivity.this, error);
+				}
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		}
+
+		@Override
+		protected void onPreExecute() {
+			super.onPreExecute();
+			this.dialog = new ProgressDialog(EditingMenuActivity.this);
+			this.dialog.setMessage("Loading..");
+			this.dialog.show();
+			this.dialog.setCancelable(false);
+
+		}
+
+		@Override
+		protected Void doInBackground(Void... params) {
+
+			List<NameValuePair> nameValuePair = new ArrayList<NameValuePair>(5);
+			String product_name = editTxtForName.getText().toString().trim();
+			String product_stock = itemStatus;
+			String product_price = editTxtForPrice.getText().toString().trim()
+					.replace("$", "");
+			String product_qty = editTxtForQty.getText().toString().trim();
+			String product_sku = editTxtForSku.getText().toString().trim();
+			String desc = editTextForItemDesc.getText().toString().trim();
+			Log.e("product_name", product_name);
+			Log.e("product_stock", product_stock);
+			Log.e("product_price", product_price);
+			Log.e("product_qty", product_qty);
+			Log.e("product_sku", product_sku);
+			Log.e("categoryId", categoryId);
+			Log.e("Product Id", productId);
+			Log.e("desc", desc);
+
+			nameValuePair.add(new BasicNameValuePair("product_name",
+					product_name));
+			nameValuePair.add(new BasicNameValuePair("product_sku", productId));
+			nameValuePair
+					.add(new BasicNameValuePair("category_id", categoryId));
+			nameValuePair.add(new BasicNameValuePair("product_stock",
+					product_stock));
+			nameValuePair.add(new BasicNameValuePair("product_price",
+					product_price));
+			nameValuePair.add(new BasicNameValuePair("product_featured", "0"));
+			nameValuePair
+					.add(new BasicNameValuePair("product_qty", product_qty));
+
+			nameValuePair.add(new BasicNameValuePair("product_description",
+					desc));
+
+			JSONObject jsonObj = new ServerResponse(
+					UrlGenerator.vendorUpdateItem()).getJSONObjectfromURL(
+					RequestType.POST, nameValuePair);
+
+			try {
+				if (jsonObj != null) {
+					status = jsonObj.getString("status");
+					if (status.equals("0")) {
+						error = jsonObj.getString("Error");
+					} else if (status.equals("1")) {
+						// Toast.makeText(getApplicationContext(),
+						// "Updated successfully!", Toast.LENGTH_LONG).show();
+					}
+				}
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}
+			return null;
+		}
+
+	}
+
+	public void ShowDeleteAlert(String message) {
+		AlertDialog.Builder adb = new AlertDialog.Builder(
+				EditingMenuActivity.this);
+		adb.setMessage(message);
+		adb.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+
+			public void onClick(DialogInterface dialog, int which) {
+				dialog.cancel();
+				boolean isOnline = Utils.isOnline();
+				Log.e("isOnline", isOnline + "");
+				if (isOnline) {
+					new DeleteItem().execute();
+
+					
+				}
+				else
+				{
+					Utils.ShowAlert(EditingMenuActivity.this, Constant.networkDisconected);
+				}
+				
+			}
+		});
+		adb.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+
+			public void onClick(DialogInterface dialog, int which) {
+				dialog.cancel();
+
+			}
+		});
+		AlertDialog alert = adb.create();
+		alert.show();
+	}
+}

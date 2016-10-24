@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Customer APIs -->
+    <string name="base_url">http://162.209.127.121/%s</string> <!-- dev url -->
+    <string name="browse_wine">browse_wine.php</string>
+    <string name="browse_featured">browse_featured.php</string>
+    <string name="browse_mixers">browse_mixers.php</string>
+    <string name="browse_beer">browse_beer.php</string>
+    <string name="browse_liquor">browse_liquior.php</string>
+    <string name="item_view">item_view.php</string>
+    <string name="add_cart">cart_create.php</string>
+    <string name="create_acc">create_account.php</string>
+    <string name="login_acc">customer_login.php</string>
+    <string name="create_order">create_order.php</string>
+     <string name="user_myaccount">customer_myaccount.php</string>
+     <string name="user_pending_orders">customer_pending.php</string>
+      <string name="customer_favorites">customer_favorites.php</string>
+   <string name="user_order_details">customer_orderview.php</string>
+   <string name="user_porduct_search">search.php</string>
+   <string name="scan_ccard">scan_creditcard.php</string>
+   <string name="customer_changepassword">customer_changepassword.php</string>
+   <string name="customer_update">customer_update.php</string>
+   <string name="customer_forgotpassword">customer_forgotpassword.php</string>
+   <string name="customer_browse">customer_browse.php</string>
+   <string name="customer_promocode_list">customer_promocode_list.php</string>
+  <string name="search_location">customer_store_open_close.php</string>
+   
+   <!-- Vendor APIs -->
+   <string name="vendor_loginapi">vendor_login.php</string>
+   <string name="vendor_dashboard">vendor_dashboard.php</string>
+   <string name="vendor_order_pending">vendor_order_pending.php</string>
+   <string name="vendor_order_processing">vendor_order_processing.php</string>
+   <string name="vendor_order_complete">vendor_order_complete.php</string>
+   <string name="vendor_order_pending_overview">vendor_pending_orderview.php</string>
+   <string name="vendor_processing_orderview">vendor_processing_orderview.php</string>
+   <string name="vendor_complete_orderview">vendor_complete_orderview.php</string>
+   <string name="vendor_list_drivers">vendor_list_drivers.php</string>
+   <string name="vendor_accept_order">vendor_accept_order.php</string>
+   <string name="vendor_mark_delivered">vendor_mark_delivered.php</string>
+   <string name="vendor_remove_driver">vendor_remove_driver.php</string>
+   <string name="vendor_browse">vendor_browse.php</string>
+   <string name="vendor_item_add">vendor_item_add.php</string>
+   <string name="vendor_item_update">vendor_item_update.php</string>
+   <string name="vendor_item_delete">vendor_item_delete.php</string>
+   <string name="vendor_item_qty">vendor_item_qty.php</string>
+   <string name="vendor_add_driver">vendor_add_driver.php</string>
+   <string name="vender_store_info_hrs">vendor_store_info.php</string>
+   <!--Driver APIs  -->
+   
+   <string name="driverlogin">driver_login.php</string>
+   <string name="driver_order_processing">driver_order_processing.php</string>
+   <string name="driver_processing_orderview">driver_processing_orderview.php</string>
+   
+</resources>

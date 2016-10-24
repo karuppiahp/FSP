@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        layout="@layout/header" />
+
+    <ScrollView
+        android:id="@+id/scrollBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" >
+
+            <com.eliqxir.utils.CustomTextOpensansRegular
+                android:id="@+id/textForDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="DATE OF BIRTH"
+                android:textColor="@color/txt_color_gray" />
+
+            <com.eliqxir.utils.CustomTextOpensansRegular
+                android:id="@+id/textForDOBMust"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_toRightOf="@+id/textForDOB"
+                android:text="*"
+                android:textColor="#fbb03b"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:id="@+id/layoutForDOB"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/textForDOB"
+                android:layout_marginTop="5dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@color/txt_color_gray" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <EditText
+                            android:id="@+id/spineerForMonth"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="1dp"
+                            android:background="@color/app_bg_color"
+                            android:clickable="false"
+                            android:enabled="false"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/txt_color_gray" />
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/drop_down_arrow" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/txt_color_gray" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <EditText
+                            android:id="@+id/spineerForDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="1dp"
+                            android:background="@color/app_bg_color"
+                            android:clickable="false"
+                            android:enabled="false"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/txt_color_gray" />
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/drop_down_arrow" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@color/txt_color_gray" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <EditText
+                            android:id="@+id/spineerForYear"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="1dp"
+                            android:background="@color/app_bg_color"
+                            android:clickable="false"
+                            android:enabled="false"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/txt_color_gray" />
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/drop_down_arrow" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.eliqxir.utils.CustomTextOpensansRegular
+                android:id="@+id/textForAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutForDOB"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="DELIVERY ADDRESS"
+                android:textColor="@color/txt_color_gray" />
+
+            <ImageView
+                android:id="@+id/imageForAddressArrow"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_below="@+id/layoutForDOB"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="23dp"
+                android:layout_toRightOf="@+id/textForAddress"
+                android:src="@drawable/address_arrow" />
+
+            <LinearLayout
+                android:id="@+id/layoutForAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textForAddress"
+                android:layout_marginTop="5dp"
+                android:background="@color/txt_color_gray"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/editTxtForDeliveryName"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="1dp"
+                    android:background="@color/app_bg_color"
+                    android:hint="@string/name"
+                    android:singleLine="true"
+	             android:imeOptions="actionNext"
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/txt_color_gray"
+                    android:textColorHint="@color/txt_color_gray" />
+
+                <EditText
+                    android:id="@+id/editTxtForAddress1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="1dp"
+                    android:background="@color/app_bg_color"
+                   android:singleLine="true"
+	             android:imeOptions="actionNext"
+                    android:hint="@string/address"
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/txt_color_gray"
+                    android:textColorHint="@color/txt_color_gray" />
+
+                <EditText
+                    android:id="@+id/editTxtForAddress2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:background="@color/app_bg_color"
+                   android:singleLine="true"
+	             android:imeOptions="actionNext"
+                    android:hint="@string/city"
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/txt_color_gray"
+                    android:textColorHint="@color/txt_color_gray" />
+
+                <EditText
+                    android:id="@+id/editTxtForAddress3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:background="@color/app_bg_color"
+                    android:singleLine="true"
+	             android:imeOptions="actionNext"
+                    android:hint="@string/state"
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/txt_color_gray"
+                    android:textColorHint="@color/txt_color_gray" />
+
+                <EditText
+                    android:id="@+id/editTxtForAddress4"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:background="@color/app_bg_color"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:singleLine="true"
+	             android:imeOptions="actionNext"
+                    android:hint="@string/country"
+                    android:inputType="text"
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/txt_color_gray"
+                    android:textColorHint="@color/txt_color_gray" />
+
+                <EditText
+                    android:id="@+id/editTxtForAddress5"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="1dp"
+                    android:background="@color/app_bg_color"
+                    android:digits="0123456789"
+                    android:singleLine="true"
+	             android:imeOptions="actionNext"
+                    android:hint="@string/zip"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/txt_color_gray"
+                    android:textColorHint="@color/txt_color_gray" />
+            </LinearLayout>
+
+            <com.eliqxir.utils.CustomTextOpensansRegular
+                android:id="@+id/textForDeleivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutForAddress"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="DELIVERY TIME &amp; DATE"
+                android:textColor="@color/txt_color_gray" />
+
+            <LinearLayout
+                android:id="@+id/layoutForDelivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textForDeleivery"
+                android:layout_marginTop="10dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:background="@color/txt_color_gray" >
+
+                    <EditText
+                        android:id="@+id/editTxtForDeliveryDate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/app_bg_color"
+                        android:hint="Date"
+                        android:paddingLeft="3dp"
+                        android:textColor="@color/txt_color_gray"
+                        android:textColorHint="@color/txt_color_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/txt_color_gray" >
+
+                    <EditText
+                        android:id="@+id/editTxtForDeliveryTime"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/app_bg_color"
+                        android:hint="Time"
+                        android:paddingLeft="3dp"
+                        android:textColor="@color/txt_color_gray"
+                        android:textColorHint="@color/txt_color_gray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.eliqxir.utils.CustomTextOpensansRegular
+                android:id="@+id/textForPhoneNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutForDelivery"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="PHONE NUMBER"
+                android:textColor="@color/txt_color_gray" />
+
+            <LinearLayout
+                android:id="@+id/layoutForPhoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/textForPhoneNo"
+                android:layout_marginTop="10dp"
+                android:background="@color/txt_color_gray" >
+
+                <EditText
+                    android:id="@+id/editTxtForPhoneNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/app_bg_color"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:textColor="@color/txt_color_gray"
+                    android:textColorHint="@color/txt_color_gray" />
+            </LinearLayout>
+
+            <com.eliqxir.utils.CustomTextOpensansRegular
+                android:id="@+id/textForPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutForPhoneNo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="PAYMENT"
+                android:textColor="@color/txt_color_gray" />
+
+            <LinearLayout
+                android:id="@+id/layoutForPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textForPayment"
+                android:layout_marginTop="10dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/txt_color_gray" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <Spinner
+                            android:id="@+id/spinnerForVisa"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_margin="1dp"
+                            android:background="@color/app_bg_color"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="10dp" />
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/drop_down_arrow" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:background="@color/txt_color_gray" >
+
+                    <EditText
+                        android:id="@+id/editTxtForCcNo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/app_bg_color"
+                        android:hint="CC NUMBER"
+                        android:inputType="number"
+                        android:paddingLeft="3dp"
+                        android:textColor="@color/txt_color_gray"
+                        android:textColorHint="@color/txt_color_gray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutForPaymentExpired"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutForPayment"
+                android:layout_marginTop="10dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/txt_color_gray" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <Spinner
+                            android:id="@+id/spinnerForExpMonth"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_margin="1dp"
+                            android:background="@color/app_bg_color"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="10dp" />
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/drop_down_arrow" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/txt_color_gray" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <Spinner
+                            android:id="@+id/spinnerForExpYear"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_margin="1dp"
+                            android:background="@color/app_bg_color"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="10dp" />
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/drop_down_arrow" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/txt_color_gray" >
+
+                    <EditText
+                        android:id="@+id/editTxtForExpCcid"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/app_bg_color"
+                        android:hint="CCID"
+                        android:inputType="number"
+                        android:paddingLeft="3dp"
+                        android:textColor="@color/txt_color_gray"
+                        android:textColorHint="@color/txt_color_gray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutForScanCreditCard"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/layoutForPaymentExpired"
+                android:layout_marginTop="10dp"
+                android:background="#fbb03b" >
+
+                <com.eliqxir.utils.CustomTextOpensansSemiBold
+                    android:id="@+id/textForScanCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/app_bg_color"
+                    android:gravity="center"
+                    android:text="Scan Credit Card"
+                    android:textColor="#fbb03b"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <com.eliqxir.utils.CustomTextOpensansRegular
+                android:id="@+id/textForBilling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutForScanCreditCard"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="BILLING ADDRESS"
+                android:textColor="@color/txt_color_gray" />
+
+            <LinearLayout
+                android:id="@+id/layoutForBillingAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textForBilling"
+                android:layout_marginTop="5dp"
+                android:background="@color/txt_color_gray"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/editTxtForBillingName"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="1dp"
+                    android:background="@color/app_bg_color"
+                    android:hint="@string/name"
+                    android:paddingLeft="3dp"
+                    android:textColorHint="@color/txt_color_gray" />
+
+                <EditText
+                    android:id="@+id/editTxtForBillingAddress1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="1dp"
+                    android:background="@color/app_bg_color"
+                    android:hint="@string/address"
+                    android:paddingLeft="3dp"
+                    android:textColorHint="@color/txt_color_gray" />
+
+                <EditText
+                    android:id="@+id/editTxtForBillingAddress2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:background="@color/app_bg_color"
+                    android:hint="@string/city"
+                    android:paddingLeft="3dp"
+                    android:textColorHint="@color/txt_color_gray" />
+
+                <EditText
+                    android:id="@+id/editTxtForBillingAddress3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:background="@color/app_bg_color"
+                    android:hint="@string/state"
+                    android:paddingLeft="3dp"
+                    android:textColorHint="@color/txt_color_gray" />
+
+                <EditText
+                    android:id="@+id/editTxtForBillingAddress4"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:background="@color/app_bg_color"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:hint="@string/country"
+                    android:inputType="text"
+                    android:paddingLeft="3dp"
+                    android:textColorHint="@color/txt_color_gray" />
+
+                <EditText
+                    android:id="@+id/editTxtForBillingAddress5"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="1dp"
+                    android:background="@color/app_bg_color"
+                    android:digits="0123456789"
+                    android:hint="@string/zip"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingLeft="3dp"
+                    android:textColorHint="@color/txt_color_gray" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/chkBoxForBilling"
+                android:layout_width="18dp"
+                android:layout_height="15dp"
+                android:layout_below="@+id/layoutForBillingAddress"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/chkbox_selector"
+                android:button="@null" />
+
+            <com.eliqxir.utils.CustomTextOpensansRegular
+                android:id="@+id/textForBillingChkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutForBillingAddress"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/chkBoxForBilling"
+                android:text="Billing address same as delivery address"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="12dp" />
+
+            <com.eliqxir.utils.CustomTextOpensansRegular
+                android:id="@+id/textForCheckOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chkBoxForBilling"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="      Final exchange of product is contigent on the presentation of a valid ID that matches the above date of birth that must be over the age of 21. The vendor is responsible for final verification of legal alcohol purchase age upon delivery."
+                android:textColor="@color/txt_color_gray"
+                android:textSize="12dp" />
+
+            <com.eliqxir.utils.CustomTextOpensansRegular
+                android:id="@+id/textForSignatutre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textForCheckOut"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="SIGNATURE"
+                android:textColor="@color/txt_color_gray" />
+
+            <LinearLayout
+                android:id="@+id/layoutForSignature"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/textForSignatutre"
+                android:layout_marginTop="10dp"
+                android:background="@color/txt_color_gray" >
+
+                <LinearLayout
+                    android:id="@+id/layoutForSign"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/app_bg_color" />
+            </LinearLayout>
+
+            <com.eliqxir.utils.CustomTextOpensansRegular
+                android:id="@+id/textForTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/layoutForSignature"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="TOTAL:"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="20dp" />
+
+            <com.eliqxir.utils.CustomTextOpensansRegular
+                android:id="@+id/textForTotalValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/layoutForSignature"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="-"
+                android:textColor="#53bc9d"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btnForConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/textForTotalValue"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_color_bg"
+                android:text="Confirm"
+                android:textColor="#FFFFFF" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/btnForConfirm"
+                android:layout_marginTop="30dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

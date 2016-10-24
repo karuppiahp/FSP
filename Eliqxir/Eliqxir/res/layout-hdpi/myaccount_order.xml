@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        layout="@layout/header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:id="@+id/textForOrderFor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ORDER FOR:"
+            android:textColor="#939597"
+            android:textSize="14dp" />
+
+        <com.eliqxir.utils.CustomTextOpensansSemiBold
+            android:id="@+id/textForOrderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textForOrderFor"
+            android:layout_marginTop="5dp"
+            android:text="ORDER name"
+            android:textColor="#fbb03b"
+            android:textSize="18dp" />
+
+        <ListView
+            android:id="@+id/listForOrders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textForOrderName"
+            android:layout_marginTop="10dp"
+            android:layout_above="@+id/bottomlist" />
+
+        <LinearLayout
+            android:id="@+id/bottomlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.eliqxir.utils.CustomTextOpensansSemiBold
+                    android:id="@+id/textForDiscount"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="right"
+                    android:text="@string/discount_caps"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="18sp" />
+
+                <com.eliqxir.utils.CustomTextOpensansSemiBold
+                    android:id="@+id/textForDiscountField"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="$0.00"
+                    android:textColor="@color/app_green"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.eliqxir.utils.CustomTextOpensansSemiBold
+                    android:id="@+id/textForTax"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="center|right"
+                    android:text="@string/tax_caps"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="18sp" />
+
+                <com.eliqxir.utils.CustomTextOpensansSemiBold
+                    android:id="@+id/textForTaxField"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="$0.00"
+                    android:textColor="@color/app_green"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.eliqxir.utils.CustomTextOpensansSemiBold
+                    android:id="@+id/textForServiceFee"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="right"
+                    android:text="@string/service_fee_caps"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="18sp" />
+
+                <com.eliqxir.utils.CustomTextOpensansSemiBold
+                    android:id="@+id/textForServiceFeeField"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:text="$0.00"
+                    android:textColor="@color/app_green"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.eliqxir.utils.CustomTextOpensansSemiBold
+                    android:id="@+id/textForTip"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="right"
+                    android:text="@string/tip"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="18sp" />
+
+                <com.eliqxir.utils.CustomTextOpensansSemiBold
+                    android:id="@+id/textForTipField"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:text="$0.00"
+                    android:textColor="@color/app_green"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.eliqxir.utils.CustomTextOpensansSemiBold
+                    android:id="@+id/textForSubTotal"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="center|right"
+                    android:text="@string/subtotal_caps"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="18sp" />
+
+                <com.eliqxir.utils.CustomTextOpensansSemiBold
+                    android:id="@+id/textForSubTotalField"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:text="$0.00"
+                    android:textColor="@color/app_green"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnToOrderAgain"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="#fbb03b"
+                android:text="Order This Again"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

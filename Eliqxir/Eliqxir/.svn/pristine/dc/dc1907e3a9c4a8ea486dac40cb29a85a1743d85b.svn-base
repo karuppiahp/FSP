@@ -1,0 +1,156 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eliqxir"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name="com.eliqxir.application.EliqxirApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.eliqxir.tabhostfragments.TabsFragmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.eliqxir.EliqxirSplash"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.eliqxir.driver.LoginDriverActivity"
+            android:screenOrientation="portrait" />
+         
+          <activity
+            android:name="com.eliqxir.driver.OrderDeliveredActivity"
+            android:screenOrientation="portrait" />
+          
+           <activity
+            android:name="com.eliqxir.driver.OrdersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eliqxir.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eliqxir.AddToCartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eliqxir.LocationWindow"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.eliqxir.MyAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eliqxir.MyAccountOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eliqxir.CartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eliqxir.DeliveryTipsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eliqxir.DeliveryTipsTotalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eliqxir.UserSettings"
+            android:screenOrientation="portrait"
+             android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.eliqxir.CheckoutActivity"
+            android:screenOrientation="portrait" 
+             android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.eliqxir.OrderPlacedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eliqxir.SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eliqxir.vendor.LoginVendorActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.eliqxir.vendor.OverviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eliqxir.vendor.EditingMenuActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.eliqxir.vendor.StoreInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eliqxir.vendor.DriversActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eliqxir.vendor.AddDriver"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.eliqxir.vendor.DriversStoreInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eliqxir.vendor.OrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eliqxir.vendor.OrderSpecificActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eliqxir.vendor.AssignDriverActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eliqxir.vendor.AddItemActivity"
+          android:windowSoftInputMode="adjustPan|adjustResize"
+            
+            android:screenOrientation="portrait" >
+            <intent-filter>
+			  <action android:name="android.intent.action.VIEW"></action>
+			  <category android:name="android.intent.category.DEFAULT"></category>
+			  <category android:name="android.intent.category.BROWSABLE"></category>
+			</intent-filter>
+        </activity>
+        <activity
+            android:name="com.eliqxir.tabhostfragments.TabsFragmentActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity  
+           android:name="com.google.zxing.client.android.CaptureActivity"  
+           android:configChanges="orientation|keyboardHidden"  
+           android:screenOrientation="landscape"  
+           android:theme="@android:style/Theme.NoTitleBar.Fullscreen"  
+           android:windowSoftInputMode="stateAlwaysHidden" >  
+           <intent-filter>  
+             <action android:name="android.intent.action.MAIN" />  
+  
+             <category android:name="android.intent.category.DEFAULT" />  
+           </intent-filter>  
+           
+           <intent-filter>  
+             <action android:name="com.google.zxing.client.android.SCAN" />  
+  
+             <category android:name="android.intent.category.DEFAULT" />  
+           </intent-filter>  
+       </activity>  
+    </application>
+
+</manifest>

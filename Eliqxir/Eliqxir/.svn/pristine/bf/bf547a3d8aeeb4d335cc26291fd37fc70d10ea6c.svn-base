@@ -1,0 +1,279 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color" >
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        layout="@layout/header" />
+
+    <!-- Main Layout below the header -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="20dp" >
+
+            <RelativeLayout
+                android:id="@+id/subtotal_service_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp" >
+
+                <com.eliqxir.utils.CustomTextOpensansRegular
+                    android:id="@+id/subtotal_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:paddingTop="30dp"
+                    android:text="@string/subtotal"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="18sp" />
+
+                <com.eliqxir.utils.CustomTextOpensansSemiBold
+                    android:id="@+id/subtotal_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_toRightOf="@+id/subtotal_label"
+                    android:gravity="right|bottom"
+                    android:text="-"
+                    android:textColor="@color/app_green"
+                    android:textSize="25sp" />
+
+                <com.eliqxir.utils.CustomTextOpensansRegular
+                    android:id="@+id/service_fee_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/subtotal_label"
+                    android:layout_marginTop="20dp"
+                    android:paddingTop="30dp"
+                    android:text="@string/service_fee"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="18sp" />
+
+                <com.eliqxir.utils.CustomTextOpensansSemiBold
+                    android:id="@+id/service_fee_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/subtotal_label"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/service_fee_label"
+                    android:gravity="right|bottom"
+                    android:text="$5.00"
+                    android:textColor="@color/app_green"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/subtotal_service_layout"
+                android:layout_marginTop="30dp"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:id="@+id/tip_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp" >
+
+                <com.eliqxir.utils.CustomTextOpensansRegular
+                    android:id="@+id/tip_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="@string/tip"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="18sp" />
+
+                <com.eliqxir.utils.CustomTextOpensansSemiBold
+                    android:id="@+id/txtTipPercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/tip_value" 
+                      android:layout_centerVertical="true"
+                    android:textColor="@color/app_green"
+                    android:textSize="25sp"
+                    android:visibility="gone"
+                    android:text="(0%)"/>
+
+                <com.eliqxir.utils.CustomTextOpensansSemiBold
+                    android:id="@+id/tip_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/btn_tip"
+                    android:text="--"
+                    android:textColor="@color/app_green"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/btn_tip"
+                    android:layout_width="10dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/next1" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tip_layout"
+                android:layout_marginTop="5dp"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:id="@+id/taxes_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp" >
+
+                <com.eliqxir.utils.CustomTextOpensansRegular
+                    android:id="@+id/taxes_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:paddingTop="30dp"
+                    android:text="@string/taxes"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="18sp" />
+
+                <com.eliqxir.utils.CustomTextOpensansSemiBold
+                    android:id="@+id/taxes_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_toRightOf="@+id/taxes_label"
+                    android:layout_centerVertical="true"
+                    android:gravity="right|bottom"
+                    android:text="$2.00"
+                    android:textColor="@color/app_green"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/taxes_layout"
+                android:layout_marginTop="5dp"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:id="@+id/promo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp" >
+
+                <com.eliqxir.utils.CustomTextOpensansRegular
+                    android:id="@+id/promo_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:paddingTop="30dp"
+                    android:text="@string/discount"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="18sp" />
+
+                <com.eliqxir.utils.CustomTextOpensansSemiBold
+                    android:id="@+id/promo_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_toRightOf="@+id/taxes_label"
+                    android:gravity="right|bottom"
+                    android:text="$0"
+                    android:textColor="@color/app_green"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/btn_add_a_promo_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/promo_label"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_bg_orange"
+                    android:text="@string/add_a_promo_code"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/line4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/promo_layout"
+                android:layout_marginTop="40dp"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:id="@+id/total_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line4"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.eliqxir.utils.CustomTextOpensansSemiBold
+                        android:id="@+id/total_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:paddingTop="15dp"
+                        android:text="@string/total"
+                        android:textColor="@color/txt_color_gray"
+                        android:textSize="18sp" />
+
+                    <com.eliqxir.utils.CustomTextOpensansSemiBold
+                        android:id="@+id/total_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_toRightOf="@+id/total_label"
+                        android:gravity="right|bottom"
+                        android:text="-"
+                        android:textColor="@color/app_green"
+                        android:textSize="30sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_bg_orange"
+                    android:text="@string/confirm"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

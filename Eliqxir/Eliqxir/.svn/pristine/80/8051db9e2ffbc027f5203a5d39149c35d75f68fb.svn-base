@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_centerVertical="true"
+    	android:layout_marginRight="5dp"
+    	android:layout_marginLeft="5dp"
+    	android:layout_marginTop="20dp"
+    	android:layout_marginBottom="20dp"
+        >
+    <com.eliqxir.utils.CustomTextOpensansSemiBold
+        android:id="@+id/textForQuantities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textColor="#939597"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:textSize="17dp"
+        />
+    <com.eliqxir.utils.CustomTextOpensansSemiBold
+        android:id="@+id/textForX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:textColor="#939597"
+        android:layout_toRightOf="@+id/textForQuantities"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:textSize="17dp"
+        />
+    <LinearLayout
+        android:id="@+id/layoutForOrderNameList"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/textForX"
+        >
+        <com.eliqxir.utils.CustomTextOpensansSemiBold
+            android:id="@+id/textForOrderItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stella Artois"
+            android:textColor="#fbb03b"
+            android:textSize="17dp"
+            />    
+            <com.eliqxir.utils.CustomTextOpensansRegular
+            android:id="@+id/textForOrderItemPacks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 pack of 11.2oz	Bottles"
+            android:textColor="#939597"
+            android:textSize="16dp"
+            />    
+    </LinearLayout>
+    <com.eliqxir.utils.CustomTextOpensansSemiBold
+        android:id="@+id/textForAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$12.99 ea"
+        android:textColor="#53bc9d"
+        android:textSize="17dp"
+      android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        />
+</RelativeLayout>
+</RelativeLayout>

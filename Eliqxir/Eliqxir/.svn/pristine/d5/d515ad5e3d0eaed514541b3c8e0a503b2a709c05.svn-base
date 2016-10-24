@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/app_bg_color" >
+ 
+    <RelativeLayout
+        android:id="@+id/layoutForCloseBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        >
+        <Button
+            android:id="@+id/btnForSignatureClose"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/close_btn"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/layoutForSignatureBtns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/grey" >
+ 
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Clear"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_bg_orange"
+            android:textColor="@color/white" />
+ 
+        <Button
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="save"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_bg_orange"
+            android:textColor="@color/white" />
+    </LinearLayout>
+ 
+    <LinearLayout
+        android:id="@+id/layoutForCaptureSignature"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/app_bg_color"
+        android:layout_below="@+id/layoutForCloseBtn"
+        android:layout_above="@+id/layoutForSignatureBtns" >
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/imageForSignature"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:background="@color/app_bg_color"
+        android:layout_below="@+id/layoutForCloseBtn"
+        android:layout_above="@+id/layoutForSignatureBtns" >
+    </ImageView>
+ 
+</RelativeLayout>

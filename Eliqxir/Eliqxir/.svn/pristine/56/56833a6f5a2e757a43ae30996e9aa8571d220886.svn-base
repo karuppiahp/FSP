@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/menu_back"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent" 
+    	android:orientation="vertical"
+        >
+    <com.eliqxir.utils.CustomTextOpensansSemiBold
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="ELIQXIR"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layOrders"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/menu_black_back" >
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/orders_driver"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/layDriverLogout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/menu_black_back" >
+
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/vendor_logout"
+            android:textColor="@color/vendor_log_color"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

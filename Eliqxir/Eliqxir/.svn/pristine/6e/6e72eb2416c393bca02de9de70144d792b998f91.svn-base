@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <ImageView
+        android:id="@+id/imageForArrow"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/list_arrow"
+        />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_toLeftOf="@+id/imageForArrow"
+    	android:layout_marginRight="12dp"
+    	android:layout_marginLeft="12dp"
+    	android:layout_marginTop="22dp"
+    	android:layout_marginBottom="22dp"
+    	android:layout_centerVertical="true"
+    	android:orientation="vertical"
+        >
+    <com.eliqxir.utils.CustomTextOpensansRegular
+        android:id="@+id/textViewHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#fbb03b"
+        android:text="Stella Artis"
+        />
+    <com.eliqxir.utils.CustomTextOpensansRegular
+        android:id="@+id/textViewNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textColor="#b2b4b3"
+        android:text="Stella Artis"
+        android:layout_marginTop="3dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/driver_login_logo" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="40dp"
+        android:id="@+id/edtDriverUname"
+         android:singleLine="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/app_bg_color"
+        android:hint="@string/uname"
+        android:textColor="@color/txt_grey"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/txt_grey" />
+
+    <EditText
+        android:id="@+id/edtDriverPwd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="40dp"
+         android:singleLine="true"
+        android:layout_marginTop="30dp"
+        android:inputType="textPassword"
+        android:background="@color/app_bg_color"
+        android:hint="@string/password"
+        android:textColor="@color/txt_grey"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/txt_grey" />
+
+    <Button
+        android:id="@+id/btnDriverLogin"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/driver_login_btn" />
+ <Button
+        android:id="@+id/btnDriverLoginCancel"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/cancel" />
+    
+</LinearLayout>

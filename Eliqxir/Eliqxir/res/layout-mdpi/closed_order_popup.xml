@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true"
+        android:background="@color/pop_up_white"
+        android:orientation="vertical"
+        >
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/closed_success"
+            android:gravity="center"
+            android:textColor="@color/grey"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            />
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/closed_desc"
+            android:gravity="center"
+            android:textColor="@color/grey"
+            android:textSize="13dp"
+            android:layout_marginTop="15dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/edit_menu_txt"
+            />
+        <com.eliqxir.utils.CustomTextOpensansRegular
+            android:id="@+id/txtForClosedOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/closed_ok"
+            android:textSize="15dp"
+            android:textColor="@color/grey"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

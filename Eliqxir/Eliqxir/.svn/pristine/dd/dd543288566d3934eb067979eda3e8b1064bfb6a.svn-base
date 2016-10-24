@@ -1,0 +1,140 @@
+<resources>
+
+    <string name="app_name">Eliqxir</string>
+    <string name="search">SEARCH</string>
+    <string name="browse">BROWSE</string>
+    <string name="my_account">MY ACCOUNT</string>
+    <string name="cart">CART</string>
+    <string name="location">LOCATION</string>
+    <string name="vendor_login">VENDOR LOGIN</string>
+    <string name="user_logout">LOGOUT</string>
+    <!-- Menu strings for vendor -->
+    <string name="overview">OVERVIEW</string>
+    <string name="orders">ORDERS</string>
+    <string name="menu">MENU</string>
+    <string name="store_info">STORE INFO</string>
+    <string name="drivers">DRIVERS</string>
+    <string name="vendor_logout">LOGOUT</string>
+    <string name="sample"></string>
+    <string name="notes">Note your typical Belgain brew, but an extremely drinkable lager, with a dedicated following in Belgium, Britain, and most recently the U.S. You\'l find this beer, on tap, almost everywhere</string>
+    <!-- Signup.xml -->
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+    <string name="dob">DATE OF BIRTH</string>
+    <string name="email">Email</string>
+    <string name="submit">Submit</string>
+    <!-- delivery_tip.xml -->
+    <string name="subtotal">Subtotal:</string>
+    <string name="service_fee">Service Fee:</string>
+    <string name="tip">Tip:</string>
+    <string name="taxes">Taxes:</string>
+    <string name="discount">Discount:</string>
+    <string name="add_a_promo_code">Add a Promo Code</string>
+    <string name="total">TOTAL:</string>
+    <string name="confirm">Confirm</string>
+    <string name="tip_total">Tip Total:</string>
+    <string name="percentage">Percentage</string>
+    <string name="enter_manually">Enter Manually</string>
+    <string name="use_cash">Use Cash</string>
+
+    <!-- promo_dailog.xml -->
+    <string name="promo_title">Add Promo</string>
+    <string name="promo_code">Promo Code</string>
+    <string name="apply">Apply</string>
+    <string name="success">Success!</string>
+    <string name="sample_percentage">Promo coupon has been applied. Please check the total amount.</string>
+
+    <!-- login_dailog.xml -->
+    <string name="log_in">Log In</string>
+    <string name="uname">User name </string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="forgot_pwd">&lt;u&gt;Forgot password?&lt;/u&gt;</string>
+    <!-- checkout.xml -->
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="country">Country</string>
+    <string name="name">Name </string>
+    <string name="zip">Zipcode</string>
+    <!-- change_password.xml -->
+    <string name="change_pwd">Change Password</string>
+    <string name="oldpwd">Old Password </string>
+    <string name="newpwd">New Password</string>
+    <string name="confirmpwd">Confirm Password</string>
+    <string name="pwdvia_email">Generate new password via email</string>
+    <string name="alert_fill_signature">Signature field must not be empty.</string>
+    <string name="alert_save_signature">Please save the signature.</string>
+    <string name="alert_ok_label">Ok</string>
+
+    <!-- cart.xml -->
+    <string name="check_out">Checkout</string>
+    <string name="subtotal_caps">SUBTOTAL:</string>
+    <string name="tax_caps">TAX:</string>
+    <string name="service_fee_caps">SERVICE FEE:</string>
+    <string name="discount_caps">DISCOUNT:</string>
+    <string name="plus_one">+1</string>
+    <string name="minus_one">-1</string>
+
+    <!-- overview.xml -->
+    <string name="overview_sales">SALES</string>
+    <string name="overview_sales_sub">Month-to-Date</string>
+    <string name="overview_average">AVERAGE DELIVERY TIME</string>
+    <string name="overview_avg_sub">Month-to-Date</string>
+    <string name="overview_top_sellings">TOP SELLING ITEMS</string>
+    <string name="overview_top_sellings_sub">This Month</string>
+
+    <!-- edit_menu.xml -->
+    <string name="edit_item_name">Item Name:</string>
+    <string name="edit_qty">Quantity:</string>
+    <string name="edit_f1oz">FI.Oz:</string>
+    <string name="product_sku">Product SKU:</string>
+    <string name="edit_Price">Price:</string>
+    <string name="edit_category">Category:</string>
+    <string name="edit_sub_category">Sub-Category:</string>
+    <string name="edit_available">Available:</string>
+    <string name="edit_featured">Featured:</string>
+    <string name="weight">Weight:</string>
+    <string name="desc">Description:</string>
+    <string name="sdesc">Short-Description:</string>
+    <string name="mdesc">Meta-Description:</string>
+
+    <!-- store_info.xml -->
+    <string name="hours">HOURS</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="open_closed">Open/Forced Closed</string>
+    <string name="store_txt">Leaving this active will automatically show your store\'s open status to customers.</string>
+    <string name="deliveries">Accepting Deliveries</string>
+    <string name="save_changes">Save</string>
+    <!-- closed_order_popup -->
+    <string name="closed_success">SUCCESS!</string>
+    <string name="closed_desc">This order will now appear in your History</string>
+    <string name="closed_ok">OK</string>
+    <!-- signup.xml -->
+    <string name="signup_terms">&lt;u&gt; I accept with Terms &amp; Conditions&lt;/u&gt;</string>
+    <string name="terms">Terms &amp; Conditions</string>
+    <string name="date_hint">DD</string>
+    <string name="month_hint">MM</string>
+    <string name="year_hint">YYYY</string>
+    <string name="orders_driver">ORDERS</string>
+    <string name="driver_login">DRIVER LOGIN</string>
+
+    <!-- Add driver -->
+
+    <string name="driver_fname">Enter Driver First Name:</string>
+    <string name="driver_lname">Enter Driver Last Name:</string>
+    <string name="driver_email">Enter Email:</string>
+    <string name="driver_phone">Enter Phone:</string>
+    <string name="driver_password">Enter Password:</string>
+
+    <!-- Facebook App Id -->
+    <string name="app_id">691109997654214</string>
+
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/app_bg_color" >
+  <include
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        layout="@layout/header" />
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0" />
+
+            <FrameLayout
+                android:id="@+id/realtabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+ <ImageView
+                android:id="@+id/imgSplash"
+                 android:scaleType="fitXY"
+                android:layout_width="fill_parent"
+               android:visibility="gone"
+                android:layout_height="fill_parent"
+                android:src="@drawable/intro" />
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_weight="0"
+                android:background="#f1f1ec"
+                android:fadingEdge="none"
+                android:orientation="horizontal"
+                android:showDividers="none" />
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

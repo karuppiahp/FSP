@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        layout="@layout/header" />
+    
+    <RelativeLayout 
+        android:id="@+id/searchRelative"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_height="60dp"  >
+
+    <EditText
+        android:id="@+id/editTxtForSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@color/pop_up_white"
+        android:hint="Search"
+        android:imeOptions="actionDone"
+        android:paddingLeft="5dp"
+        android:singleLine="true" />
+    
+    <Button 
+        android:id="@+id/searchclose"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/closeicon"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        />
+    
+</RelativeLayout>
+   
+    <ListView
+        android:id="@+id/listForSearchPdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchRelative"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <com.eliqxir.utils.CustomTextOpensansRegular        
+        android:id="@+id/txtNoitems"        
+        android:layout_width="wrap_content"
+        android:text="@string/searchnovalues"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" 
+        android:visibility="gone"/>
+
+</RelativeLayout>

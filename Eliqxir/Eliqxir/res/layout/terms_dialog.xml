@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="280dp"
+    android:background="@drawable/promo_layout_bg" >
+ <TextView
+        android:id="@+id/login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/terms"
+        android:textColor="@color/app_orange"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/terms_close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/login_close" />
+
+    <com.eliqxir.utils.CustomTextOpensansRegular
+        android:id="@+id/textForCheckOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="      Final exchange of product is contigent on the presentation of a valid ID that matches the above date of birth that must be over the age of 21. The vendor is responsible for final verification of legal alcohol purchase age upon delivery."
+        android:textColor="#939597"
+        android:textSize="12dp" />
+
+</RelativeLayout>
